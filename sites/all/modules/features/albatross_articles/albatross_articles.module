@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Albatross Articles feature.
- */
-
-include_once('albatross_articles.features.inc');

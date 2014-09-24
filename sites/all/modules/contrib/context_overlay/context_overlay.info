@@ -1,6 +1,0 @@
-name = "Context Overlay"
-description = "Adds context reactions to force pages to appear (or not appear) in the overlay."
-package = "Context"
-dependencies[] = context
-dependencies[] = overlay
-core = "7.x"

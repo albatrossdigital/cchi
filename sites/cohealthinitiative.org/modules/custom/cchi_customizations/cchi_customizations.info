@@ -1,4 +1,0 @@
-core = "7.x"
-
-description = "Navigation and other customizations for CCHI"
-name = "CCHI Customizations"

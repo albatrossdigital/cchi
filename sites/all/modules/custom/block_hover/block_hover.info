@@ -1,7 +1,0 @@
-name = Block Hover
-description = Creates hover behaviors for blocks
-core = 7.x
-
-dependencies[] = block
-
-files[] = block_hover.module

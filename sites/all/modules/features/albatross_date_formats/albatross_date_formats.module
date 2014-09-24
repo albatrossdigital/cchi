@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Albatross Date Formats feature.
- */
-
-include_once('albatross_date_formats.features.inc');

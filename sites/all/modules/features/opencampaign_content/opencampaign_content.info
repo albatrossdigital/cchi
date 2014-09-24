@@ -1,7 +1,0 @@
-core = "7.x"
-description = "Content that is used on most campaign sites (ie Webforms)"
-features[content][] = "volunteer"
-name = "OpenCampaign Content"
-package = "Features"
-project = "opencampaign_content"
-version = "7.x-1.0-beta1"

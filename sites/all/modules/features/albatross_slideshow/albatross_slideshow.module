@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Albatross Slideshow feature.
- */
-
-include_once('albatross_slideshow.features.inc');

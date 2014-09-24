@@ -1,5 +1,0 @@
-;$Id: 
-name = DPM without Devel
-description = Allows you to run dpm() commands without devel enabled
-core = 7.x
-
