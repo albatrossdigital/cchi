@@ -1,0 +1,8 @@
+name = Button Block
+description = Adds simple blocks consisting of a button-ized link
+core = 7.x
+
+dependencies[] = block
+
+files[] = button_block.module
+files[] = button_block.install

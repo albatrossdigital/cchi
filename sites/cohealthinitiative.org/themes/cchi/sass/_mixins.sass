@@ -1,0 +1,198 @@
+@import _variables.sass
+@import ../../../../all/themes/albatross/sass/_mixins.sass
+
+@mixin image_block($width, $height, $left, $top, $img: "sprite.png", $repeat: no-repeat)
+  width: $width
+  height: $height
+  display: block
+  text-indent: -1000em
+  overflow: hidden
+  background: transparent url(../images/#{$img}) $left $top $repeat
+
+@mixin trans_image($x: 0, $y: 0, $img: "sprite.png", $repeat: no-repeat)
+  background: transparent url(../images/#{$img}) $x $y $repeat
+
+@mixin default_font()
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+
+@mixin simple_text_shadow($color)
+  +single-text-shadow($color, 1px, 1px, 0px)
+  
+@mixin comfortaa_dark()
+  color: $blue_dark
+  font-family: 'comfortaa'
+  text-transform: uppercase
+
+@mixin comfortaa_white()
+  color: #fff
+  font-family: 'comfortaa'
+  font-weight: normal
+  letter-spacing: 0.15em
+  +simple_text_shadow($blue_dark)
+  text-transform: uppercase
+  
+  &:hover
+    text-decoration: none
+    
+@mixin pos_hover($x, $y, $dx, $dy)
+  background-position: $x $y
+  
+  &:hover
+    background-position: $dx $dy
+    
+@mixin bold_shadow()
+  color: #fff
+  font-weight: bold
+  letter-spacing: 0.15em
+  +simple_text_shadow($blue_dark)
+  
+@mixin block_header()
+  border-top: 3px solid $blue_hover
+        
+  .block-inner
+    border-top: 40px solid $blue_dark
+    
+    h2.block-title
+      position: absolute
+      top: -4px
+      +comfortaa_white()
+      line-height: 48px
+      padding-left: 15px
+  
+@mixin block_header_image($x, $y, $img: "sprite.png")
+  +block_header()
+        
+  .block-inner  
+    h2.block-title
+      +trans_image($x, $y)
+      overflow: hidden
+      height: 60px
+      padding-left: 60px
+
+// USE http://kilianvalkhof.com/2010/css-xhtml/how-to-use-rgba-in-ie/ to convert
+@mixin ie_rgba($r, $g, $b, $a, $argb)
+  background-color: rgba($r, $g, $b, $a)
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$argb}', endColorstr='#{$argb}')"
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$argb}', endColorstr='#{$argb}')
+  zoom: 1
+  
+  
+//simple 2 color vertical gradient
+@mixin grad($color1, $color2)
+  background-color: $color1
+  //+linear-gradient(color-stops($color1, $color2))
+  +background-image(linear-gradient($color1, $color2))
+
+//Hover reverses gradient  
+@mixin grad_hover($color1, $color2)
+  background-color: $color1
+  +grad($color1, $color2)
+   
+  &:hover
+    background-color: $color2
+    +grad($color2, $color1)
+    
+
+//simple 2 color vertical gradient
+@mixin grad_img($color1, $color2, $x: 0, $y: 0, $img: "sprite.png")
+  background-color: $color1
+  background-position: $x $y
+  //+linear-gradient(color-stops($color1, $color2), top, image-url(#{$img}))
+  +background-image(image-url(#{$img}), linear-gradient($color1, $color2))
+  
+//Hover reverses gradient  
+@mixin grad_img_hover($color1, $color2, $x: 0, $y: 0, $img: "sprite.png")
+  +grad_img($color1, $color2, $x, $y, $img)
+   
+  &:hover
+    +grad_img($color2, $color1, $x, $y, $img)
+
+@mixin minimal_input($color, $w, $h)
+  border: 0
+  background: $color
+  color: #fff
+  height: $h - 4
+  line-height: $h - 4
+  padding: 2px 7px
+  width: $w - 14
+  
+@mixin button_reset($w, $h)
+  background-color: transparent
+  border: 0
+  +border-radius(0)
+  height: $h
+  width: $w
+
+@mixin button_block_core($color1, $color2, $border, $border_hover, $text: #fff)
+  border: 5px solid $border
+  color: $text
+  display: inline-block
+  height: 40px
+  +grad_hover($color1, $color2)
+  line-height: 40px
+  font-weight: bold
+  text-transform: uppercase
+  padding: 0 10px
+  
+  &:hover
+    border-color: $border_hover
+    
+//For a blue button block link
+@mixin button_block_blue()
+  +button_block_core($button_blue_top, $button_blue_bottom, $button_blue_border, $blue_sky)
+
+//For a blue button block link
+@mixin button_block_dark()
+  +button_block_core(lighten($blue_dark, 15%), lighten($blue_dark, 10%), $button_blue_border, $blue_sky)
+
+// custom button
+@mixin button_block_blue_guide()
+  .button-block-wrapper
+    +grad_hover(lighten($blue_dark, 5%), $blue_dark)
+
+  a.button-block-link
+    border: 5px solid $button_blue_border
+    color: #fff
+    display: inline-block
+    height: 40px
+    line-height: 40px
+    font-weight: bold
+    text-transform: uppercase
+    padding: 0 10px 0 47px
+    +trans_image(9px, -580px)
+  
+    &:hover
+      border-color: $blue_sky
+
+//For a white button block link
+@mixin button_block_white()
+  +button_block_core(#fefefe, #cdcdcd, $button_blue_border, $blue_sky, $blue)
+
+@mixin button_block_core_arrow($w, $h, $img)
+  border-right: 0
+  padding-right: 0
+  position: relative
+  
+  span
+    +trans_image(0, 0, $img)
+    display: block
+    height: $h
+    position: absolute
+    right: -#{$w}
+    top: -4px
+    width: $w
+  
+  &:hover
+    span
+      background-position: -#{$w} 0
+
+@mixin button_block_blue_arrow($w, $h, $img)
+  +button_block_blue()
+  span
+    display: none
+  //+button_block_core($button_blue_top, $button_blue_top, $button_blue_border, $blue_sky)
+  //+button_block_core_arrow($w, $h, $img)
+  
+  //&:hover
+    //background-color: $button_blue_bottom
+  

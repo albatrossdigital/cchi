@@ -1,0 +1,874 @@
+@import compass/css3
+@import _mixins.sass
+@import ../../../../all/themes/albatross/sass/_mixins.sass
+@import _variables.sass
+
+
+/* ----------------------------------
+ * CONTEXTUAL LINK FIXES
+ *-----------------------------------
+ 
+.contextual-links-region-proxy
+  z-index: 499
+
+/* ----------------------------------
+ * PINNED FOOTER
+ *-----------------------------------
+ 
+html, body
+  height: 100%
+
+  #page
+    min-height: 100%
+
+  #main-area-wrapper
+    overflow: auto
+    padding-bottom: $footer_height + $closure_height
+
+  #footer
+    clear: both
+    height: $footer_height
+    margin-top: -($footer_height + $closure_height)
+    position: relative
+    z-index: 3
+    
+  #closure
+    height: $closure_height
+
+body:before
+  content: ""
+  float: left
+  height: 100%
+  margin-top: -32767px
+  width: 0
+
+/* ----------------------------------
+ * PAGE
+ *-----------------------------------
+ 
+body
+  #page
+    +trans_image(0, 0, "BGpattern.jpg", repeat) 
+
+/* ----------------------------------
+ * HEADER
+ *-----------------------------------
+ 
+#header
+  +trans_image(0, 0, "1gradient.jpg", repeat-x) 
+  
+  #header-inner
+    +trans_image(center, bottom, "mountain_range.png")
+    height: $header_height
+    position: relative
+    
+    #logo
+      left: -13px
+      position: absolute
+      top: -3px
+      z-index: 498
+  
+    #name-and-slogan
+      #site-name
+        display: none
+        
+      #site-slogan
+        color: #fff
+        font-style: italic
+        padding: 12px 0 0 132px
+        
+    .region-header
+      float: right
+      padding-top: 20px
+      
+      .block
+        &.block-button-block
+          float: left
+          margin-left: 10px
+          
+          
+          .button-block-wrapper
+            a
+              &.button-block-link
+                height: 34px
+                line-height: 34px
+          
+            //white
+            &.button-white
+              a 
+                height: 34px
+                margin-top: 1px
+                
+              
+            &.button-blue-arrow
+              a
+                
+            
+    
+
+
+/* ----------------------------------
+ * NAVIGATION
+ *-----------------------------------
+ 
+#navigation
+  +trans_image(0, 0, "2gradient.jpg", repeat-x) 
+  
+  #navigation-inner
+    height: $nav_height
+    
+    .region-navigation
+      padding-left: 120px
+      
+      #block-superfish-1
+        z-index: 2
+      
+      ul.main-menu
+        li
+          list-style: none
+          float: left
+          width: 112px
+          
+          &.sf-depth-1
+            padding-right: 1px
+            +trans_image(right, center, "nav-button-border.png")
+            
+            &.last
+              background: none
+            
+            a
+              display: inline-block
+              +comfortaa_white()
+              font-size: 1.15em
+              height: #{$nav_height - 17}
+              text-align: center
+              padding: 17px 7px 0 7px
+              width: #{112 - (2 * 7)}px
+              
+              &:hover,
+              &.active
+                +trans_image(right, center, "nav-button-over.jpg", repeat-x)
+            
+            &.sfHover,
+            &.active-trail
+              a
+                +trans_image(right, center, "nav-button-over.jpg", repeat-x)
+                
+            
+            //2 line menu items
+            &#menu-548-1,
+            &#menu-547-1,
+            &#menu-559-1
+              a
+                height: #{$nav_height - 11}
+                padding-top: 10px
+                
+              ul
+                li
+                  a
+                    height: auto
+                    padding-top: 0
+                    
+          
+          //children
+          &.menuparent    
+            ul
+              +grad($blue_top, $blue_bottom)
+              +border-radius(0)
+              margin-top: 17px
+              padding: 12px 10px
+              width: #{226 - (2 * 10)}px
+              
+              li
+                &.sf-depth-2
+                  background: none
+                  float: none
+                  padding: 0
+                  width: auto
+                  
+                  a
+                    background: none
+                    +default_font()
+                    font-size: .9em
+                    font-weight: bold
+                    height: auto
+                    line-height: 2em
+                    padding: 0
+                    text-align: left
+                    text-transform: none
+                    width: auto
+                    
+                    &.active,
+                    &:hover
+                      color: $blue_hover
+
+/* ----------------------------------
+ * MAIN HEADER
+ *-----------------------------------
+
+#main-header
+  #main-header-inner
+    height: 122px
+    
+    .region-main-header
+      padding: 20px 0 20px 35px           
+
+/* ----------------------------------
+ * MAIN
+ *-----------------------------------
+ 
+
+#main-area-wrapper
+
+  #main
+    padding: 0 0 60px $content_padding
+    width: $page_width - $content_padding
+    
+    #main-inner
+      background: #ebebeb
+
+//main sidebar actions
+body 
+  &.two-sidebars,
+  &.sidebar-second
+    #main-area-wrapper
+      #main
+        #main-inner
+          background: transparent url(../images/contentWithSidebars.png) repeat-y
+  
+  &.no-sidebars,      
+  &.sidebar-first
+    #main-area-wrapper
+      #main
+        #highlight
+          #highlight-inner
+            .region-highlight
+              #block-text_resize-0
+                right: $content_margin
+           
+/* ----------------------------------
+ * HIGHLIGHT
+ *-----------------------------------
+ 
+#highlight
+  #highlight-inner
+    border-top: 3px solid $blue_hover
+  
+    .region-highlight
+      background: $blue_faded
+      height: 40px
+      
+      .block
+        
+        &#block-cchi_customizations-section_title
+          h2
+            +comfortaa_white()
+            font-size: 1.4em
+            line-height: 40px
+            margin: 0
+            padding-left: (2 * $content_padding) 
+    
+
+/* ----------------------------------
+ * CONTENT
+ *-----------------------------------
+ 
+#content
+  padding-bottom: 20px
+  
+  #content-inner
+    background: #fff
+    +single-box-shadow( #CCC, 0, 3px, 5px, 1px)
+    margin-top: $content_padding
+    margin-left: $content_margin
+    margin-right: $content_margin
+    padding: 25px 35px
+    
+
+/* ----------------------------------
+ * SIDEBAR CONTENT BEHAVIORS
+ *-----------------------------------
+ 
+body
+  //first
+  &.sidebar-first
+    #content
+      #content-inner
+        margin-left: $first_sidebar_width
+    
+  //second
+  &.sidebar-second
+    #content
+      #content-inner
+        margin-right: $second_sidebar_width + $content_margin
+  
+  //both  
+  &.two-sidebars
+    #content
+      #content-inner
+        margin-left: $first_sidebar_width
+        margin-right: $second_sidebar_width + $content_margin
+  
+/* ----------------------------------
+ * SIDEBAR FIRST
+ *-----------------------------------
+ 
+#sidebar-first
+  #sidebar-first-inner
+    padding: $content_padding 0 $content_padding $content_padding
+    
+    .block
+      &#block-menu_block-2
+        ul.menu
+          li
+            a
+              color: $blue
+              display: block
+              font-weight: bold
+              height: 40px
+              line-height: 40px
+              padding-left: $content_padding
+              
+              &:hover,
+              &.active
+                color: $blue_dark
+              
+              &.active
+                background: #fff
+
+/* ----------------------------------
+ * SIDEBAR SECOND
+ *-----------------------------------
+ 
+#sidebar-second
+  #sidebar-second-inner
+    padding-bottom: 20px
+    
+    .block
+      +block_header()
+      margin-bottom: 1em
+      
+      //twitter pull      
+      &#block-cchi_customizations-tweets
+        +block_header_image(-4px, 0)
+
+/* ----------------------------------
+ * FOOTER
+ *-----------------------------------
+ 
+#footer
+  +trans_image(0, 0, "3gradient.jpg", repeat-x) 
+  
+  .region-footer
+    .block
+      
+      &.block-block
+        float: left
+        padding-top: 13px
+        
+        p
+          +bold_shadow
+          margin: 0
+          line-height: 1.2em
+          
+      &#block-social_block-social
+        float: right
+        margin-bottom: 0
+        padding-top: 20px
+        width: 390px
+        
+        h2.block-title
+          +comfortaa_white()
+          font-size: 1.4em
+          float: left
+          line-height: 50px
+          
+        .content
+          float: right
+          +list-clear()
+          width: 186px
+          
+          ul
+            li
+              float: left
+              margin-right: $content_padding
+              
+              a
+                +sprite-block(50px, 50px, 0, 0)
+                
+                &.facebook
+                  background-position: 0 -160px
+                  
+                  &:hover
+                    background-position: 0 -210px
+                
+                &.twitter
+                  background-position: 0 -60px
+                  
+                  &:hover
+                    background-position: 0 -110px
+                    
+                &.youtube
+                  background-position: 0 -260px
+                  
+                  &:hover
+                    background-position: 0 -310px
+        
+        
+
+/* ----------------------------------
+ * CLOSURE
+ *-----------------------------------
+ 
+#closure
+  +trans_image(0, 0, "4gradient.jpg", repeat-x) 
+  
+  .region-closure
+    color: #fff
+    height: $closure_height - 20px
+    position: relative
+    
+    .block
+      margin: 0
+      
+      //footer menu
+      &#block-menu_block-3
+        padding-top: 20px
+        
+        ul.menu
+          li
+            float: left
+            margin: 0
+            padding: 0
+            
+            &.first
+              a
+                padding-left: 0
+              
+            &.last
+              a
+                background: none
+            
+            a
+              +trans_image(right, center, "footer-menu-divider.png", no-repeat)
+              +bold_shadow()
+              padding: 0 20px
+             
+      
+      &#block-block-2,
+      &#block-block-3
+        bottom: 0
+        position: absolute
+        
+        p
+          margin: 0
+      
+      //Copyright info
+      &#block-block-2
+        left: 0
+      
+      //Albatross block  
+      &#block-block-3
+        right: 0
+
+
+/* ----------------------------------
+ * NODES
+ *-----------------------------------
+ 
+.node
+  position: relative
+        
+  .node-left
+    position: absolute
+    top: 0
+    
+  h2
+    font-size: 1.6em
+    font-weight: bold
+    
+  .content
+    .field-name-field-tags
+      margin-bottom: 20px
+      
+      .field-label
+        margin-right: 5px
+    
+      .field-item
+        display: inline
+        margin-right: 5px
+        
+  .links
+    ul
+      li
+        &.first
+          padding-left: 0
+  
+  //Teaser state      
+  &.node-teaser
+    .content
+      .field-name-field-tags
+        margin-bottom: 0
+        
+    .links
+      margin-top: 40px
+      
+      ul
+        li
+          &.first
+            padding-left: 0
+  
+  //modules with share-this
+  &.with-share-this
+    padding-bottom: 40px
+    
+    .share-this-wrapper
+      bottom : 25px
+      position: absolute
+      right: 25px
+    
+    &.node-teaser  
+      .share-this-wrapper
+        bottom : 40px  
+        
+  //node-left treatment for blog + events
+  &.node-blog-post,
+  &.node-event
+    background: #fff
+    +single-box-shadow( #CCC, 0, 3px, 5px, 1px)
+    padding: 25px
+    
+    &.node-teaser
+      margin-bottom: 35px
+    
+    .node-left
+      left: -180px
+      padding-right: 25px
+      top: 20px
+      width: 150px
+  
+  //blog posts
+  &.node-blog-post
+    padding-bottom: 40px
+    
+    &.node-teaser
+      .links
+        margin-top: 40px
+        
+        ul
+          li
+            border-right: 1px solid $color
+            padding: 0 0.75em
+            
+            &.first
+              padding-left: 0
+            
+            &.last
+              border-right: 0
+    
+    .node-left
+        
+      .left-comment-links
+        margin-top: 0.75em
+        padding-top: 0.75em
+        
+        ul.links
+          padding: 0
+           
+          li
+            display: block
+            padding: 0
+  
+  //events
+  &.node-event
+    h1, h2
+      margin-left: 60px
+      
+    .node-left
+      left: -195px
+      padding-right: 25px
+      top: 1px
+      width: 170px
+      
+      .event-map
+        background: #d4d4d4
+        height: 150px
+        padding: 10px
+        
+        &:hover
+          background: $blue_sky
+    
+    .content
+      //date box
+      .content-left
+        left: 25px
+        position: absolute
+        top: 30px
+        
+        .event-date-day-wrapper,
+        .event-date-month-wrapper
+          font-weight: bold
+          text-align: center
+          width: 40px
+          
+        .event-date-day-wrapper  
+          +trans_image(center, -63px, "content-type-sprite.png")
+          height: 41px
+          
+          .event-date-day
+            font-size: 1.5em
+            padding-top: 16px
+            
+        .event-date-month-wrapper
+          .event-date-month
+            font-size: 1.1em
+            padding-top: 3px
+            text-transform: uppercase
+            
+      //content proper
+      .content-right
+        margin-left: 60px
+        position: relative
+        
+        .event-date-label,
+        .event-location-label
+          color: $blue_dark
+          left: 4px
+          margin-left: 0
+          position: absolute
+        
+        .event-date-content,
+        .event-location-content,
+        .field-name-body
+          margin-left: 60px
+          
+        .field-name-body 
+          padding-top: 20px  
+          
+  &.node-quiz
+    table
+      &#quiz-view-table
+        display: none
+        
+    form
+      &#quiz-start-quiz-button-form
+        input
+          &#edit-submit
+            margin-top: 20px
+      
+      
+      
+
+/* ----------------------------------
+ * BLOCK STYLES 
+ *----------------------------------- 
+
+//for the search box, updates, membership trio of blocks 
+body.content-pages-section #main-header #main-header-inner .region-main-header,
+body.front #content-area .region-content
+
+  .block
+    float: left
+    
+    h2.block-title
+      color: $blue_dark
+      font-size: 1.2em
+      margin-bottom: 0
+      padding-top: 0.3em
+      text-transform: uppercase
+      
+    //button blocks      
+    &.block-button-block
+      +trans_image(center, left, "blue-button-divider.png")
+      height: 54px
+      width: 320px
+
+      h2.block-title
+        float: left
+        text-align: center
+        width: 128px
+        
+      .button-block-wrapper
+        a
+          &.button-block-link
+          float: left   
+
+.block
+
+  //user menu block
+  &#block-system-user-menu
+    position: absolute
+    right: 0
+    top: 12px
+    
+    ul.menu
+      text-align: right
+      
+      li
+        display: inline
+        padding-left: 10px
+        
+        &.first
+          border-right: 1px solid #fff
+          padding-left: 0
+          padding-right: 10px
+          
+        a
+          color: #fff
+          display: inline
+          font-weight: bold
+          
+          &:hover
+            text-decoration: underline
+    
+  //search form block 
+  &#block-search-form
+    width: 310px 
+    
+    h2.block-title
+      padding-top: 0.2em
+    
+    form
+      .form-actions
+      .form-type-textfield
+        display: block
+        float: left
+        margin: 0
+      
+      .form-type-textfield
+        width: 254px
+        
+        input.form-text
+          +minimal_input($blue_light, 254px, 26px)
+      
+      .form-actions
+        .form-submit
+          +button_reset(26px, 26px)
+          border: 1px solid $blue_faded
+          border-left: 0
+          +grad_img_hover($button_blue_top, $button_blue_bottom, 7px, -360px)
+          padding: 0
+          text-indent: -9000px
+  
+  //text-resize
+  &#block-text_resize-0
+    width: 130px
+    
+    h2.block-title
+      float: left
+      font-size: 1em
+      font-weight: bold
+      line-height: 26px
+    
+    .content
+      a
+        &.changer
+          +trans_image(0, 0)
+          height: 26px
+          float: left
+          margin: 0 0 0 8px
+          width: 26px
+          
+        &#text_resize_decrease
+          +pos_hover(-123px, -60px, -123px, -86px)
+        
+        &#text_resize_reset
+          display: none
+          //+pos_hover(-123px, -112px, -123px, -138px)
+        
+        &#text_resize_increase
+          +pos_hover(-123px, -164px, -123px, -190px)
+      
+  
+  //non block-specific twitter pull
+  .twitter-pull-block-wrapper
+    padding: 0
+    
+    .twitter-pull-block-description
+      padding: 20px 0 0 15px
+    
+    .twitter-block-header
+      background: $blue_sky
+      padding: 10px 10px 10px 20px
+                  
+      .twitter-link
+        font-size: 1em
+        font-weight: bold
+        padding-top: 12px
+        
+        .twitter-title
+          font-weight: normal
+          
+    .twitter-header a.twitter-follow-link,
+    .tweet-author a
+      +trans_image(0, -5px, "twitter-follow-sprite.png")
+      display: block
+      height: 20px
+      float: right
+      text-indent: -9000px
+      width: 61px
+      
+      &:hover
+        background-position: 0 -35px
+      
+    ul
+      padding: 0  
+      
+      li
+        line-height: 1.3em
+        margin-bottom: 20px
+        padding: 5px 20px
+      
+        .tweet-authorphoto,
+        .tweet-author,
+        .tweet-divider
+          display: none
+        
+        .tweet-time
+          padding-top: 10px
+          
+          a
+            color: $color
+            
+      a
+        color: $link
+        
+        &:hover
+          color: $hover
+
+  //button blocks general
+  &.block-button-block
+    .button-block-wrapper
+      
+      //blue
+      &.button-blue
+        a
+          &.button-block-link
+            +button_block_blue()
+            
+      //white
+      &.button-white
+        a
+          &.button-block-link
+            +button_block_white()
+
+      //blue-arrow
+      &.button-blue-arrow
+        a
+          &.button-block-link
+            +bold_shadow()
+            +simple_text_shadow(transparent)
+            padding: 6px 0
+            +sprite-block(149px, 46px, 0px, -388px)
+            text-transform: uppercase
+            text-indent: 31px
+            
+            &:hover
+              background-position: 0 -434px
+            
+            span
+              display: none
+
+  // blue guide button
+  &#block-button_block-7
+    +button_block_blue_guide()

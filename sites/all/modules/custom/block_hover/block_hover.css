@@ -1,0 +1,14 @@
+.hover-block-block /* a hover block */ {
+  
+}
+
+.block.hover-block-block .block-title {
+  margin-bottom: 0;
+  cursor: hand;
+  cursor: pointer;
+}
+
+.block.hover-block-block .content {
+  display: none;
+  position: absolute;
+}

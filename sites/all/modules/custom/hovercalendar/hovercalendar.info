@@ -1,0 +1,11 @@
+core = "7.x"
+name = "hoverCalendar"
+version = "7.x-1.0-beta1"
+
+dependencies[] = qtip
+
+features[ctools][] = "views:views_default:3.0"
+features[views_view][] = "hovercalendar"
+name = "hovercalendar"
+package = "Features"
+project = "hover_calendar"

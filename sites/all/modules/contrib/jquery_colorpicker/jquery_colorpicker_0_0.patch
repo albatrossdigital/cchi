@@ -1,0 +1,39 @@
+--- jquery_colorpicker.new.module	2011-02-17 21:06:02.480162188 +0100
++++ jquery_colorpicker.module	2011-01-25 03:18:24.000000000 +0100
+@@ -299,12 +299,12 @@ function jquery_colorpicker_field_format
+ 		'jquery_colorpicker_color_display' => array
+ 		(
+ 			'label' => t('Colored block'),
+-			'field_types' => array('jquery_colorpicker'),
++			'field types' => array('jquery_colorpicker'),
+ 		),
+ 		'jquery_colorpicker_text_display' => array
+ 		(
+ 			'label' => t('Text'),
+-			'field_types' => array('jquery_colorpicker'),
++			'field types' => array('jquery_colorpicker'),
+ 		),
+ 	);
+ }
+@@ -354,7 +354,10 @@ function jquery_colorpicker_field_widget
+  */
+ function jquery_colorpicker_field_widget_form(&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element)
+ {
+-	$value = (isset($items[$delta]['jquery_colorpicker'])) ? $items[$delta]['jquery_colorpicker'] : '';
++	$value = '';
++	if (isset($instance['default_value'][$delta]['jquery_colorpicker'])) $value = $instance['default_value'][$delta]['jquery_colorpicker'];
++	if (isset($items[$delta]['jquery_colorpicker'])) $value = $items[$delta]['jquery_colorpicker'];
++
+ 	$element += array
+ 	(
+ 		'#delta' => $delta,
+@@ -364,7 +367,7 @@ function jquery_colorpicker_field_widget
+ 	{
+ 		$element['jquery_colorpicker'] += array
+ 		(
+-			'#title' => t('Color'),
++			'#title' => $instance['label'],
+ 			'#type' => 'jquery_colorpicker',
+ 			'#default_value' => $value,
+ 		);
+

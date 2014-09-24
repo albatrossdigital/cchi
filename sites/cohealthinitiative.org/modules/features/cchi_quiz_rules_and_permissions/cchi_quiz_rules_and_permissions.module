@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CCHI quiz, rules and permissions feature.
+ */
+
+include_once('cchi_quiz_rules_and_permissions.features.inc');

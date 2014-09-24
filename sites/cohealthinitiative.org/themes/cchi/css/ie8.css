@@ -1,0 +1,25 @@
+/*
+ * button block styles
+ */
+/**********************************
+ * FONT MIXINS
+ ********************************** */
+/**********************************
+ * FONT MIXINS
+ ********************************** */
+/*
+ * button block styles
+ */
+/* Yes, we all hate IE8 too. */
+/* line 11, ../sass/ie8.sass */
+#footer .region-footer .block#block-social_block-social {
+  width: 420px; }
+
+/* line 16, ../sass/ie8.sass */
+.block#block-text_resize-0 {
+  width: 180px; }
+
+/* line 25, ../sass/ie8.sass */
+#navigation #navigation-inner .region-navigation ul.main-menu li.sf-depth-1 a {
+  font-size: 1.05em;
+  letter-spacing: 0.1em; }
