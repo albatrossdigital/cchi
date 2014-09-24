@@ -5,31 +5,26 @@
  */
 
 /**
- * Implementation of hook_ctools_plugin_api().
+ * Implements hook_ctools_plugin_api().
  */
-function albatross_news_ctools_plugin_api() {
-  list($module, $api) = func_get_args();
+function albatross_news_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
 }
 
 /**
- * Implementation of hook_views_api().
+ * Implements hook_views_api().
  */
-function albatross_news_views_api() {
-  list($module, $api) = func_get_args();
-  if ($module == "views" && $api == "views_default") {
-    return array("version" => "3.0");
-  }
+function albatross_news_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
 }
 
 /**
- * Implementation of hook_node_info().
+ * Implements hook_node_info().
  */
 function albatross_news_node_info() {
   $items = array(
@@ -42,5 +37,6 @@ function albatross_news_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }

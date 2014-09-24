@@ -5,12 +5,13 @@
  */
 
 /**
- * Implementation of hook_field_group_info().
+ * Implements hook_field_group_info().
  */
 function albatross_events_field_group_info() {
   $export = array();
 
-  $field_group = new stdClass;
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
   $field_group->identifier = 'group_attachments|node|article|form';
   $field_group->group_name = 'group_attachments';
@@ -28,7 +29,7 @@ function albatross_events_field_group_info() {
     'format_settings' => array(
       'formatter' => 'closed',
       'instance_settings' => array(
-        'classes' => '',
+        'classes' => ' group-attachments field-group-tab',
         'required_fields' => 1,
       ),
     ),
