@@ -1,0 +1,140 @@
+// Non-modular or client styles for .l-header region.
+
+
+//nav bar 
+
+@mixin nav-padding
+  padding-left: 1rem
+  padding-right: 1rem
+  padding-top: 0.5rem
+  margin-bottom: 1.5rem 
+ 
+
+    
+.l-header
+  background-color: $blue
+  
+
+  ul
+    margin-left: 12.5rem
+    margin-top: -9rem
+    height: 4rem
+  
+  li
+    z-index: -1
+    
+   
+    .active
+      +all-caps-link
+      color: $gray
+    
+    a
+      +all-caps-link
+      color: $white
+ 
+            
+    &:hover
+      color: $black      
+      
+.breadcrumbs
+  display: none
+    
+
+.logo
+  z-index: 6
+  
+/* Fonts */
+
+p 
+  font-family: $adelle
+  font-weight: 300
+  font-size: 19px
+  color: #222222
+  line-height: 1.5em
+  margin-bottom: 1rem
+    
+  a 
+    color: #ff5722
+
+    &:hover
+      color: #ff8a65
+
+
+
+
+h1 
+  font-family: $adelle-sans
+  font-weight: 700
+  font-size: 50px
+  line-height: 1.1em
+  color: #222222
+  margin-bottom: 1rem
+  
+
+
+h2 
+  font-family: $adelle
+  font-weight: 300
+  font-style: italic
+  font-size: 25px
+  color: #777777
+  line-height: 1.4em
+  margin-bottom: 2rem
+
+
+h3 
+  font-family: $adelle-sans
+  font-weight: 600
+  font-size: 25px
+  color: #222222
+
+  a 
+    color: #1976d2
+
+
+    &:hover 
+      color: #01579b
+
+
+h4 
+  font-family: $adelle
+  font-weight: 300
+  font-size: 19px
+  font-style: italic
+  color: #777777
+  line-height: 1.5em
+  margin-bottom: 1rem
+
+
+h5 
+  font-family: $adelle-sans
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-size: 14px
+  font-weight: 600
+  color: #777777
+  margin-top: .5rem
+  margin-bottom: .5rem
+
+  a 
+    color: #1976d2
+
+h5 
+  a:hover 
+    color: #01579b
+
+h6 
+  font-family: $adelle-sans
+  font-size: 16px
+  font-weight: 300
+  color: #777777
+  margin-bottom: 1rem
+
+
+  a 
+    color: #1976d2
+    
+    &:hover 
+      color: #01579b
+
+  
