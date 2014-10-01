@@ -82,6 +82,7 @@ scripts[] = js/scripts.js
 ;   <?php print render($page['header']); ?>
 
 regions[header]              = Header
+regions[button_menu]         = Button Menu
 regions[help]                = Help
 regions[highlighted]         = Highlighted
 regions[featured]            = Featured

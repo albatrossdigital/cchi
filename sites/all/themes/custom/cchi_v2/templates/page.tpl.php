@@ -83,6 +83,20 @@
 
   </header>
   <!--/.l-header -->
+  
+   <?php if (!empty($page['button_menu'])): ?>
+      <!--.l-header-region -->
+      <section class="l-button_menu-region">
+        <div class="row">
+          <div class="medium-12 columns">
+            <?php print render($page['button_menu']); ?>
+          </div>
+        </div>
+      </section>
+      <!--/.l-button_menu-region -->
+    <?php endif; ?>
+
+  <!--/.l-header -->
 
   <?php if (!empty($page['featured'])): ?>
     <!--/.featured -->

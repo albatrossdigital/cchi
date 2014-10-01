@@ -8,29 +8,44 @@
   padding-right: 1rem
   padding-top: 0.5rem
   margin-bottom: 1.5rem 
+    
+@mixin menu-font
+  font-family: "adelle-sans"
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-size: 14px
+  font-weight: 700
+  font-style: normal
  
 
     
 .l-header
   background-color: $blue
+  height: 52px
+  font-weight: 400
+  font-style: normal
   
 
   ul
     margin-left: 12.5rem
-    margin-top: -9rem
-    height: 4rem
+    margin-top: -10.5rem
+    padding-top:.05rem
+    padding-bottom: .05rem
   
   li
-    z-index: -1
+    +menu-font
+
     
    
     .active
-      +all-caps-link
+     
       color: $gray
     
     a
-      +all-caps-link
+      
       color: $white
+     
+
  
             
     &:hover
@@ -41,9 +56,45 @@
     
 
 .logo
-  z-index: 6
+  z-index: 3
   
-/* Fonts */
+/*button menu*/
+
+  
+
+@mixin custom-button
+  font-family: "adelle-sans"
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-size: remCalc(14)
+  font-weight: 600
+  color: #1976d2
+  margin-top: 1rem
+  margin-bottom: 1rem
+  background-color: #ffffff 
+  border: 2px solid #64b5f6
+  border-radius: .5rem
+  box-shadow: 0px 2px 3px #cccccc
+  
+
+.l-button_menu-region
+  background-color: $gray
+  width: 100%
+  float: right
+  height: 100px
+  margin-bottom: 5rem
+  
+  .menu
+    ul
+      width: 100%
+    li
+      list-style-type: none
+      display: inline
+      float: right
+
+      +custom-button
+
+  /* Fonts */
 
 p 
   font-family: $adelle

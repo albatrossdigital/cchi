@@ -53,3 +53,26 @@
 
 // Older IE support
 // @import "vendor/ie";
+
+//mission block on home page//
+
+@mixin standard-block-text
+  font-size: 32px
+  color: #01579b
+  margin-top: 1rem
+  font-family: $adelle
+  font-weight: 300
+  font-style: italic
+  margin-bottom: 2rem
+  line-height: 2.54rem
+  padding-left: 1rem
+  padding-right: 1rem
+  
+.standard-block-text 
+  +standard-block-text
+
+
+.block-bean-mission-block-home-page
+  background-color: #fafafa
+  padding: 4rem 
+  height: auto

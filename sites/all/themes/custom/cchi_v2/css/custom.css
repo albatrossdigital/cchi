@@ -1555,7 +1555,11 @@ div.form-type-password-confirm .description {
   top: 1.8125rem; }
 
 #admin-menu ul {
-  font-size: 0.8rem; }
+  font-size: 1rem;
+  font-family: "helvetica"; }
+
+.contextual-links ul {
+  font-family: "helvetica"; }
 
 #status-messages.reveal-modal .alert-box {
   margin-bottom: 0; }
@@ -1586,7 +1590,7 @@ div.form-type-password-confirm .description {
   width: 15px;
   display: inline-block;
   position: relative;
-  border: 0.125rem solid #e1e1e1;
+  border: 0.125rem solid #fafafa;
   border-radius: 100%;
   -webkit-animation: rotation 0.75s infinite linear;
   -moz-animation: rotation 0.75s infinite linear;
@@ -1600,13 +1604,13 @@ div.form-type-password-confirm .description {
     top: -0.125rem;
     height: 15px;
     width: 15px;
-    border-top: 0.125rem solid #e1e1e1;
+    border-top: 0.125rem solid #fafafa;
     border-left: 0.125rem solid transparent;
     border-bottom: 0.125rem solid transparent;
     border-right: 0.125rem solid transparent;
     border-radius: 100%; }
   .ajax-progress-throbber .throbber:before {
-    border-top-color: #c8c8c8; }
+    border-top-color: #e1e1e1; }
 .pager .ajax-progress-throbber {
   position: absolute;
   margin-left: -0.5625rem;
@@ -1640,26 +1644,25 @@ html, body {
     transform: translate3d(0, 0, 0); } }
 
 .l-header {
-  background-color: #01579b; }
+  background-color: #01579b;
+  height: 52px;
+  font-weight: 400;
+  font-style: normal; }
   .l-header ul {
     margin-left: 12.5rem;
-    margin-top: -9rem;
-    height: 4rem; }
+    margin-top: -10.5rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem; }
   .l-header li {
-    z-index: -1; }
+    font-family: "adelle-sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal; }
     .l-header li .active {
-      font-family: "adelle-sans", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #e1e1e1; }
+      color: #fafafa; }
     .l-header li a {
-      font-family: "adelle-sans", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      text-transform: uppercase;
-      letter-spacing: 1px;
       color: #fff; }
     .l-header li:hover {
       color: #333; }
@@ -1668,9 +1671,35 @@ html, body {
   display: none; }
 
 .logo {
-  z-index: 6; }
+  z-index: 3; }
 
-/* Fonts */
+/*button menu*/
+.l-button_menu-region {
+  background-color: #fafafa;
+  width: 100%;
+  float: right;
+  height: 100px;
+  margin-bottom: 5rem;
+  /* Fonts */ }
+  .l-button_menu-region .menu ul {
+    width: 100%; }
+  .l-button_menu-region .menu li {
+    list-style-type: none;
+    display: inline;
+    float: right;
+    font-family: "adelle-sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: remCalc(14);
+    font-weight: 600;
+    color: #1976d2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border: 2px solid #64b5f6;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 3px #cccccc; }
+
 p {
   font-family: "adelle", serif;
   font-weight: 300;
@@ -1857,7 +1886,7 @@ html.js .spinner {
   width: 0.9375rem;
   display: inline-block;
   position: relative;
-  border: 0.125rem solid #e1e1e1;
+  border: 0.125rem solid #fafafa;
   border-radius: 100%; }
   html.js .spinner:before {
     content: "";
@@ -1867,7 +1896,7 @@ html.js .spinner {
     top: -0.125rem;
     height: 0.9375rem;
     width: 0.9375rem;
-    border-top: 0.125rem solid #e1e1e1;
+    border-top: 0.125rem solid #fafafa;
     border-left: 0.125rem solid transparent;
     border-bottom: 0.125rem solid transparent;
     border-right: 0.125rem solid transparent;
@@ -1880,7 +1909,7 @@ html.js input.form-autocomplete.throbbing ~ .field-suffix .spinner {
   -o-animation: rotation 0.75s infinite linear;
   animation: rotation 0.75s infinite linear; }
   html.js input.form-autocomplete.throbbing ~ .field-suffix .spinner:before {
-    border-top-color: #c8c8c8; }
+    border-top-color: #e1e1e1; }
 
 form.confirmation .form-submit {
   position: relative;
@@ -1958,7 +1987,7 @@ form.confirmation .form-submit {
 .node-story.node-teaser:after {
   content: "";
   display: block;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #fafafa;
   margin-left: 0;
   margin-right: 0;
   padding-top: 1.875rem;
@@ -1966,3 +1995,20 @@ form.confirmation .form-submit {
 
 .views-row-last .node-story.node-teaser:after {
   border: 0; }
+
+.standard-block-text {
+  font-size: 32px;
+  color: #01579b;
+  margin-top: 1rem;
+  font-family: "adelle", serif;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 2rem;
+  line-height: 2.54rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.block-bean-mission-block-home-page {
+  background-color: #fafafa;
+  padding: 4rem;
+  height: auto; }

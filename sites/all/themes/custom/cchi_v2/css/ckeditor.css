@@ -417,7 +417,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 95.25rem; }
+  max-width: 80rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -3595,7 +3595,7 @@ ul.pagination {
   @media only screen and (min-width:40.0625em) {
     .reveal-modal {
       width: 80%;
-      max-width: 95.25rem;
+      max-width: 80rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3611,35 +3611,35 @@ ul.pagination {
   @media only screen and (min-width:40.0625em) {
     .reveal-modal.tiny {
       width: 30%;
-      max-width: 95.25rem;
+      max-width: 80rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.0625em) {
     .reveal-modal.small {
       width: 40%;
-      max-width: 95.25rem;
+      max-width: 80rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.0625em) {
     .reveal-modal.medium {
       width: 60%;
-      max-width: 95.25rem;
+      max-width: 80rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.0625em) {
     .reveal-modal.large {
       width: 70%;
-      max-width: 95.25rem;
+      max-width: 80rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.0625em) {
     .reveal-modal.xlarge {
       width: 95%;
-      max-width: 95.25rem;
+      max-width: 80rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3653,7 +3653,7 @@ ul.pagination {
     @media only screen and (min-width:40.0625em) {
       .reveal-modal.full {
         width: 100vw;
-        max-width: 95.25rem;
+        max-width: 80rem;
         left: 0;
         right: 0;
         margin: 0 auto; } }
@@ -4699,7 +4699,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
-    max-width: 95.25rem;
+    max-width: 80rem;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -7033,7 +7033,11 @@ i[class^="fa"] {
   top: 1.8125rem; }
 
 #admin-menu ul {
-  font-size: 0.8rem; }
+  font-size: 1rem;
+  font-family: "helvetica"; }
+
+.contextual-links ul {
+  font-family: "helvetica"; }
 
 #status-messages.reveal-modal .alert-box, #status-messages.reveal-modal dialog#status-messages {
   margin-bottom: 0; }
@@ -7064,7 +7068,7 @@ i[class^="fa"] {
   width: 15px;
   display: inline-block;
   position: relative;
-  border: 0.125rem solid #e1e1e1;
+  border: 0.125rem solid #fafafa;
   border-radius: 100%;
   -webkit-animation: rotation 0.75s infinite linear;
   -moz-animation: rotation 0.75s infinite linear;
@@ -7078,13 +7082,13 @@ i[class^="fa"] {
     top: -0.125rem;
     height: 15px;
     width: 15px;
-    border-top: 0.125rem solid #e1e1e1;
+    border-top: 0.125rem solid #fafafa;
     border-left: 0.125rem solid transparent;
     border-bottom: 0.125rem solid transparent;
     border-right: 0.125rem solid transparent;
     border-radius: 100%; }
   .ajax-progress-throbber .throbber:before {
-    border-top-color: #c8c8c8; }
+    border-top-color: #e1e1e1; }
 .pager .ajax-progress-throbber {
   position: absolute;
   margin-left: -0.5625rem;
