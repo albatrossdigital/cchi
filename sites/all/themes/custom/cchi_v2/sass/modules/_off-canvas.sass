@@ -1,24 +1,89 @@
 
 
+// Mixins
+// ------------------------------------------------------
+
+@mixin off-canvas-label
+  display: block
+  padding: $off-canvas-label-padding!important
+  color: $off-canvas-label-color
+  text-transform: $off-canvas-label-text-transform
+  font-size: $off-canvas-label-font-size
+  font-weight: $off-canvas-label-font-weight
+  background: $off-canvas-label-bg
+  border-top: $off-canvas-label-border-top
+  border-bottom: $off-canvas-label-border-bottom
+  margin: $off-canvas-label-margin
+
+@mixin off-canvas-link
+  display: block
+  padding: $off-canvas-link-padding!important
+  color: $off-canvas-link-color
+  border-bottom: $off-canvas-link-border-bottom
+  &:hover
+    background: scale-color($tabbar-bg, $lightness: -30%)
+  transition: background 300ms ease
+
+
+
+// Wrapper
+// ------------------------------------------------------
+
 .off-canvas-wrap
   overflow: hidden
   max-width: 100%
 
 
+// Buttons
+// ------------------------------------------------------
+
+
+.toggle-off-canvas
+  line-height: $topbar-height
+  position: absolute
+  top: 0
+  font-size: rem-calc(20)
+  z-index: 1
+  
+  a 
+    +c(link-yellow)
+
+
+.menu-toggle
+  text-align: left
+  left: rem-calc(52)
+  margin-left: 1%
+
+  a
+    color: $white
+
+  span
+    display: block
+    float: left
+    margin-left: rem-calc(-45)
+    +f(upper-full)
+
+.left-off-canvas-toggle
+  i
+    margin-right: 0
+
+
+
+
 // Main Menu
 // ------------------------------------------------------
 
-$off-menu-border: lighten($blue, 2%)
+.left-off-canvas-menu
 
-.right-off-canvas-menu
 
-  .menu-name-main-menu
-    
-    ul
-      +list-clear()
+  .left-off-canvas-toggle
+    +c(link-white)
+    top: rem-calc(0)
+    position: absolute
+    font-size: 1rem
+    width: 100%
+    z-index: 1
 
-    a
-      +icon-after($fa-var-angle-right, $off-menu-border)
 
 
 // *
@@ -28,104 +93,33 @@ $off-menu-border: lighten($blue, 2%)
 
 +respond($mobile-to-menu)
 
-  // Topbar
-  // ------------------------------------------------------
+  .top-bar
+    position: static!important
 
-  .header-menu-wrap
-    float: none!important
-
-    .block
-      width: (100%/3)
-
-    .button
-      padding-left: 0
-      padding-right: 0
-      width: 100%
-
-  // Logo, ect
-  // ------------------------------------------------------
-
-  // logo
-  .title-area > a
-    display: block
-    max-width: 60%
+  .l-header-region
+    display: none
 
   // Main Menu
   // ------------------------------------------------------
 
-  .right-off-canvas-menu
-    padding-top: $header-menu-height
+  .left-off-canvas-menu
+    left: auto!important
     padding-left: 0
     padding-right: 0
 
     & > *
       max-width: $off-canvas-width
-      +column-padding()
+      +column-padding(rem-calc(13))
       overflow: hidden
 
-    #cart-wrapper, .menu-name-main-menu
-      +expand-row()
-      border-top: 2px solid $off-menu-border
 
-    #cart-wrapper
-      padding: 0 $column-gutter/2
-      height: $header-menu-height
-
-    .menu-name-main-menu
-
-      a
-        +horizontal-menu-link($white, $off-menu-border)
-        display: block
-        padding: 0 $column-gutter/2
-
-        &:after
-          float: right
-          line-height: $header-menu-height
-          padding-right: 0
-
-        &:hover, &:active
-          border-color: lighten($blue, 3%)
-          background: darken($blue, 3%)
-
-          &:after
-            color: $white
-
-      .active-trail, .active
-        a
-          color: $blue-dark 
-          background: darken($blue, 3%)
-
-
++respond($menu-only)
+  .menu-toggle
+    left: rem-calc(58)
 
 +respond($past-menu)
 
-  // Main Menu
-  // ------------------------------------------------------
-
-  .right-off-canvas-menu
-    background: none
-    position: relative!important
-    overflow: visible
-    padding-top: 0
-    height: auto!important
-    +translate3d(0, 0, 0)
-    +box-sizing(border-box)
-    width: grid-calc(9, 12)!important
-    z-index: 1
-
-    .menu-name-main-menu
-      border-top: 0
-      margin-top: rem-calc(15)
-      +expand-row(0)
-      
-      ul 
-        +clearfix
-        float: right 
-        +main-menu-style-horizontal(true)
-
-        li
-          margin-bottom: 0
-
-      a
-        &:after
-          display: none
+  .menu-toggle,
+  .left-off-canvas-toggle,
+  .left-off-canvas-menu .block-block-28
+    display: none
