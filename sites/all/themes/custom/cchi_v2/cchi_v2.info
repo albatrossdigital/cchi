@@ -81,6 +81,7 @@ scripts[] = js/scripts.js
 ; You'll use this variable in page.tpl.php:
 ;   <?php print render($page['header']); ?>
 
+regions[topbar]              = Topbar
 regions[header]              = Header
 regions[button_menu]         = Button Menu
 regions[help]                = Help
