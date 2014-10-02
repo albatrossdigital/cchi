@@ -39,7 +39,9 @@
   @import "foundation/components/tabs";
   @import "foundation/components/thumbs";
   @import "foundation/components/tooltips";
-  @import "foundation/components/top-bar";
+  //@import "foundation/components/top-bar";
+  @import "../vendor-override/foundation/components/top-bar";
   @import "foundation/components/type";
-  @import "foundation/components/offcanvas";
+  @import "../vendor-override/foundation/components/offcanvas";
+  //@import "foundation/components/offcanvas";
   @import "foundation/components/visibility";
