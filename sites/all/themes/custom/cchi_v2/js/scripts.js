@@ -1,6 +1,6 @@
 (function() {
   (function($, Drupal, Foundation) {
-    Drupal.behaviors.cchi-v2 = {
+    Drupal.behaviors.cchi_v2 = {
       attach: function(context, settings) {
         var reg, triggerImageSize;
         triggerImageSize = function($image, callback) {

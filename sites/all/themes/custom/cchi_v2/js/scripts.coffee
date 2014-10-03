@@ -1,5 +1,5 @@
 (($, Drupal, Foundation) ->
-  Drupal.behaviors.cchi-v2 = attach: (context, settings) ->
+  Drupal.behaviors.cchi_v2 = attach: (context, settings) ->
     
     # waits for image(s) to load then calls callback
     triggerImageSize = ($image, callback) ->

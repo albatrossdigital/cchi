@@ -1,5 +1,5 @@
 <!--.page -->
-<div role="document" class="page">
+<div data-offcanvas role="document" class="page off-canvas-wrap"><div class="inner-wrap">
 
   <!--.l-header region -->
   <header role="banner" class="l-header">
@@ -12,15 +12,17 @@
         <nav class="top-bar" data-topbar<?php print $top_bar_options; ?>>
           <ul class="title-area inner-wrap">
             <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
+            <li class="toggle-off-canvas menu-toggle"><a class="left-off-canvas-toggle" href="#"><span><?php print $top_bar_menu_text; ?></span> <i class="fa-bars"></i></a></li>
           </ul>
-          <section class="top-bar-section">
+          <section class="top-bar-section left-off-canvas-menu">
+            <a class="left-off-canvas-toggle" href="#"><span><?php print t('Close'); ?></span> <i class="fa-times"></i></a>
             <?php if ($top_bar_main_menu) :?>
               <?php print $top_bar_main_menu; ?>
             <?php endif; ?>
             <?php if ($top_bar_secondary_menu) :?>
               <?php print $top_bar_secondary_menu; ?>
             <?php endif; ?>
+            <?php print render($page['topbar']); ?>
           </section>
         </nav>
       <?php if ($top_bar_classes): ?>
@@ -252,7 +254,7 @@
 
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
-</div>
+</div></div>
 <!--/.page -->
 
 <script type="text/javascript">

@@ -1,0 +1,112 @@
+
+
+.top-bar
+  height: $topbar-height!important
+
+
+
+// Buttons
+// ----------------------------------------------------------------------------
+
+// deal with admin bar 
+.top-bar .has-form
+  position: relative
+
+// Deal with buttons
+.top-bar .button,
+.top-bar li.has-dropdown > a.button
+  padding-top: rem-calc(12)!important
+  padding-bottom: rem-calc(12)!important
+
+.top-bar li.has-dropdown:hover
+  & > a.button
+    +border-bottom-radius(0)
+
+    & ~ .dropdown
+      margin-top: 4px
+    
+    &.alert
+      //background: scale-color($alert-color, $lightness: $button-function-factor)!important
+
+
+// Links
+.top-bar li.has-dropdown
+  & > a
+    padding: 0 $topbar-link-padding*1.5!important
+
+
+
+
+
+// *
+// * Media Queries
+// *
+// ******************************************************
+
++respond($mobile-to-menu)
+
+  .top-bar
+    overflow: visible
+
+  .user-menu-wrap
+    li
+      padding-top: rem-calc(4)!important
+
+
++respond($past-menu)
+
+  // Menu in topbar style
+  // ----------------------------------------------------------------------------
+
+  .main-nav > li > a
+    text-transform: uppercase
+    letter-spacing: 0.05em
+
+  .main-nav > li.has-dropdown > a
+    &, &:hover 
+      cursor: default
+
+
+  .main-nav > li
+    &:hover > a
+      background: $topbar-dropdown-bg!important
+
+  // active items
+  .main-nav 
+    // First level
+    & > li > a
+      &.active, &.active-trail
+        position: relative
+        
+        &:before
+          position: absolute
+          content: ""
+          height: 3px
+          left: 0
+          top: 0
+          right: 0
+
+    // All items
+    li > a 
+      &.active, &.active-trail
+        color: $topbar-link-color-active!important
+      
+        &:hover 
+          color: $topbar-link-color-active-hover!important
+
+  // Unset focus behavior
+  .top-bar-section .has-dropdown > a:focus + .dropdown
+    display: block
+    position: absolute !important
+    height: 1px
+    width: 1px
+    overflow: hidden
+    clip: rect(1px, 1px, 1px, 1px)
+
+  .top-bar-section ul li
+    background: $topbar-bg
+
+
+  .user-menu-wrap
+    li
+      padding-top: rem-calc(2)!important
