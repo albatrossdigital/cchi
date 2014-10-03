@@ -54,8 +54,7 @@
 // Older IE support
 // @import "vendor/ie";
 
-//mission block on home page//
-
+//mixins
 @mixin standard-block-text
   font-size: 32px
   color: #01579b
@@ -67,6 +66,199 @@
   line-height: 2.54rem
   padding-left: 1rem
   padding-right: 1rem
+
+@mixin h5-style
+  font-family: "adelle-sans"
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-size: 14px
+  font-weight: 600
+  font-style: normal
+  color: #777777
+  margin-top: .5rem
+  margin-bottom: .5rem
+
+@mixin h4-style
+  font-family: "adelle"
+  font-weight: 300
+  font-size: 19px
+  font-style: italic
+  color: #777777
+  line-height: 1.5em
+  margin-bottom: 1rem
+
+
+@mixin h3-style
+  font-family: $adelle-sans
+  font-weight: 600
+  font-size: 25px
+  color: #222222
+  font-style: normal
+    
+@mixin h1-style 
+  font-family: $adelle-sans
+  font-weight: 700
+  font-size: 50px
+  line-height: 1.1em
+  color: #222222
+  margin-bottom: 1rem
+  font-style: normal
+  
+
+
+@mixin h2-style 
+  font-family: $adelle
+  font-weight: 300
+  font-style: italic
+  font-size: 25px
+  color: #777777
+  line-height: 1.4em
+  margin-bottom: 2rem
+
+    
+@mixin link
+  color: $blue-link
+  
+@mixin submenu-button
+  +menu-font
+  color: $black
+  padding: 1rem
+  
+  
+@mixin no-bullets  
+  display: inline
+  list-style-type: none
+    
+
+@mixin center-grid-4
+  width: 33.33333%
+  padding-left: 0.83333rem
+  padding-right: 0.83333rem
+
+//global
+    
+#page-title
+  margin-left: -20.6rem
+  padding-top: 4rem
+  margin-top: -5rem
+ 
+  
+.menu-block-wrapper
+  margin-top: 5rem
+ 
+    
+  ul
+    +no-bullets
+    
+    li
+      margin-bottom: 0.8rem
+      
+    .active-trail
+      background-color: $yellow
+      padding: 0.6rem 0 0.6rem 1rem
+      margin-left: -1rem
+      margin-right: 2.8rem
+      color: $black
+    
+//content elements: NEWS View
+
+.view-id-news
+  .field-name-post-date
+    +h5-style
+    margin-top: 1.5rem
+
+  .field-name-title
+    h2
+      +h3-style
+      +link
+      margin-top: 1.5rem
+
+  .more-link
+    a
+      +h5-style
+      +link
+
+  .medium-9
+    .field
+      padding-left: 4rem
+      padding-right: 4rem
+
+      em
+        +h4-style
+
+//events view
+.view-id-events
+  .group-left
+    +h5-style
+    padding-top: 2.6rem
+  
+  h2
+    +h3-style
+    padding-top: 2.3rem
+    
+  
+  .field-name-field-location
+    padding-bottom: 1.6rem
+    margin-top: -1rem
+    +h4-style
+      
+  .medium-9
+    
+    .field, p
+      padding-left: 4rem
+      padding-right: 4rem
+    
+.block-menu-menu-events-sub-menu
+  background-color: $gray
+  padding: 1rem
+  +grid-row()
+  
+  
+  
+  .menu
+    
+      @include grid-column(
+        // Control the number of columns
+        $columns:4,
+        // Specify whether or not this is the last column in the row
+        $last-column:true,
+        // Choose whether or not to center this column
+        $center:true,
+        // Choose the number of columns to offset this element by
+        $offset:3,
+        // Specify how many columns to push this element past
+        $push:3,
+        // Specify how many columns to pull this element past
+        $pull:9,
+        // Set to true to remove column padding
+        $collapse:true,
+        // Specify the float direction
+        $float:right
+      )
+
+      
+    li
+      +no-bullets
+     
+      +submenu-button
+      background-color: $white
+        
+    .active-trail
+      background-color: $yellow  
+
+  
+        
+        
+    
+  h2
+    +h1-style
+    text-align: center
+  
+  
+  
+    
+  
+//mission block on home page//
   
 .standard-block-text 
   +standard-block-text
@@ -75,4 +267,11 @@
 .block-bean-mission-block-home-page
   background-color: #fafafa
   padding: 4rem 
-  height: auto
+
+  
+  h2
+    +h5-style
+    padding-bottom: 1rem
+      
+      
+  

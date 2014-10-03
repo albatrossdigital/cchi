@@ -1733,7 +1733,8 @@ h3 {
   font-family: "adelle-sans", sans-serif;
   font-weight: 600;
   font-size: 25px;
-  color: #222222; }
+  color: #222222;
+  font-style: normal; }
   h3 a {
     color: #1976d2; }
     h3 a:hover {
@@ -1946,7 +1947,7 @@ form.confirmation .form-submit {
 
 .views-reset-button button {
   margin: 0;
-  color: #008CBA;
+  color: #1976d2;
   font-size: 1rem;
   font-weight: normal;
   line-height: 2.3; }
@@ -1956,7 +1957,7 @@ form.confirmation .form-submit {
     padding: 0;
     font-size: 1rem; }
   .views-reset-button button:focus, .views-reset-button button:hover, .views-reset-button button:active {
-    color: #007ba0;
+    color: #1668b5;
     outline: 0; }
 
 .views-content > h3, .grouping-content > h2 {
@@ -1996,6 +1997,149 @@ form.confirmation .form-submit {
 .views-row-last .node-story.node-teaser:after {
   border: 0; }
 
+#page-title {
+  margin-left: -20.6rem;
+  padding-top: 4rem;
+  margin-top: -5rem; }
+
+.menu-block-wrapper {
+  margin-top: 5rem; }
+  .menu-block-wrapper ul {
+    display: inline;
+    list-style-type: none; }
+    .menu-block-wrapper ul li {
+      margin-bottom: 0.8rem; }
+    .menu-block-wrapper ul .active-trail {
+      background-color: #fdd835;
+      padding: 0.6rem 0 0.6rem 1rem;
+      margin-left: -1rem;
+      margin-right: 2.8rem;
+      color: #333; }
+
+.view-id-news .field-name-post-date {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem; }
+.view-id-news .field-name-title h2 {
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #222222;
+  font-style: normal;
+  color: #1976d2;
+  margin-top: 1.5rem; }
+.view-id-news .more-link a {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #1976d2; }
+.view-id-news .medium-9 .field {
+  padding-left: 4rem;
+  padding-right: 4rem; }
+  .view-id-news .medium-9 .field em {
+    font-family: "adelle";
+    font-weight: 300;
+    font-size: 19px;
+    font-style: italic;
+    color: #777777;
+    line-height: 1.5em;
+    margin-bottom: 1rem; }
+
+.view-id-events .group-left {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 2.6rem; }
+.view-id-events h2 {
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #222222;
+  font-style: normal;
+  padding-top: 2.3rem; }
+.view-id-events .field-name-field-location {
+  padding-bottom: 1.6rem;
+  margin-top: -1rem;
+  font-family: "adelle";
+  font-weight: 300;
+  font-size: 19px;
+  font-style: italic;
+  color: #777777;
+  line-height: 1.5em;
+  margin-bottom: 1rem; }
+.view-id-events .medium-9 .field, .view-id-events .medium-9 p {
+  padding-left: 4rem;
+  padding-right: 4rem; }
+
+.block-menu-menu-events-sub-menu {
+  background-color: #fafafa;
+  padding: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 80rem;
+  /* IE6 */
+  /* IE7 */ }
+  .block-menu-menu-events-sub-menu:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .block-menu-menu-events-sub-menu * html {
+    height: 1%; }
+  .clearfix *:first-child + html .block-menu-menu-events-sub-menu {
+    min-height: 1%; }
+  .block-menu-menu-events-sub-menu .menu {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left; }
+    .block-menu-menu-events-sub-menu .menu li {
+      display: inline;
+      list-style-type: none;
+      font-family: "adelle-sans";
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+      font-weight: 700;
+      font-style: normal;
+      color: #333;
+      padding: 1rem;
+      background-color: #fff; }
+    .block-menu-menu-events-sub-menu .menu .active-trail {
+      background-color: #fdd835; }
+  .block-menu-menu-events-sub-menu h2 {
+    font-family: "adelle-sans", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.1em;
+    color: #222222;
+    margin-bottom: 1rem;
+    font-style: normal;
+    text-align: center; }
+
 .standard-block-text {
   font-size: 32px;
   color: #01579b;
@@ -2010,5 +2154,15 @@ form.confirmation .form-submit {
 
 .block-bean-mission-block-home-page {
   background-color: #fafafa;
-  padding: 4rem;
-  height: auto; }
+  padding: 4rem; }
+  .block-bean-mission-block-home-page h2 {
+    font-family: "adelle-sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: #777777;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem; }

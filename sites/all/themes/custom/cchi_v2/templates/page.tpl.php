@@ -96,7 +96,23 @@
       <!--/.l-button_menu-region -->
     <?php endif; ?>
 
-  <!--/.l-header -->
+  
+    <?php if (!empty($page['button_submenu'])): ?>
+    <!--/.l-button_submenu -->
+    <section class="l-button_submenu row">
+      <div class="medium-4 columns">
+        &nbsp;
+      </div>
+      <div class="medium-4 columns">
+        <?php print render($page['button_submenu']); ?>
+      </div>
+      <div class="medium-4 columns">
+        &nbsp;
+      </div>
+      
+    </section>
+    <!--/.l-featured -->
+  <?php endif; ?>
 
   <?php if (!empty($page['featured'])): ?>
     <!--/.featured -->
