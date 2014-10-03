@@ -126,12 +126,6 @@
   color: $black
   padding: 1rem
   
-  
-@mixin no-bullets  
-  display: inline
-  list-style-type: none
-    
-
 @mixin center-grid-4
   width: 33.33333%
   padding-left: 0.83333rem
@@ -147,13 +141,35 @@
     
 
 .two-sidebars, .sidebar-first
-  #page-title
-     margin-left: -20.6rem
+  h1#page-title
+    margin-left: -20.6rem
+
     
 .sidebar-second, .two-sidebars
+  #page-title
+    margin-left: -0.5rem
   .main
     padding-right: 4rem
+      
+.body
+  margin-top: 4rem
+    
+#main-content
+ .view
+  margin-top: 4rem
   
+
+//sidebar
+
+.block-menu-block
+  h2
+    +h5-style
+    margin-top: 6rem
+    margin-bottom: -5.5rem
+    margin-left: -0.4rem
+    font-weight: 600
+    
+
 .menu-block-wrapper
   margin-top: 5rem
  
@@ -225,17 +241,17 @@
   background-color: $gray
   padding: 1rem
 
-  
+  ul
+    text-align: center
+  li
+    +no-bullets
+    +submenu-button
+    background-color: $white
+    display: inline-block
 
-  .menu    
-    li
-      +no-bullets
-     
-      +submenu-button
-      background-color: $white
-        
-    .active-trail
-      background-color: $yellow  
+  .active-trail
+    background-color: $yellow  
+    color: $black
 
   
         
@@ -245,9 +261,26 @@
     +h1-style
     text-align: center
   
-  
-  
+//footer
+
+.l-footer-sections
+  .panel
+    height: 60px
     
+  .block-menu-block-3
+    margin-top: -4rem
+    ul
+      margin-bottom: 2rem
+      li
+        display: inline-block
+        padding-right: 1rem
+        a
+          +menu-font
+          color: $blue
+        
+  
+  .block-block-2
+    padding-left: 0.8rem
   
 //mission block on home page//
   

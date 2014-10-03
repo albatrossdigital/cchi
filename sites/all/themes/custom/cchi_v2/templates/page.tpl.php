@@ -211,33 +211,26 @@
 
   <?php if (!empty($page['footer_firstcolumn']) || !empty($page['footer_secondcolumn']) || !empty($page['footer_thirdcolumn']) || !empty($page['footer_fourthcolumn'])): ?>
     <!--.footer-sections -->
-    <section class="row l-footer-sections">
-      <?php if (!empty($page['footer_firstcolumn'])): ?>
-        <div class="footer-first medium-3 columns">
+    <section class="panel l-footer-sections">
+      <div class="row">
+        <?php if (!empty($page['footer_firstcolumn'])): ?>
+        <div class="footer-first medium-9 columns">
           <?php print render($page['footer_firstcolumn']); ?>
         </div>
+      </div>
       <?php endif; ?>
       <?php if (!empty($page['footer_secondcolumn'])): ?>
         <div class="footer-second medium-3 columns">
           <?php print render($page['footer_secondcolumn']); ?>
         </div>
       <?php endif; ?>
-      <?php if (!empty($page['footer_thirdcolumn'])): ?>
-        <div class="footer-third medium-3 columns">
-          <?php print render($page['footer_thirdcolumn']); ?>
-        </div>
-      <?php endif; ?>
-      <?php if (!empty($page['footer_fourthcolumn'])): ?>
-        <div class="footer-fourth medium-3 columns">
-          <?php print render($page['footer_fourthcolumn']); ?>
-        </div>
-      <?php endif; ?>
-    </section>
+    
+   
     <!--/.footer-sections-->
   <?php endif; ?>
 
   <!--.l-footer-->
-  <footer class="l-footer panel row" role="contentinfo">
+  <footer class="l-footer row" role="contentinfo">
     <?php if (!empty($page['footer'])): ?>
       <div class="footer medium-12 columns">
         <?php print render($page['footer']); ?>
@@ -246,10 +239,11 @@
 
     <?php if ($site_name) :?>
       <div class="copyright medium-12 columns">
-        &copy; <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
+        &copy; 2008 - <?php print date('Y') . ' ' . check_plain($site_name) . ' ' . t('All rights reserved.'); ?>
       </div>
     <?php endif; ?>
   </footer>
+   </section>
   <!--/.footer-->
 
 

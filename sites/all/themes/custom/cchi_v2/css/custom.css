@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('./assets/icomoon/fonts/icomoon.eot?-yl3zlt');
+  src: url('./assets/icomoon/fonts/icomoon.eot?#iefix-yl3zlt') format('embedded-opentype'), url('../assets/icomoon/fonts/icomoon.woff?-yl3zlt') format('woff'), url('../assets/icomoon/fonts/icomoon.ttf?-yl3zlt') format('truetype'), url('../assets/icomoon/fonts/icomoon.svg?-yl3zlt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
 meta.foundation-version {
   font-family: "/5.4.1/"; }
 
@@ -1648,26 +1655,26 @@ html, body {
   height: 52px;
   font-weight: 400;
   font-style: normal; }
-  .l-header li.last a {
+  .l-header li.last a, .l-header li.active-trail.last a {
     color: #fdd835; }
   .l-header ul {
     margin-left: 12.5rem;
     margin-top: -10.5rem;
     padding-top: 0.05rem;
-    padding-bottom: 0.05rem; }
-  .l-header li {
+    padding-bottom: 0.05rem;
+    z-index: 55; }
+  .l-header li a {
     font-family: "adelle-sans";
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 14px;
     font-weight: 700;
-    font-style: normal; }
-    .l-header li .active {
-      color: #fafafa; }
-    .l-header li a {
-      color: #fff; }
-    .l-header li:hover {
+    font-style: normal;
+    color: #fff; }
+    .l-header li a:hover {
       color: #333; }
+  .l-header li a.active-trail.active {
+    color: #333; }
 
 .breadcrumbs {
   display: none; }
@@ -1683,39 +1690,49 @@ html, body {
   height: 100px;
   margin-bottom: 5rem;
   /* Fonts */ }
-  .l-button_menu-region .menu ul {
-    width: 100%; }
-  .l-button_menu-region .menu li.leaf {
-    margin-left: 1rem; }
-  .l-button_menu-region .menu li {
-    list-style-type: none;
-    display: inline;
-    float: right;
-    font-family: "adelle-sans";
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: remCalc(14);
-    font-weight: 600;
-    color: #1976d2;
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-    background-color: #ffffff;
-    border: 1px solid #64b5f6;
-    border-radius: 0.5rem;
-    box-shadow: 0px 2px 3px #cccccc;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem; }
-  .l-button_menu-region .menu a {
-    padding-left: 0.8rem;
-    padding-right: 0.8rem; }
-    .l-button_menu-region .menu a:hover {
-      background-color: #e3f2fd;
-      color: #01579b;
+  .l-button_menu-region .block-menu-menu-button-menu li.leaf:after {
+    content: "\e604";
+    color: red;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem; }
+  .l-button_menu-region .block-menu-menu-button-menu .menu {
+    margin-top: 2.25rem;
+    margin-bottom: 0.5rem; }
+    .l-button_menu-region .block-menu-menu-button-menu .menu ul {
+      width: 100%; }
+    .l-button_menu-region .block-menu-menu-button-menu .menu .leaf {
+      margin-left: 1rem; }
+    .l-button_menu-region .block-menu-menu-button-menu .menu li {
+      display: inline;
+      list-style-type: none;
+      float: right; }
+    .l-button_menu-region .block-menu-menu-button-menu .menu a.active-trail.active {
+      color: #333; }
+    .l-button_menu-region .block-menu-menu-button-menu .menu a {
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+      font-family: "adelle-sans";
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: remCalc(14);
+      font-weight: 600;
+      color: #1976d2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
+      background-color: #ffffff;
+      border: 1px solid #64b5f6;
       border-radius: 0.5rem;
+      box-shadow: 0px 2px 3px #cccccc;
       padding-top: 0.8rem;
       padding-bottom: 0.8rem; }
+      .l-button_menu-region .block-menu-menu-button-menu .menu a:hover {
+        background-color: #e3f2fd;
+        color: #01579b;
+        margin-top: 0.25rem;
+        margin-bottom: 1rem;
+        border-radius: 0.5rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem; }
 
 p {
   font-family: "adelle", serif;
@@ -2131,11 +2148,34 @@ form.confirmation .form-submit {
   padding-top: 4rem;
   margin-top: -5rem; }
 
-.two-sidebars #page-title, .sidebar-first #page-title {
+.two-sidebars h1#page-title, .sidebar-first h1#page-title {
   margin-left: -20.6rem; }
 
+.sidebar-second #page-title, .two-sidebars #page-title {
+  margin-left: -0.5rem; }
 .sidebar-second .main, .two-sidebars .main {
   padding-right: 4rem; }
+
+.body {
+  margin-top: 4rem; }
+
+#main-content .view {
+  margin-top: 4rem; }
+
+.block-menu-block h2 {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 6rem;
+  margin-bottom: -5.5rem;
+  margin-left: -0.4rem;
+  font-weight: 600; }
 
 .menu-block-wrapper {
   margin-top: 5rem; }
@@ -2230,7 +2270,9 @@ form.confirmation .form-submit {
 .block-menu-menu-events-sub-menu {
   background-color: #fafafa;
   padding: 1rem; }
-  .block-menu-menu-events-sub-menu .menu li {
+  .block-menu-menu-events-sub-menu ul {
+    text-align: center; }
+  .block-menu-menu-events-sub-menu li {
     display: inline;
     list-style-type: none;
     font-family: "adelle-sans";
@@ -2241,9 +2283,11 @@ form.confirmation .form-submit {
     font-style: normal;
     color: #333;
     padding: 1rem;
-    background-color: #fff; }
-  .block-menu-menu-events-sub-menu .menu .active-trail {
-    background-color: #fdd835; }
+    background-color: #fff;
+    display: inline-block; }
+  .block-menu-menu-events-sub-menu .active-trail {
+    background-color: #fdd835;
+    color: #333; }
   .block-menu-menu-events-sub-menu h2 {
     font-family: "adelle-sans", sans-serif;
     font-weight: 700;
@@ -2253,6 +2297,26 @@ form.confirmation .form-submit {
     margin-bottom: 1rem;
     font-style: normal;
     text-align: center; }
+
+.l-footer-sections .panel {
+  height: 60px; }
+.l-footer-sections .block-menu-block-3 {
+  margin-top: -4rem; }
+  .l-footer-sections .block-menu-block-3 ul {
+    margin-bottom: 2rem; }
+    .l-footer-sections .block-menu-block-3 ul li {
+      display: inline-block;
+      padding-right: 1rem; }
+      .l-footer-sections .block-menu-block-3 ul li a {
+        font-family: "adelle-sans";
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        color: #01579b; }
+.l-footer-sections .block-block-2 {
+  padding-left: 0.8rem; }
 
 .standard-block-text {
   font-size: 32px;

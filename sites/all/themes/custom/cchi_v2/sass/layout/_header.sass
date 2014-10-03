@@ -25,7 +25,7 @@
   font-weight: 400
   font-style: normal
   
-  li.last
+  li.last, li.active-trail.last
     a
       color: $yellow
   
@@ -33,29 +33,23 @@
   ul
     margin-left: 12.5rem
     margin-top: -10.5rem
-    padding-top:.05rem
-    padding-bottom: .05rem
+    padding-top: 0.05rem
+    padding-bottom: 0.05rem
+    z-index: 55
+  
+
   
   li
-    +menu-font
-    
- 
-
-    
-   
-    .active
-     
-      color: $gray
-    
     a
-      
+      +menu-font
       color: $white
-     
+      &:hover
+        color: $black  
+       
+    a.active-trail.active
+      color: $black
 
- 
-            
-    &:hover
-      color: $black      
+
       
 .breadcrumbs
   display: none
@@ -74,28 +68,48 @@
   float: right
   height: 100px
   margin-bottom: 5rem
-  
-  .menu
-    ul
-      width: 100%
-      
+    
+  .block-menu-menu-button-menu
+    
+    
     li.leaf
-      margin-left: 1rem
+      &:after
+        content: "\e604"
+        color: red
+        margin-left: 0.25rem
+        margin-right: 0.25rem
+        
+    .menu
+      margin-top: 2.25rem
+      margin-bottom: 0.5rem
+        
       
-      
-    li
-      list-style-type: none
-      display: inline
-      float: right
-      +custom-button
-      
-    a
-      padding-left: 0.8rem
-      padding-right: 0.8rem
-      &:hover
-        +custom-button-hover 
-    
-    
+      ul
+        width: 100%
+
+      .leaf
+        margin-left: 1rem
+
+
+      li
+        +no-bullets
+        float: right 
+          
+       
+      a.active-trail.active
+        color: $black
+
+
+      a
+        padding-left: 0.8rem
+        padding-right: 0.8rem
+        +custom-button
+       
+        &:hover
+          +custom-button-hover 
+  
+        
+        
     
           
 
