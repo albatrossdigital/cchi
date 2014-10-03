@@ -136,14 +136,23 @@
   width: 33.33333%
   padding-left: 0.83333rem
   padding-right: 0.83333rem
+    
+
 
 //global
     
 #page-title
-  margin-left: -20.6rem
   padding-top: 4rem
   margin-top: -5rem
- 
+    
+
+.two-sidebars, .sidebar-first
+  #page-title
+     margin-left: -20.6rem
+    
+.sidebar-second, .two-sidebars
+  .main
+    padding-right: 4rem
   
 .menu-block-wrapper
   margin-top: 5rem
@@ -154,6 +163,7 @@
     
     li
       margin-bottom: 0.8rem
+      margin-left: -0.3rem
       
     .active-trail
       background-color: $yellow
@@ -176,6 +186,7 @@
       margin-top: 1.5rem
 
   .more-link
+    padding-right: 4rem
     a
       +h5-style
       +link
@@ -208,37 +219,15 @@
     
     .field, p
       padding-left: 4rem
-      padding-right: 4rem
+  
     
 .block-menu-menu-events-sub-menu
   background-color: $gray
   padding: 1rem
-  +grid-row()
-  
-  
-  
-  .menu
-    
-      @include grid-column(
-        // Control the number of columns
-        $columns:4,
-        // Specify whether or not this is the last column in the row
-        $last-column:true,
-        // Choose whether or not to center this column
-        $center:true,
-        // Choose the number of columns to offset this element by
-        $offset:3,
-        // Specify how many columns to push this element past
-        $push:3,
-        // Specify how many columns to pull this element past
-        $pull:9,
-        // Set to true to remove column padding
-        $collapse:true,
-        // Specify the float direction
-        $float:right
-      )
 
-      
+  
+
+  .menu    
     li
       +no-bullets
      

@@ -25,6 +25,10 @@
   font-weight: 400
   font-style: normal
   
+  li.last
+    a
+      color: $yellow
+  
 
   ul
     margin-left: 12.5rem
@@ -34,6 +38,8 @@
   
   li
     +menu-font
+    
+ 
 
     
    
@@ -60,22 +66,7 @@
   
 /*button menu*/
 
-  
 
-@mixin custom-button
-  font-family: "adelle-sans"
-  text-transform: uppercase
-  letter-spacing: 1px
-  font-size: remCalc(14)
-  font-weight: 600
-  color: #1976d2
-  margin-top: 1rem
-  margin-bottom: 1rem
-  background-color: #ffffff 
-  border: 2px solid #64b5f6
-  border-radius: .5rem
-  box-shadow: 0px 2px 3px #cccccc
-  
 
 .l-button_menu-region
   background-color: $gray
@@ -87,12 +78,26 @@
   .menu
     ul
       width: 100%
+      
+    li.leaf
+      margin-left: 1rem
+      
+      
     li
       list-style-type: none
       display: inline
       float: right
-
       +custom-button
+      
+    a
+      padding-left: 0.8rem
+      padding-right: 0.8rem
+      &:hover
+        +custom-button-hover 
+    
+    
+    
+          
 
   /* Fonts */
 
