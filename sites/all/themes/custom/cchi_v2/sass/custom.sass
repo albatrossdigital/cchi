@@ -57,80 +57,7 @@
 // @import "vendor/ie";
 
 //mixins
-@mixin standard-block-text
-  font-size: 32px
-  color: #01579b
-  margin-top: 1rem
-  font-family: $adelle
-  font-weight: 300
-  font-style: italic
-  margin-bottom: 2rem
-  line-height: 2.54rem
-  padding-left: 1rem
-  padding-right: 1rem
 
-@mixin h5-style
-  font-family: "adelle-sans"
-  text-transform: uppercase
-  letter-spacing: 1px
-  font-size: 14px
-  font-weight: 600
-  font-style: normal
-  color: #777777
-  margin-top: .5rem
-  margin-bottom: .5rem
-
-@mixin h4-style
-  font-family: "adelle"
-  font-weight: 300
-  font-size: 19px
-  font-style: italic
-  color: #777777
-  line-height: 1.5em
-  margin-bottom: 1rem
-
-
-@mixin h3-style
-  font-family: $adelle-sans
-  font-weight: 600
-  font-size: 25px
-  color: #222222
-  font-style: normal
-    
-@mixin h1-style 
-  font-family: $adelle-sans
-  font-weight: 700
-  font-size: 50px
-  line-height: 1.1em
-  color: #222222
-  margin-bottom: 1rem
-  font-style: normal
-  
-
-
-@mixin h2-style 
-  font-family: $adelle
-  font-weight: 300
-  font-style: italic
-  font-size: 25px
-  color: #777777
-  line-height: 1.4em
-  margin-bottom: 2rem
-
-    
-@mixin link
-  color: $blue-link
-  
-@mixin submenu-button
-  +menu-font
-  color: $black
-  padding: 1rem
-  
-@mixin center-grid-4
-  width: 33.33333%
-  padding-left: 0.83333rem
-  padding-right: 0.83333rem
-    
 
 
 //global
@@ -210,7 +137,7 @@
   .medium-9
     .field
       padding-left: 4rem
-      padding-right: 4rem
+      padding-right: 3.3rem
 
       em
         +h4-style
@@ -301,6 +228,127 @@
   h2
     +h5-style
     padding-bottom: 1rem
+  
+      
+  //share
+
+#share42
+  
+  &:hover
+    background: transparent
+    border: 0px solid transparent
+    box-shadow: 0 0 0 transparent
+      
+  a
+    background-image: none !important
+
+@mixin icon-layout
+  font-size: 2rem
+
+
+.share42-item:nth-child(1)
+  padding-top: 1rem
+  padding-right: 1rem
+  padding-bottom: 4rem
+  a
+    +icon(facebook)
+    +icon-layout
+      
+.share42-item:nth-child(2)
+  padding-right: 2rem
+  a
+    +icon(twitter)
+    +icon-layout
+    padding-right: 2rem
+      
+.share42-item:nth-child(3)
+  padding-right: 1rem
+  a
+    +icon(linkedin)
+    +icon-layout
+
+  h2
+    +h2-style
+    margin-top: -1rem
+  
+    
+  
+#share42 img 
+ display: none
+    
+    
+//twitter
+
+.twitter-pull-block-description
+  display: none
+
+.tweet-authorphoto
+  display: none
+
+.twitter-block-header
+  width: 60%
+  z-index: 5
+  margin-top: 2rem
+  padding-top: 2rem
+  margin-bottom: -2rem
+  padding-bottom: 0.5rem
+    
+.twitter-link 
+  a
+    +h5-style
+    margin-top: 0.5rem
+    
+  
+.tweets-pulled-listing
+  margin-top: 0.3rem
+  
+.tweet-actions
+  padding-top: 2rem
+  +link
+  
+  a
+    padding-right: 0.5rem
+    padding-top: 1rem
+
+
+.tweet-text
+  font-size: 0.9rem
+    
+div.tweet-author-wrapper
+  width: 300px
+  
+.tweet-screenname, .tweet-author, .twitter-title, .twitter-follow-link
+  display: none
+    
+
+    
+  
+.block-cchi-customizations-tweets
+  margin-top: 8rem
+  margin-left: -2rem
+    
+  .block-title
+    display: none
+    
+
+  
+  h2
+    +h2-style
+  
+  li
+    list-style-type: none
+   
+   
+    
+    .tweet-actions
+      display: none
+      
+      
+  .tweet-divider
+    color: $gray
+  
+  
+      
       
       
   

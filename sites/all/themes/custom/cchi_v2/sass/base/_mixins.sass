@@ -34,6 +34,81 @@
 @mixin no-bullets  
   display: inline
   list-style-type: none
+    
+@mixin standard-block-text
+  font-size: 32px
+  color: #01579b
+  margin-top: 1rem
+  font-family: $adelle
+  font-weight: 300
+  font-style: italic
+  margin-bottom: 2rem
+  line-height: 2.54rem
+  padding-left: 1rem
+  padding-right: 1rem
+
+@mixin h5-style
+  font-family: "adelle-sans"
+  text-transform: uppercase
+  letter-spacing: 1px
+  font-size: 14px
+  font-weight: 600
+  font-style: normal
+  color: #777777
+  margin-top: .5rem
+  margin-bottom: .5rem
+
+@mixin h4-style
+  font-family: "adelle"
+  font-weight: 300
+  font-size: 19px
+  font-style: italic
+  color: #777777
+  line-height: 1.5em
+  margin-bottom: 1rem
+
+
+@mixin h3-style
+  font-family: $adelle-sans
+  font-weight: 600
+  font-size: 25px
+  color: #222222
+  font-style: normal
+    
+@mixin h1-style 
+  font-family: $adelle-sans
+  font-weight: 700
+  font-size: 50px
+  line-height: 1.1em
+  color: #222222
+  margin-bottom: 1rem
+  font-style: normal
+  
+
+
+@mixin h2-style 
+  font-family: $adelle
+  font-weight: 300
+  font-style: italic
+  font-size: 25px
+  color: #777777
+  line-height: 1.4em
+  margin-bottom: 2rem
+
+    
+@mixin link
+  color: $blue-link
+  
+@mixin submenu-button
+  +menu-font
+  color: $black
+  padding: 1rem
+  
+@mixin center-grid-4
+  width: 33.33333%
+  padding-left: 0.83333rem
+  padding-right: 0.83333rem
+    
 
 //***********************************
 // START FLIGHT MIXINS

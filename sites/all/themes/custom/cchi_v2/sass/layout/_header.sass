@@ -1,5 +1,14 @@
 // Non-modular or client styles for .l-header region.
 
+.l-header 
+  #secondary-menu
+    ul 
+      margin-top: -25.5rem
+    
+    
+fa-bars
+  float: right
+
 
 //nav bar 
 
@@ -43,6 +52,7 @@
     a
       +menu-font
       color: $white
+      z-index: 15
       &:hover
         color: $black  
        
@@ -58,6 +68,40 @@
 .logo
   z-index: 3
   
+//*search dropdown/
+.searchblock
+  float: right
+  padding-top: 0.75rem
+  margin-bottom: 2rem
+    
+  #edit-submit
+    z-index: 10
+    width: 5rem
+    margin-left: -1.75rem
+      
+  #edit-search-block-form--2
+    z-index:10
+    width: 20rem
+    margin-left: -15rem
+      
+  a.s-button
+    +icon(search)
+    font-size: 1.3rem
+    color: $white
+    padding: 2rem
+    margin-left: 5rem
+    margin-bottom: 5rem
+    margin-top: 5rem
+    padding-top: 4rem
+      
+  a.s-button.open
+    background-color: yellow
+
+  
+
+
+
+  
 /*button menu*/
 
 
@@ -70,14 +114,6 @@
   margin-bottom: 5rem
     
   .block-menu-menu-button-menu
-    
-    
-    li.leaf
-      &:after
-        content: "\e604"
-        color: red
-        margin-left: 0.25rem
-        margin-right: 0.25rem
         
     .menu
       margin-top: 2.25rem
@@ -104,14 +140,30 @@
         padding-left: 0.8rem
         padding-right: 0.8rem
         +custom-button
+        
        
         &:hover
           +custom-button-hover 
   
         
         
-    
+.block-menu-menu-button-menu
+  .menu
+    li.leaf
+      a
+        +icon(envelope-o)
+        
           
+    li.first
+      a
+        +icon(bookmark-o)
+        
+    
+    li.last
+      a
+        +icon(external-link)
+        
+    
 
   /* Fonts */
 

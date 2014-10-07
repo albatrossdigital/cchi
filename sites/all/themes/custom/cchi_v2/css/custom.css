@@ -35,7 +35,7 @@ meta.foundation-data-attribute-namespace {
 [aria-label="breadcrumbs"] [aria-hidden="true"]:after {
   content: "/"; }
 
-i[class^="fa"], .draggable a.tabledrag-handle:before {
+i[class^="fa"], .searchblock a.s-button:before, .block-menu-menu-button-menu .menu li.leaf a:before, .block-menu-menu-button-menu .menu li.first a:before, .block-menu-menu-button-menu .menu li.last a:before, .draggable a.tabledrag-handle:before, .share42-item:nth-child(1) a:before, .share42-item:nth-child(2) a:before, .share42-item:nth-child(3) a:before {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -81,8 +81,14 @@ i[class^="fa"] {
 .fa-music:before {
   content: "\f001"; }
 
+.searchblock a.s-button:before {
+  content: "\f002"; }
+
 .fa-search:before {
   content: "\f002"; }
+
+.block-menu-menu-button-menu .menu li.leaf a:before {
+  content: "\f003"; }
 
 .fa-envelope-o:before {
   content: "\f003"; }
@@ -477,6 +483,9 @@ i[class^="fa"] {
 .fa-thumb-tack:before {
   content: "\f08d"; }
 
+.block-menu-menu-button-menu .menu li.last a:before {
+  content: "\f08e"; }
+
 .fa-external-link:before {
   content: "\f08e"; }
 
@@ -501,14 +510,23 @@ i[class^="fa"] {
 .fa-square-o:before {
   content: "\f096"; }
 
+.block-menu-menu-button-menu .menu li.first a:before {
+  content: "\f097"; }
+
 .fa-bookmark-o:before {
   content: "\f097"; }
 
 .fa-phone-square:before {
   content: "\f098"; }
 
+.share42-item:nth-child(2) a:before {
+  content: "\f099"; }
+
 .fa-twitter:before {
   content: "\f099"; }
+
+.share42-item:nth-child(1) a:before {
+  content: "\f09a"; }
 
 .fa-facebook:before {
   content: "\f09a"; }
@@ -671,6 +689,9 @@ i[class^="fa"] {
 
 .fa-envelope:before {
   content: "\f0e0"; }
+
+.share42-item:nth-child(3) a:before {
+  content: "\f0e1"; }
 
 .fa-linkedin:before {
   content: "\f0e1"; }
@@ -1650,6 +1671,12 @@ html, body {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 
+.l-header #secondary-menu ul {
+  margin-top: -25.5rem; }
+
+fa-bars {
+  float: right; }
+
 .l-header {
   background-color: #01579b;
   height: 52px;
@@ -1670,7 +1697,8 @@ html, body {
     font-size: 14px;
     font-weight: 700;
     font-style: normal;
-    color: #fff; }
+    color: #fff;
+    z-index: 15; }
     .l-header li a:hover {
       color: #333; }
   .l-header li a.active-trail.active {
@@ -1682,19 +1710,38 @@ html, body {
 .logo {
   z-index: 3; }
 
+.searchblock {
+  float: right;
+  padding-top: 0.75rem;
+  margin-bottom: 2rem; }
+  .searchblock #edit-submit {
+    z-index: 10;
+    width: 5rem;
+    margin-left: -1.75rem; }
+  .searchblock #edit-search-block-form--2 {
+    z-index: 10;
+    width: 20rem;
+    margin-left: -15rem; }
+  .searchblock a.s-button {
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 2rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    padding-top: 4rem; }
+    .searchblock a.s-button:before {
+      font-size: inherit; }
+  .searchblock a.s-button.open {
+    background-color: yellow; }
+
 /*button menu*/
 .l-button_menu-region {
   background-color: #fafafa;
   width: 100%;
   float: right;
   height: 100px;
-  margin-bottom: 5rem;
-  /* Fonts */ }
-  .l-button_menu-region .block-menu-menu-button-menu li.leaf:after {
-    content: "\e604";
-    color: red;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem; }
+  margin-bottom: 5rem; }
   .l-button_menu-region .block-menu-menu-button-menu .menu {
     margin-top: 2.25rem;
     margin-bottom: 0.5rem; }
@@ -1733,6 +1780,15 @@ html, body {
         border-radius: 0.5rem;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem; }
+
+.block-menu-menu-button-menu {
+  /* Fonts */ }
+  .block-menu-menu-button-menu .menu li.leaf a:before {
+    font-size: inherit; }
+  .block-menu-menu-button-menu .menu li.first a:before {
+    font-size: inherit; }
+  .block-menu-menu-button-menu .menu li.last a:before {
+    font-size: inherit; }
 
 p {
   font-family: "adelle", serif;
@@ -2226,7 +2282,7 @@ form.confirmation .form-submit {
     color: #1976d2; }
 .view-id-news .medium-9 .field {
   padding-left: 4rem;
-  padding-right: 4rem; }
+  padding-right: 3.3rem; }
   .view-id-news .medium-9 .field em {
     font-family: "adelle";
     font-weight: 300;
@@ -2348,3 +2404,111 @@ form.confirmation .form-submit {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     padding-bottom: 1rem; }
+
+#share42:hover {
+  background: transparent;
+  border: 0px solid transparent;
+  box-shadow: 0 0 0 transparent; }
+#share42 a {
+  background-image: none !important; }
+
+.share42-item:nth-child(1) {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem; }
+  .share42-item:nth-child(1) a {
+    font-size: 2rem; }
+    .share42-item:nth-child(1) a:before {
+      font-size: inherit; }
+
+.share42-item:nth-child(2) {
+  padding-right: 2rem; }
+  .share42-item:nth-child(2) a {
+    font-size: 2rem;
+    padding-right: 2rem; }
+    .share42-item:nth-child(2) a:before {
+      font-size: inherit; }
+
+.share42-item:nth-child(3) {
+  padding-right: 1rem; }
+  .share42-item:nth-child(3) a {
+    font-size: 2rem; }
+    .share42-item:nth-child(3) a:before {
+      font-size: inherit; }
+  .share42-item:nth-child(3) h2 {
+    font-family: "adelle", serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    color: #777777;
+    line-height: 1.4em;
+    margin-bottom: 2rem;
+    margin-top: -1rem; }
+
+#share42 img {
+  display: none; }
+
+.twitter-pull-block-description {
+  display: none; }
+
+.tweet-authorphoto {
+  display: none; }
+
+.twitter-block-header {
+  width: 60%;
+  z-index: 5;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  margin-bottom: -2rem;
+  padding-bottom: 0.5rem; }
+
+.twitter-link a {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem; }
+
+.tweets-pulled-listing {
+  margin-top: 0.3rem; }
+
+.tweet-actions {
+  padding-top: 2rem;
+  color: #1976d2; }
+  .tweet-actions a {
+    padding-right: 0.5rem;
+    padding-top: 1rem; }
+
+.tweet-text {
+  font-size: 0.9rem; }
+
+div.tweet-author-wrapper {
+  width: 300px; }
+
+.tweet-screenname, .tweet-author, .twitter-title, .twitter-follow-link {
+  display: none; }
+
+.block-cchi-customizations-tweets {
+  margin-top: 8rem;
+  margin-left: -2rem; }
+  .block-cchi-customizations-tweets .block-title {
+    display: none; }
+  .block-cchi-customizations-tweets h2 {
+    font-family: "adelle", serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    color: #777777;
+    line-height: 1.4em;
+    margin-bottom: 2rem; }
+  .block-cchi-customizations-tweets li {
+    list-style-type: none; }
+    .block-cchi-customizations-tweets li .tweet-actions {
+      display: none; }
+  .block-cchi-customizations-tweets .tweet-divider {
+    color: #fafafa; }
