@@ -6,11 +6,7 @@
   
 
 @mixin custom-button
-  font-family: "adelle-sans"
-  text-transform: uppercase
-  letter-spacing: 1px
-  font-size: remCalc(14)
-  font-weight: 600
+  +menu-font
   color: #1976d2
   margin-top: 0.25rem
   margin-bottom: 1rem
@@ -20,6 +16,7 @@
   box-shadow: 0px 2px 3px #cccccc
   padding-top: 0.8rem
   padding-bottom: 0.8rem
+  
   
 @mixin custom-button-hover
   background-color: rgb(227, 242, 253)
@@ -104,10 +101,17 @@
   color: $black
   padding: 1rem
   
+  
 @mixin center-grid-4
   width: 33.33333%
   padding-left: 0.83333rem
   padding-right: 0.83333rem
+    
+@mixin divider-line
+  clear: left
+  border-bottom: 2px solid #efefef
+  margin: 5px 0 5px 0
+  border-bottom-color: $blue-light
     
 
 //***********************************

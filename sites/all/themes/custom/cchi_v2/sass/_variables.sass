@@ -12,9 +12,10 @@ $black: #333
 $black-true: #000
 $white: #fff
 $gray: #fafafa
-$gray-dark: darken($gray, 10%)  
+$gray-dark: #777  
 $blue: #01579b
 $blue-link: #1976d2
+$blue-light: rgb(227, 242, 253)
 $yellow: #fdd835
 
 
@@ -163,7 +164,7 @@ $include-html-global-classes: false
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-$row-width-px: 1280px
+$row-width-px: 1250px
 $row-width: rem-calc($row-width-px)
 $total-columns: 12
 $column-gutter-px: 30px
@@ -232,8 +233,8 @@ $primary-color: $blue-link
 
 
 // menu-break
-$menu-break: emCalc(825)
-$menu-break-plus: emCalc(826)
+$menu-break: emCalc(999)
+$menu-break-plus: emCalc(1000)
 
 // screen is squished
 $screen-break: emCalc(960)
@@ -353,10 +354,10 @@ $header-font-family: $ff-alt
 // $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
-// $hr-border-width: 1px;
-// $hr-border-style: solid;
-// $hr-border-color: $gainsboro;
-// $hr-margin: rem-calc(20);
+$hr-border-width: 2px
+$hr-border-style: solid
+$hr-border-color: $blue-light
+$hr-margin: rem-calc(20)
 
 // We use these to style lists
 // $list-font-family: $paragraph-font-family;

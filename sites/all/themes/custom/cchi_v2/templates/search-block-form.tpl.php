@@ -30,10 +30,11 @@
  */
 ?>
 
-    <div class="small-3 columns searchblock">
-      <a href="#" class="s-button" data-dropdown="drop"></a>
+    
+<div class="medium-1 columns right searchblock">
+    <a href="#" class="s-button" data-dropdown="drop"></a>
   
-      <div id="drop" class="[tiny small medium large content]f-dropdown" data-dropdown-content>  
+      <div id="drop" class="content f-dropdown" data-dropdown-content>  
         <div class="container-inline">
         <?php if (empty($variables['form']['#block']->subject)): ?>
 

@@ -23,7 +23,7 @@ fa-bars
   text-transform: uppercase
   letter-spacing: 1px
   font-size: 14px
-  font-weight: 700
+  font-weight: 600
   font-style: normal
  
 
@@ -52,12 +52,13 @@ fa-bars
     a
       +menu-font
       color: $white
+      padding-left: 1rem
       z-index: 15 
       &:hover
-        color: $black  
+        color: $blue-light  
        
     a.active-trail.active
-      color: $black
+      color: $blue-light
 
 
       
@@ -70,29 +71,29 @@ fa-bars
   
 //*search dropdown/
 .searchblock
-  float: right
   padding-top: 0.75rem
   margin-bottom: 2rem
+  position: relative
+  z-index: 55
+  margin-top: -3.2rem
     
   #edit-submit
     z-index: 10
+    position: relative
     width: 5rem
     margin-left: -1.75rem
       
   #edit-search-block-form--2
-    z-index:10
+    position: relative
+    z-index: 10
     width: 20rem
     margin-left: -15rem
       
   a.s-button
     +icon(search)
-    font-size: 1.3rem
-    color: $white
-    padding: 2rem
-    margin-left: 5rem
-    margin-bottom: 5rem
-    margin-top: 5rem
-    padding-top: 4rem
+    font-size: 1.2rem
+    color: $yellow
+    float: right
       
   a.s-button.open
     background-color: yellow
@@ -112,6 +113,7 @@ fa-bars
   float: right
   height: 100px
   margin-bottom: 5rem
+  margin-top: -1.1rem
     
   .block-menu-menu-button-menu
         
@@ -129,7 +131,7 @@ fa-bars
 
       li
         +no-bullets
-        float: right 
+        float: right
           
        
       a.active-trail.active
@@ -149,19 +151,57 @@ fa-bars
         
 .block-menu-menu-button-menu
   .menu
+    
     li.leaf
       a
         +icon(envelope-o)
+        padding-right: 2.5rem
+        margin-left: 0.5rem 
+          
+        &:before
+          float: right
+          position: relative
+          z-index: 3
+          margin-left: -5rem
+          padding-right: 1rem
+          padding-left: 1rem
+          padding-top: 0.35rem
+        
         
           
     li.first
       a
         +icon(bookmark-o)
+        padding-right: 2.5rem
+        margin-left: 0.5rem 
+          
+        &:before
+          float: right
+          position: relative
+          z-index: 3
+          margin-left: -5rem
+          padding-right: 1rem
+          padding-left: 1rem
+          padding-top: 0.35rem
         
     
     li.last
       a
         +icon(external-link)
+        padding-right: 2.5rem
+        margin-left: 0.5rem 
+        
+      
+        &:before
+          float: right
+          position: relative
+          z-index: 3
+          margin-left: -5rem
+          padding-right: 1rem
+          padding-left: 1rem
+          padding-top: 0.35rem
+          
+      
         
     
 

@@ -1638,19 +1638,19 @@ div.form-type-password-confirm .description {
     border-right: 0.125rem solid transparent;
     border-radius: 100%; }
   .ajax-progress-throbber .throbber:before {
-    border-top-color: #e1e1e1; }
+    border-top-color: #777; }
 .pager .ajax-progress-throbber {
   position: absolute;
   margin-left: -0.5625rem;
   margin-top: -1.3125rem; }
 
 meta.before-menu {
-  font-family: "/only screen and (max-width:51.5625em)/";
-  max-width: 51.5625em; }
+  font-family: "/only screen and (max-width:62.4375em)/";
+  max-width: 62.4375em; }
 
 meta.past-menu {
-  font-family: "/only screen and (min-width:51.625em)/";
-  min-width: 51.625em; }
+  font-family: "/only screen and (min-width:62.5em)/";
+  min-width: 62.5em; }
 
 html body.admin-menu {
   margin-top: 0px !important; }
@@ -1662,7 +1662,7 @@ html, body {
 
 @media only screen and (min-width:40.0625em) { }
 
-@media only screen and (min-width:51.625em) {
+@media only screen and (min-width:62.5em) {
   .move-left > .inner-wrap {
     -ms-transform: translate(0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -1695,14 +1695,15 @@ fa-bars {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     color: #fff;
+    padding-left: 1rem;
     z-index: 15; }
     .l-header li a:hover {
-      color: #333; }
+      color: #e3f2fd; }
   .l-header li a.active-trail.active {
-    color: #333; }
+    color: #e3f2fd; }
 
 .breadcrumbs {
   display: none; }
@@ -1711,25 +1712,25 @@ fa-bars {
   z-index: 3; }
 
 .searchblock {
-  float: right;
   padding-top: 0.75rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 55;
+  margin-top: -3.2rem; }
   .searchblock #edit-submit {
     z-index: 10;
+    position: relative;
     width: 5rem;
     margin-left: -1.75rem; }
   .searchblock #edit-search-block-form--2 {
+    position: relative;
     z-index: 10;
     width: 20rem;
     margin-left: -15rem; }
   .searchblock a.s-button {
-    font-size: 1.3rem;
-    color: #fff;
-    padding: 2rem;
-    margin-left: 5rem;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-    padding-top: 4rem; }
+    font-size: 1.2rem;
+    color: #fdd835;
+    float: right; }
     .searchblock a.s-button:before {
       font-size: inherit; }
   .searchblock a.s-button.open {
@@ -1741,7 +1742,8 @@ fa-bars {
   width: 100%;
   float: right;
   height: 100px;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  margin-top: -1.1rem; }
   .l-button_menu-region .block-menu-menu-button-menu .menu {
     margin-top: 2.25rem;
     margin-bottom: 0.5rem; }
@@ -1761,8 +1763,9 @@ fa-bars {
       font-family: "adelle-sans";
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-size: remCalc(14);
+      font-size: 14px;
       font-weight: 600;
+      font-style: normal;
       color: #1976d2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1783,12 +1786,45 @@ fa-bars {
 
 .block-menu-menu-button-menu {
   /* Fonts */ }
-  .block-menu-menu-button-menu .menu li.leaf a:before {
-    font-size: inherit; }
-  .block-menu-menu-button-menu .menu li.first a:before {
-    font-size: inherit; }
-  .block-menu-menu-button-menu .menu li.last a:before {
-    font-size: inherit; }
+  .block-menu-menu-button-menu .menu li.leaf a {
+    padding-right: 2.5rem;
+    margin-left: 0.5rem; }
+    .block-menu-menu-button-menu .menu li.leaf a:before {
+      font-size: inherit; }
+    .block-menu-menu-button-menu .menu li.leaf a:before {
+      float: right;
+      position: relative;
+      z-index: 3;
+      margin-left: -5rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-top: 0.35rem; }
+  .block-menu-menu-button-menu .menu li.first a {
+    padding-right: 2.5rem;
+    margin-left: 0.5rem; }
+    .block-menu-menu-button-menu .menu li.first a:before {
+      font-size: inherit; }
+    .block-menu-menu-button-menu .menu li.first a:before {
+      float: right;
+      position: relative;
+      z-index: 3;
+      margin-left: -5rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-top: 0.35rem; }
+  .block-menu-menu-button-menu .menu li.last a {
+    padding-right: 2.5rem;
+    margin-left: 0.5rem; }
+    .block-menu-menu-button-menu .menu li.last a:before {
+      font-size: inherit; }
+    .block-menu-menu-button-menu .menu li.last a:before {
+      float: right;
+      position: relative;
+      z-index: 3;
+      margin-left: -5rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-top: 0.35rem; }
 
 p {
   font-family: "adelle", serif;
@@ -2000,7 +2036,7 @@ html.js input.form-autocomplete.throbbing ~ .field-suffix .spinner {
   -o-animation: rotation 0.75s infinite linear;
   animation: rotation 0.75s infinite linear; }
   html.js input.form-autocomplete.throbbing ~ .field-suffix .spinner:before {
-    border-top-color: #e1e1e1; }
+    border-top-color: #777; }
 
 form.confirmation .form-submit {
   position: relative;
@@ -2080,13 +2116,13 @@ form.confirmation .form-submit {
 .top-bar li.has-dropdown > a {
   padding: 0 22.5px !important; }
 
-@media only screen and (max-width:51.5625em) {
+@media only screen and (max-width:62.4375em) {
   .top-bar {
     overflow: visible; }
   .user-menu-wrap li {
     padding-top: 0.25rem !important; } }
 
-@media only screen and (min-width:51.625em) {
+@media only screen and (min-width:62.5em) {
   .main-nav > li > a {
     text-transform: uppercase;
     letter-spacing: 0.05em; }
@@ -2151,7 +2187,7 @@ form.confirmation .form-submit {
   width: 100%;
   z-index: 1; }
 
-@media only screen and (max-width:51.5625em) {
+@media only screen and (max-width:62.4375em) {
   .top-bar {
     position: static !important; }
   .l-header-region {
@@ -2166,11 +2202,11 @@ form.confirmation .form-submit {
       padding-right: 0.8125rem;
       overflow: hidden; } }
 
-@media only screen and (min-width:40.0625em) and (max-width:51.5625em) {
+@media only screen and (min-width:40.0625em) and (max-width:62.4375em) {
   .menu-toggle {
     left: 3.625rem; } }
 
-@media only screen and (min-width:51.625em) {
+@media only screen and (min-width:62.5em) {
   .menu-toggle, .left-off-canvas-toggle, .left-off-canvas-menu .block-block-28 {
     display: none; } }
 
@@ -2204,6 +2240,9 @@ form.confirmation .form-submit {
   padding-top: 4rem;
   margin-top: -5rem; }
 
+hr {
+  border-bottom-color: #e3f2fd; }
+
 .two-sidebars h1#page-title, .sidebar-first h1#page-title {
   margin-left: -20.6rem; }
 
@@ -2232,21 +2271,28 @@ form.confirmation .form-submit {
   margin-bottom: -5.5rem;
   margin-left: -0.4rem;
   font-weight: 600; }
-
-.menu-block-wrapper {
+.block-menu-block .menu-block-wrapper {
   margin-top: 5rem; }
-  .menu-block-wrapper ul {
-    display: inline;
-    list-style-type: none; }
-    .menu-block-wrapper ul li {
-      margin-bottom: 0.8rem;
-      margin-left: -0.3rem; }
-    .menu-block-wrapper ul .active-trail {
-      background-color: #fdd835;
+.block-menu-block ul {
+  display: inline;
+  list-style-type: none; }
+  .block-menu-block ul li {
+    margin-bottom: 0.8rem;
+    margin-left: -0.3rem; }
+    .block-menu-block ul li:hover {
+      background-color: #e3f2fd;
       padding: 0.6rem 0 0.6rem 1rem;
       margin-left: -1rem;
       margin-right: 2.8rem;
       color: #333; }
+      .block-menu-block ul li:hover a {
+        background-color: #e3f2fd; }
+  .block-menu-block ul .active-trail {
+    background-color: #fdd835;
+    padding: 0.6rem 0 0.6rem 1rem;
+    margin-left: -1rem;
+    margin-right: 2.8rem;
+    color: #333; }
 
 .view-id-news .field-name-post-date {
   font-family: "adelle-sans";
@@ -2292,6 +2338,20 @@ form.confirmation .form-submit {
     line-height: 1.5em;
     margin-bottom: 1rem; }
 
+.view-id-events .field-name-node-link {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #1976d2;
+  float: right;
+  margin-top: -0.5rem;
+  padding-bottom: 1.5rem; }
 .view-id-events .group-left {
   font-family: "adelle-sans";
   text-transform: uppercase;
@@ -2311,21 +2371,25 @@ form.confirmation .form-submit {
   font-style: normal;
   padding-top: 2.3rem; }
 .view-id-events .field-name-field-location {
-  padding-bottom: 1.6rem;
-  margin-top: -1rem;
   font-family: "adelle";
   font-weight: 300;
   font-size: 19px;
   font-style: italic;
   color: #777777;
   line-height: 1.5em;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  margin-bottom: 0; }
+.view-id-events p:first-child {
+  margin-top: -2rem; }
 .view-id-events .medium-9 .field, .view-id-events .medium-9 p {
   padding-left: 4rem; }
 
 .block-menu-menu-events-sub-menu {
   background-color: #fafafa;
-  padding: 1rem; }
+  padding: 1rem;
+  margin-left: -0.8rem;
+  padding-right: 0.8rem; }
   .block-menu-menu-events-sub-menu ul {
     text-align: center; }
   .block-menu-menu-events-sub-menu li {
@@ -2335,12 +2399,16 @@ form.confirmation .form-submit {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     color: #333;
     padding: 1rem;
     background-color: #fff;
     display: inline-block; }
+    .block-menu-menu-events-sub-menu li:hover {
+      background-color: #e3f2fd; }
+      .block-menu-menu-events-sub-menu li:hover a {
+        background-color: #e3f2fd; }
   .block-menu-menu-events-sub-menu .active-trail {
     background-color: #fdd835;
     color: #333; }
@@ -2354,29 +2422,147 @@ form.confirmation .form-submit {
     font-style: normal;
     text-align: center; }
 
-.l-footer-sections .panel {
-  height: 60px; }
-.l-footer-sections .block-menu-block-3 {
-  margin-top: -4rem; }
-  .l-footer-sections .block-menu-block-3 ul {
-    margin-bottom: 2rem; }
-    .l-footer-sections .block-menu-block-3 ul li {
-      display: inline-block; }
-      .l-footer-sections .block-menu-block-3 ul li a {
-        font-family: "adelle-sans";
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 14px;
-        font-weight: 700;
-        font-style: normal;
-        color: #01579b;
-        padding-right: 1rem; }
-    .l-footer-sections .block-menu-block-3 ul .active-trail {
-      background-color: transparent;
-      margin-right: 0;
-      color: #333; }
-.l-footer-sections .block-block-2 {
-  padding-left: 0.8rem; }
+.node-event h1#page-title.title {
+  margin-top: 0rem; }
+.node-event .field-name-field-location {
+  font-family: "adelle";
+  font-weight: 300;
+  font-size: 19px;
+  font-style: italic;
+  color: #777777;
+  line-height: 1.5em;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0; }
+.node-event .date-display-single {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-bottom: 6rem; }
+.node-event div.body.field {
+  margin-top: 1.5rem; }
+.node-event .twitter-pull-block-wrapper {
+  margin-top: -5rem;
+  padding-top: 0rem; }
+
+.page-members-resources .medium-12 ul.button-group {
+  text-align: center;
+  background-color: #fafafa;
+  margin-top: -2.5rem;
+  padding-bottom: 0.75rem; }
+  .page-members-resources .medium-12 ul.button-group a {
+    background-color: transparent; }
+.page-members-resources .medium-12 #page-title {
+  text-align: center;
+  background-color: #fafafa;
+  padding-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  padding-top: 1.2rem;
+  margin-left: 0.5rem; }
+.page-members-resources .medium-12 li {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+.page-members-resources .medium-12 a.small.button.secondary {
+  background-color: #fff;
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #333;
+  padding: 1rem;
+  color: #01579b;
+  font-weight: 700;
+  display: inline-block;
+  margin: 0.2rem;
+  height: 56px; }
+  .page-members-resources .medium-12 a.small.button.secondary:hover {
+    background-color: #e3f2fd;
+    transition: background-color 300ms ease-out; }
+.page-members-resources .medium-12 a.small.button.secondary.active {
+  background-color: #fdd835;
+  color: #333; }
+.page-members-resources .medium-12 h2 {
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.1em;
+  color: #222222;
+  margin-bottom: 1rem;
+  font-style: normal;
+  text-align: center; }
+
+.l-footer-sections {
+  margin-top: 4rem; }
+  .l-footer-sections .panel {
+    height: 60px; }
+  .l-footer-sections .button {
+    background-color: #01579b; }
+    .l-footer-sections .button:hover {
+      background-color: #e3f2fd; }
+      .l-footer-sections .button:hover a {
+        color: #01579b; }
+    .l-footer-sections .button a {
+      color: #fff;
+      font-family: "adelle-sans";
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+      font-weight: 600;
+      font-style: normal; }
+  .l-footer-sections .block-menu-block-3 {
+    margin-top: -5rem;
+    padding-bottom: 0.5rem; }
+    .l-footer-sections .block-menu-block-3 ul {
+      margin-bottom: 2rem;
+      margin-top: -0.5rem; }
+      .l-footer-sections .block-menu-block-3 ul li {
+        display: inline-block;
+        padding-right: 1.6rem; }
+        .l-footer-sections .block-menu-block-3 ul li a {
+          font-family: "adelle-sans";
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-size: 14px;
+          font-weight: 600;
+          font-style: normal;
+          color: #01579b;
+          padding-right: 1rem; }
+      .l-footer-sections .block-menu-block-3 ul .active-trail {
+        background-color: transparent;
+        margin-right: 0;
+        color: #333; }
+  .l-footer-sections .block-block-2 p {
+    font-family: "adelle-sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: #777777;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
+    .l-footer-sections .block-block-2 p a {
+      font-weight: 700;
+      color: #777; }
+
+.block-bean-member-login-button {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
 
 .standard-block-text {
   font-size: 32px;
@@ -2405,36 +2591,43 @@ form.confirmation .form-submit {
     margin-bottom: 0.5rem;
     padding-bottom: 1rem; }
 
-#share42:hover {
+div.footer-second {
+  width: 10%;
+  float: right;
+  margin-top: -3.5rem; }
+
+#share42 {
+  border-color: transparent;
   background: transparent;
-  border: 0px solid transparent;
-  box-shadow: 0 0 0 transparent; }
-#share42 a {
-  background-image: none !important; }
+  color: #01579b;
+  padding: 0px;
+  margin: 0px; }
+  #share42:hover {
+    background: transparent;
+    border: 1px solid transparent;
+    box-shadow: 0 0 0 transparent; }
+  #share42 a {
+    background-image: none !important; }
 
 .share42-item:nth-child(1) {
   padding-top: 1rem;
-  padding-right: 1rem;
+  padding-right: 0.1rem;
   padding-bottom: 4rem; }
   .share42-item:nth-child(1) a {
-    font-size: 2rem; }
+    width: 10 !important;
+    height: 10 !important; }
     .share42-item:nth-child(1) a:before {
       font-size: inherit; }
 
 .share42-item:nth-child(2) {
-  padding-right: 2rem; }
-  .share42-item:nth-child(2) a {
-    font-size: 2rem;
-    padding-right: 2rem; }
-    .share42-item:nth-child(2) a:before {
-      font-size: inherit; }
+  padding-right: 0.1rem; }
+  .share42-item:nth-child(2) a:before {
+    font-size: inherit; }
 
 .share42-item:nth-child(3) {
-  padding-right: 1rem; }
-  .share42-item:nth-child(3) a {
-    font-size: 2rem; }
-    .share42-item:nth-child(3) a:before {
-      font-size: inherit; }
+  padding-right: 0.1rem; }
+  .share42-item:nth-child(3) a:before {
+    font-size: inherit; }
   .share42-item:nth-child(3) h2 {
     font-family: "adelle", serif;
     font-weight: 300;
@@ -2475,7 +2668,23 @@ form.confirmation .form-submit {
   margin-top: 0.5rem; }
 
 .tweets-pulled-listing {
-  margin-top: 0.3rem; }
+  margin-left: 1.8rem;
+  margin-top: 0.3rem;
+  color: #777;
+  font-size: remCalc(16); }
+  .tweets-pulled-listing li iframe {
+    display: none; }
+  .tweets-pulled-listing li:first-child iframe {
+    display: block;
+    margin-top: -0.25rem; }
+  .tweets-pulled-listing li .tweet-divider {
+    display: none; }
+  .tweets-pulled-listing li:last-child {
+    clear: left;
+    border-bottom: 2px solid #efefef;
+    margin: 5px 0 5px 0;
+    border-bottom-color: #e3f2fd;
+    padding-bottom: 2rem; }
 
 .tweet-actions {
   padding-top: 2rem;
@@ -2488,9 +2697,13 @@ form.confirmation .form-submit {
   font-size: 0.9rem; }
 
 div.tweet-author-wrapper {
-  width: 300px; }
+  padding-bottom: 1rem; }
 
-.tweet-screenname, .tweet-author, .twitter-title, .twitter-follow-link {
+.twitter-link {
+  padding-left: 3.2rem;
+  padding-top: 0.25rem; }
+
+.tweet-screenname, .tweet-author, .twitter-title, .twitter-follow-link, .tweet-time {
   display: none; }
 
 .block-cchi-customizations-tweets {
@@ -2510,5 +2723,6 @@ div.tweet-author-wrapper {
     list-style-type: none; }
     .block-cchi-customizations-tweets li .tweet-actions {
       display: none; }
-  .block-cchi-customizations-tweets .tweet-divider {
-    color: #fafafa; }
+
+.tweet-divider {
+  display: none; }
