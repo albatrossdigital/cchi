@@ -56,7 +56,22 @@
 // Older IE support
 // @import "vendor/ie";
 
-//mixins
+//slideshow
+.orbit-container
+  padding-bottom: 4rem
+  h4
+    +h5-style
+    a
+      color: $gray-dark
+      &:hover
+        color: #01579b
+  p
+    +h3-style
+    color: #1976d2
+  .button
+    +custom-button
+    &:hover
+      +custom-button-hover
 
 
 
@@ -131,6 +146,9 @@ hr
 //content elements: NEWS View
 
 .view-id-news
+  #page-title
+    margin-top: 1rem
+    padding-top: 0px
   .field-name-post-date
     +h5-style
     margin-top: 1.5rem
@@ -156,14 +174,23 @@ hr
         +h4-style
 
 //events view
+
+  
+.section-all-media
+  h1#page-title.title
+    margin-top: 2rem
+    padding-top: 0rem
+  
 .view-id-events
+  
+      
   .field-name-node-link
     +h5-style
     +link
     float: right
     margin-top: -0.5rem
     padding-bottom: 1.5rem
-    
+  
   .group-left
     +h5-style
     padding-top: 2.6rem
@@ -188,9 +215,15 @@ hr
     
     .field, p
       padding-left: 4rem
+        
+  .date-display-single
+    font-weight: 700
+  
+    america
+      font-weight: 600
   
     
-.block-menu-menu-events-sub-menu
+.block-menu-menu-events-sub-menu, .block-menu-menu-media-categories
   background-color: $gray
   padding: 1rem
   margin-left: -0.8rem
@@ -341,32 +374,39 @@ hr
   
 //mission block on home page//
   
-.standard-block-text 
-  +standard-block-text
 
 
-.block-bean-mission-block-home-page
+
+.bean-standard
   background-color: #fafafa
   padding: 4rem 
-
-  
-  h2
+  .field-name-field-display-title
     +h5-style
-    padding-bottom: 1rem
+    margin-left: 1rem
+  
+  .field-name-field-description
+    +standard-block-text
+      
+  .button
+    +custom-button
+    margin-left: 1rem
+    &:hover
+      +custom-button-hover
+  
   
       
   //share
 div.footer-second
   width: 10%
   float: right
-  margin-top: -3.5rem
+  margin-top: -4rem
   
 #share42
   border-color: transparent
   background: transparent
   color: $blue
   padding: 0px
-  margin: 0px
+  margin-left: -6.2rem
   
   &:hover
     background: transparent

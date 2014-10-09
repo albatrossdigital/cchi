@@ -2249,6 +2249,54 @@ form.confirmation .form-submit {
 .views-row-last .node-story.node-teaser:after {
   border: 0; }
 
+.orbit-container {
+  padding-bottom: 4rem; }
+  .orbit-container h4 {
+    font-family: "adelle-sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: #777777;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
+    .orbit-container h4 a {
+      color: #777; }
+      .orbit-container h4 a:hover {
+        color: #01579b; }
+  .orbit-container p {
+    font-family: "adelle-sans", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #222222;
+    font-style: normal;
+    color: #1976d2; }
+  .orbit-container .button {
+    font-family: "adelle-sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: #1976d2;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #64b5f6;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 3px #cccccc;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem; }
+    .orbit-container .button:hover {
+      background-color: #e3f2fd;
+      color: #01579b;
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem; }
+
 #page-title {
   padding-top: 4rem;
   margin-top: -5rem; }
@@ -2588,22 +2636,10 @@ hr {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
 
-.standard-block-text {
-  font-size: 32px;
-  color: #01579b;
-  margin-top: 1rem;
-  font-family: "adelle", serif;
-  font-weight: 300;
-  font-style: italic;
-  margin-bottom: 2rem;
-  line-height: 2.54rem;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-
-.block-bean-mission-block-home-page {
+.bean-standard {
   background-color: #fafafa;
   padding: 4rem; }
-  .block-bean-mission-block-home-page h2 {
+  .bean-standard .field-name-field-display-title {
     font-family: "adelle-sans";
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -2613,7 +2649,43 @@ hr {
     color: #777777;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    padding-bottom: 1rem; }
+    margin-left: 1rem; }
+  .bean-standard .field-name-field-description {
+    font-size: 32px;
+    color: #01579b;
+    margin-top: 1rem;
+    font-family: "adelle", serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 2rem;
+    line-height: 2.54rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .bean-standard .button {
+    font-family: "adelle-sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: #1976d2;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #64b5f6;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 3px #cccccc;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-left: 1rem; }
+    .bean-standard .button:hover {
+      background-color: #e3f2fd;
+      color: #01579b;
+      margin-top: 0.25rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem; }
 
 div.footer-second {
   width: 10%;
