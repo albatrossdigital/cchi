@@ -102,6 +102,10 @@ hr
 #main-content
  .view
   margin-top: 4rem
+    
+p 
+  a
+    color: $blue
   
 
 //sidebar
@@ -158,7 +162,9 @@ hr
       +h3-style
       +link
       margin-top: 1.5rem
-
+        
+  .field-name-field-subtitle
+    +h2-style
   .more-link
     padding-right: 4rem
     a
@@ -540,7 +546,27 @@ div.tweet-author-wrapper
   display: none
   
   
+//MEDIA pages       
+//h1s     
+.node-type-blog-post, .node-type-story, .node-type-in_the_news, .node-type-blog-post 
+  #page-title
+    padding-left: 12.8rem
       
+  .field-name-post-date
+    +h5-style
+    
+  .field-name-field-subtitle
+    +h2-style
+  
+  
+  
+.block-bean-media-release-contact
+  +h2-style
+  font-size: 1.3rem
+  padding: 1rem
+  padding-left: 1.3rem
+  padding-right: 0.5rem
+
       
       
   

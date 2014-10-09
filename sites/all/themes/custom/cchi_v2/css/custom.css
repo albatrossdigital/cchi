@@ -2318,6 +2318,9 @@ hr {
 #main-content .view {
   margin-top: 4rem; }
 
+p a {
+  color: #01579b; }
+
 .block-menu-block h2 {
   font-family: "adelle-sans";
   text-transform: uppercase;
@@ -2377,6 +2380,14 @@ hr {
   font-style: normal;
   color: #1976d2;
   margin-top: 1.5rem; }
+.view-id-news .field-name-field-subtitle {
+  font-family: "adelle", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 25px;
+  color: #777777;
+  line-height: 1.4em;
+  margin-bottom: 2rem; }
 .view-id-news .more-link {
   padding-right: 4rem; }
   .view-id-news .more-link a {
@@ -2822,3 +2833,37 @@ div.tweet-author-wrapper {
 
 .tweet-divider {
   display: none; }
+
+.node-type-blog-post #page-title, .node-type-story #page-title, .node-type-in_the_news #page-title, .node-type-blog-post #page-title {
+  padding-left: 12.8rem; }
+.node-type-blog-post .field-name-post-date, .node-type-story .field-name-post-date, .node-type-in_the_news .field-name-post-date, .node-type-blog-post .field-name-post-date {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+.node-type-blog-post .field-name-field-subtitle, .node-type-story .field-name-field-subtitle, .node-type-in_the_news .field-name-field-subtitle, .node-type-blog-post .field-name-field-subtitle {
+  font-family: "adelle", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 25px;
+  color: #777777;
+  line-height: 1.4em;
+  margin-bottom: 2rem; }
+
+.block-bean-media-release-contact {
+  font-family: "adelle", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 25px;
+  color: #777777;
+  line-height: 1.4em;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  padding: 1rem;
+  padding-left: 1.3rem;
+  padding-right: 0.5rem; }
