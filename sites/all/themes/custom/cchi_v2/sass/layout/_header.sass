@@ -98,14 +98,28 @@ fa-bars
   a.s-button.open
     background-color: yellow
 
-  
-
-
 
   
 /*button menu*/
 
+.one-sidebar.sidebar-first, .one-sidebar.sidebar-second, .no-sidebars.page-providers
+  .l-button_menu-region
+    margin-top: 0rem
+      
+  
+.front.one-sidebar.sidebar-second, .sidebar-second.section-donate-online
+  .l-button_menu-region
+    margin-top: -1.1rem
+      
 
+.one-sidebar, .no-sidebars, 
+  .l-button_menu-region
+    margin-top: -1.1rem
+      
+.sidebar-second
+  .l-button_menu-region
+    margin-top: -1.1
+    
 
 .l-button_menu-region
   background-color: $gray
@@ -113,7 +127,9 @@ fa-bars
   float: right
   height: 100px
   margin-bottom: 5rem
-  margin-top: -1.1rem
+    
+  .front
+    margin-top: -1.1rem
     
   .block-menu-menu-button-menu
         
