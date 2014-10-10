@@ -1712,8 +1712,7 @@ fa-bars {
   z-index: 99; }
 
 .searchblock {
-  padding-top: 0.75rem;
-  margin-bottom: 2rem; }
+  display: none; }
 
 .block-search {
   float: right;
@@ -1721,7 +1720,8 @@ fa-bars {
   top: 1px;
   z-index: 999;
   color: #fdd835;
-  background-color: red; }
+  background-color: red;
+  display: none; }
 
 a.s-button {
   font-size: 1.2rem;
@@ -2230,6 +2230,14 @@ form.confirmation .form-submit {
 .views-row-last .node-story.node-teaser:after {
   border: 0; }
 
+h1, h2, h3, h4, h5, h6, p, .field-name-body, .field-name-field-date, a, .views-field-name, label {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out; }
+  .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6, .wf-active p, .wf-active .field-name-body, .wf-active .field-name-field-date, .wf-active a, .wf-active .views-field-name, .wf-active label {
+    opacity: 1; }
+
 .orbit-container {
   padding-bottom: 4rem; }
   .orbit-container h4 {
@@ -2337,20 +2345,16 @@ p a {
   .block-menu-block ul li {
     margin-bottom: 0.8rem;
     margin-left: -0.3rem; }
-    .block-menu-block ul li:hover {
-      background-color: #e3f2fd;
-      padding: 0.6rem 0 0.6rem 1rem;
-      margin-left: -1rem;
-      margin-right: 2.8rem;
-      color: #333; }
-      .block-menu-block ul li:hover a {
-        background-color: #e3f2fd; }
   .block-menu-block ul .active-trail {
     background-color: #fdd835;
     padding: 0.6rem 0 0.6rem 1rem;
     margin-left: -1rem;
     margin-right: 2.8rem;
     color: #333; }
+    .block-menu-block ul .active-trail:hover {
+      background-color: #fdd835;
+      height: auto;
+      width: auto; }
 
 .view-id-news #page-title {
   margin-top: 1rem;
@@ -2422,8 +2426,7 @@ p a {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   color: #1976d2;
-  float: right;
-  margin-top: -0.5rem;
+  margin-top: 1.5rem;
   padding-bottom: 1.5rem; }
 .view-id-events .group-left {
   font-family: "adelle-sans";

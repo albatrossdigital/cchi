@@ -56,6 +56,17 @@
 // Older IE support
 // @import "vendor/ie";
 
+// Typekit fade
+//------------------------------------------
+
+h1, h2, h3, h4, h5, h6, p, .field-name-body, .field-name-field-date, a, .views-field-name, label
+ opacity: 0
+ +transition (opacity 0.20s ease-in-out)
+
+ .wf-active &
+   opacity: 1
+
+
 //slideshow
 .orbit-container
   padding-bottom: 4rem
@@ -76,7 +87,19 @@
 
 
 //global
-    
+
+h1#page-title.title
+  margin-left: 70.5 rem
+  padding-bottom: 1rem
+  
+    //hides page title for nodes uses display suite
+.node-type-event, .blog-section, .section-media
+  h1#page-title.title
+    display: none
+  h2
+    +h1-style
+
+  
 #page-title
   padding-top: 4rem
   margin-top: -5rem
@@ -95,13 +118,14 @@ hr
     margin-left: -0.5rem
   .main
     padding-right: 4rem
+    padding-left: 1rem
       
 .body
   margin-top: 4rem
     
-#main-content
- .view
-  margin-top: 4rem
+//#main-content
+ //.view
+  //margin-top: 4rem
     
 p 
   a
@@ -130,22 +154,23 @@ p
       margin-bottom: 0.8rem
       margin-left: -0.3rem
         
-      &:hover
-        background-color: $blue-light
-        padding: 0.6rem 0 0.6rem 1rem
-        margin-left: -1rem
-        margin-right: 2.8rem
-        color: $black
-        
-        a
-          background-color: $blue-light
-      
+      //&:hover
+        //background-color: $blue-light
+        //color: $black
+        //width: 241px
+        //height: 35px
+
     .active-trail
       background-color: $yellow
       padding: 0.6rem 0 0.6rem 1rem
       margin-left: -1rem
       margin-right: 2.8rem
       color: $black
+      
+      &:hover
+        background-color: $yellow
+        height: auto
+        width: auto
     
 //content elements: NEWS View
 
@@ -193,8 +218,7 @@ p
   .field-name-node-link
     +h5-style
     +link
-    float: right
-    margin-top: -0.5rem
+    margin-top: 1.5rem
     padding-bottom: 1.5rem
   
   .group-left
@@ -204,6 +228,7 @@ p
   h2
     +h3-style
     padding-top: 2.3rem
+    margin-bottom: 0.01rem
     
   
   .field-name-field-location
@@ -228,9 +253,9 @@ p
     america
       font-weight: 600
       
-.node-type-event
-  .block-menu-menu-events-sub-menu
-    margin-bottom: 3  rem
+//.node-type-event
+  //.block-menu-menu-events-sub-menu
+    //margin-bottom: 3rem
   
   
     
@@ -280,9 +305,16 @@ p
     margin-top: 1.5rem
       
     
-  .twitter-pull-block-wrapper
-    margin-top: -5rem
-    padding-top: 0rem
+div.twitter-pull-block-wrapper
+  margin-top: -9.25rem
+  padding-top: 0rem
+
+.page-node
+  div.twitter-pull-block-wrapper
+    margin-top: -4.5rem
+.node-type-event, .blog-section, .section-media
+  div.twitter-pull-block-wrapper
+    margin-top: -11.25rem
       
 //member resources
 .page-members-resources
@@ -554,9 +586,6 @@ div.tweet-author-wrapper
 //MEDIA pages       
 //h1s     
 .node-type-blog-post, .node-type-story, .node-type-in_the_news, .node-type-blog-post 
-  #page-title
-    padding-left: 12.8rem
-      
   .field-name-post-date
     +h5-style
     
