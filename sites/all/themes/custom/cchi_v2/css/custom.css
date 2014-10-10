@@ -2345,6 +2345,8 @@ p a {
   .block-menu-block ul li {
     margin-bottom: 0.8rem;
     margin-left: -0.3rem; }
+  .block-menu-block ul a:hover {
+    color: #333; }
   .block-menu-block ul .active-trail {
     background-color: #fdd835;
     padding: 0.6rem 0 0.6rem 1rem;
@@ -2588,6 +2590,22 @@ div.twitter-pull-block-wrapper {
   margin-bottom: 1rem;
   font-style: normal;
   text-align: center; }
+
+.field-name-field-tags h2 {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+ul.links.inline {
+  display: inline;
+  list-style-type: none;
+  display: inline; }
 
 .l-footer-sections {
   margin-top: 4rem; }
