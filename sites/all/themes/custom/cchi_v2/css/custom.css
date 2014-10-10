@@ -35,7 +35,7 @@ meta.foundation-data-attribute-namespace {
 [aria-label="breadcrumbs"] [aria-hidden="true"]:after {
   content: "/"; }
 
-i[class^="fa"], .searchblock a.s-button:before, .block-menu-menu-button-menu .menu li.leaf a:before, .block-menu-menu-button-menu .menu li.first a:before, .block-menu-menu-button-menu .menu li.last a:before, .draggable a.tabledrag-handle:before, .share42-item:nth-child(1) a:before, .share42-item:nth-child(2) a:before, .share42-item:nth-child(3) a:before {
+i[class^="fa"], a.s-button:before, .block-menu-menu-button-menu .menu li.leaf a:before, .block-menu-menu-button-menu .menu li.first a:before, .block-menu-menu-button-menu .menu li.last a:before, .draggable a.tabledrag-handle:before, .share42-item:nth-child(1) a:before, .share42-item:nth-child(2) a:before, .share42-item:nth-child(3) a:before {
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
@@ -81,7 +81,7 @@ i[class^="fa"] {
 .fa-music:before {
   content: "\f001"; }
 
-.searchblock a.s-button:before {
+a.s-button:before {
   content: "\f002"; }
 
 .fa-search:before {
@@ -1709,46 +1709,27 @@ fa-bars {
   display: none; }
 
 .logo {
-  z-index: 3; }
+  z-index: 99; }
 
 .searchblock {
   padding-top: 0.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; }
+
+.block-search {
+  float: right;
   position: relative;
-  z-index: 55;
-  margin-top: -3.2rem; }
-  .searchblock #edit-submit {
-    z-index: 10;
-    position: relative;
-    width: 5rem;
-    margin-left: -1.75rem; }
-  .searchblock #edit-search-block-form--2 {
-    position: relative;
-    z-index: 10;
-    width: 20rem;
-    margin-left: -15rem; }
-  .searchblock a.s-button {
-    font-size: 1.2rem;
-    color: #fdd835;
-    float: right; }
-    .searchblock a.s-button:before {
-      font-size: inherit; }
-  .searchblock a.s-button.open {
-    background-color: yellow; }
+  top: 1px;
+  z-index: 999;
+  color: #fdd835;
+  background-color: red; }
+
+a.s-button {
+  font-size: 1.2rem;
+  color: #fdd835; }
+  a.s-button:before {
+    font-size: inherit; }
 
 /*button menu*/
-.one-sidebar.sidebar-first .l-button_menu-region, .one-sidebar.sidebar-second .l-button_menu-region, .no-sidebars.page-providers .l-button_menu-region {
-  margin-top: 0rem; }
-
-.front.one-sidebar.sidebar-second .l-button_menu-region, .sidebar-second.section-donate-online .l-button_menu-region {
-  margin-top: -1.1rem; }
-
-.one-sidebar .l-button_menu-region, .no-sidebars .l-button_menu-region {
-  margin-top: -1.1rem; }
-
-.sidebar-second .l-button_menu-region {
-  margin-top: -1.1; }
-
 .l-button_menu-region {
   background-color: #fafafa;
   width: 100%;
@@ -2297,6 +2278,21 @@ form.confirmation .form-submit {
       padding-top: 0.8rem;
       padding-bottom: 0.8rem; }
 
+h1#page-title.title {
+  margin-left: 70.5 rem;
+  padding-bottom: 1rem; }
+
+.node-type-event h1#page-title.title, .blog-section h1#page-title.title, .section-media h1#page-title.title {
+  display: none; }
+.node-type-event h2, .blog-section h2, .section-media h2 {
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.1em;
+  color: #222222;
+  margin-bottom: 1rem;
+  font-style: normal; }
+
 #page-title {
   padding-top: 4rem;
   margin-top: -5rem; }
@@ -2310,12 +2306,10 @@ hr {
 .sidebar-second #page-title, .two-sidebars #page-title {
   margin-left: -0.5rem; }
 .sidebar-second .main, .two-sidebars .main {
-  padding-right: 4rem; }
+  padding-right: 4rem;
+  padding-left: 1rem; }
 
 .body {
-  margin-top: 4rem; }
-
-#main-content .view {
   margin-top: 4rem; }
 
 p a {
@@ -2469,9 +2463,6 @@ p a {
   .view-id-events .date-display-single america {
     font-weight: 600; }
 
-.node-type-event .block-menu-menu-events-sub-menu {
-  margin-bottom: 3 rem; }
-
 .block-menu-menu-events-sub-menu, .block-menu-menu-media-categories {
   background-color: #fafafa;
   padding: 1rem;
@@ -2536,9 +2527,16 @@ p a {
   margin-bottom: 6rem; }
 .node-event div.body.field {
   margin-top: 1.5rem; }
-.node-event .twitter-pull-block-wrapper {
-  margin-top: -5rem;
+
+div.twitter-pull-block-wrapper {
+  margin-top: -9.25rem;
   padding-top: 0rem; }
+
+.page-node div.twitter-pull-block-wrapper {
+  margin-top: -4.5rem; }
+
+.node-type-event div.twitter-pull-block-wrapper, .blog-section div.twitter-pull-block-wrapper, .section-media div.twitter-pull-block-wrapper {
+  margin-top: -11.25rem; }
 
 .page-members-resources .medium-12 ul.button-group {
   text-align: center;
@@ -2840,8 +2838,6 @@ div.tweet-author-wrapper {
 .tweet-divider {
   display: none; }
 
-.node-type-blog-post #page-title, .node-type-story #page-title, .node-type-in_the_news #page-title, .node-type-blog-post #page-title {
-  padding-left: 12.8rem; }
 .node-type-blog-post .field-name-post-date, .node-type-story .field-name-post-date, .node-type-in_the_news .field-name-post-date, .node-type-blog-post .field-name-post-date {
   font-family: "adelle-sans";
   text-transform: uppercase;
