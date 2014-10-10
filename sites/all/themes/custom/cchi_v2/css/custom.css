@@ -2468,6 +2468,9 @@ p a {
   .view-id-events .date-display-single america {
     font-weight: 600; }
 
+.node-type-event .block-menu-menu-events-sub-menu {
+  margin-bottom: 3 rem; }
+
 .block-menu-menu-events-sub-menu, .block-menu-menu-media-categories {
   background-color: #fafafa;
   padding: 1rem;
@@ -2503,7 +2506,9 @@ p a {
     color: #222222;
     margin-bottom: 1rem;
     font-style: normal;
-    text-align: center; }
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
 
 .node-event h1#page-title.title {
   margin-top: 0rem; }
