@@ -2448,7 +2448,8 @@ p a {
   font-size: 25px;
   color: #222222;
   font-style: normal;
-  padding-top: 2.3rem; }
+  padding-top: 2.3rem;
+  margin-bottom: 0.01rem; }
 .view-id-events .field-name-field-location {
   font-family: "adelle";
   font-weight: 300;
