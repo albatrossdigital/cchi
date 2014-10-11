@@ -2314,11 +2314,8 @@ hr {
 .sidebar-second #page-title, .two-sidebars #page-title {
   margin-left: -0.5rem; }
 .sidebar-second .main, .two-sidebars .main {
-  padding-right: 4rem;
+  padding-right: 3rem;
   padding-left: 1rem; }
-
-.body {
-  margin-top: 4rem; }
 
 p a {
   color: #01579b; }
@@ -2379,15 +2376,16 @@ p a {
   color: #222222;
   font-style: normal;
   color: #1976d2;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem; }
 .view-id-news .field-name-field-subtitle {
-  font-family: "adelle", serif;
+  font-family: "adelle";
   font-weight: 300;
+  font-size: 19px;
   font-style: italic;
-  font-size: 25px;
   color: #777777;
-  line-height: 1.4em;
-  margin-bottom: 2rem; }
+  line-height: 1.5em;
+  margin-bottom: 1rem; }
 .view-id-news .more-link {
   padding-right: 4rem; }
   .view-id-news .more-link a {
@@ -2694,7 +2692,7 @@ ul.links.inline {
     font-weight: 300;
     font-style: italic;
     margin-bottom: 2rem;
-    line-height: 2.54rem;
+    line-height: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem; }
   .bean-standard .button {
