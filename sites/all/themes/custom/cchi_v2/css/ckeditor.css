@@ -7090,3 +7090,50 @@ body {
 
 .row {
   max-width: 100% !important; }
+
+h1 {
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.1em;
+  color: #222222;
+  margin-bottom: 1rem;
+  font-style: normal; }
+
+h2 {
+  font-family: "adelle", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 25px;
+  color: #777777;
+  line-height: 1.4em;
+  margin-bottom: 2rem; }
+
+h3 {
+  font-family: "adelle";
+  font-weight: 300;
+  font-size: 19px;
+  font-style: italic;
+  color: #777777;
+  line-height: 1.5em;
+  margin-bottom: 1rem; }
+
+h4 {
+  font-family: "adelle";
+  font-weight: 300;
+  font-size: 19px;
+  font-style: italic;
+  color: #777777;
+  line-height: 1.5em;
+  margin-bottom: 1rem; }
+
+h5 {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
