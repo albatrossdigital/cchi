@@ -2415,6 +2415,8 @@ p a {
   margin-top: 2rem;
   padding-top: 0rem; }
 
+.view-id-events .body {
+  margin-top: 4rem; }
 .view-id-events .field-name-node-link {
   font-family: "adelle-sans";
   text-transform: uppercase;
@@ -2456,7 +2458,8 @@ p a {
   line-height: 1.5em;
   margin-bottom: 1rem;
   margin-top: -1rem;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  text-transform: none; }
 .view-id-events p:first-child {
   margin-top: -2rem; }
 .view-id-events .medium-9 .field, .view-id-events .medium-9 p {
