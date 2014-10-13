@@ -36,7 +36,6 @@ CKEDITOR.plugins.add( 'widgettemplatemenu', {
         //if (editor.commands.FontAwesome != undefined) {
             buttonData.FontAwesome = 'Insert icon';
         //}
-        console.log(editor.commands);
 
         // Get the enabled menu items from editor.config
         if (editor.config.widgettemplatemenuButtons != undefined) {
@@ -60,8 +59,6 @@ CKEDITOR.plugins.add( 'widgettemplatemenu', {
                 icon: key
             }
         }
-        console.log(buttons);
-        console.log(buttonData);
 
         // Items must belong to a group.
         editor.addMenuGroup( 'widgettemplatemenu' );

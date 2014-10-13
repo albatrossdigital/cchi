@@ -1,4 +1,3 @@
-console.log(1);
 
 CKEDITOR.plugins.add( 'widgetfoundation', {
     requires: 'widget',
@@ -13,8 +12,6 @@ CKEDITOR.plugins.add( 'widgetfoundation', {
     },
 
     init: function( editor ) {
-
-        console.log(editor);
         
         // Configurable settings
         var allowedFull = editor.config.widgetFoundation_allowedFull != undefined ? editor.config.widgetFoundation_allowedFull :
@@ -39,7 +36,7 @@ CKEDITOR.plugins.add( 'widgetfoundation', {
             template:
                 '<div class="row two-col-left">' +
                     '<div class="columns small-12 medium-3 col-sidebar"><img src="http://placehold.it/300x250&text=Medium" /></div>' +
-                    '<div class="columns small-12 medium-9 col-main"><p>Content...</p></div>' +
+                    '<div class="columns small-12 medium-9 col-main"><p>Content</p></div>' +
                 '</div>',
 
             editables: {
@@ -67,7 +64,7 @@ CKEDITOR.plugins.add( 'widgetfoundation', {
 
             template:
                 '<div class="row two-col-right">' +
-                    '<div class="columns small-12 medium-9 col-main"><p>Content...</p></div>' +
+                    '<div class="columns small-12 medium-9 col-main"><p>Content</p></div>' +
                     '<div class="columns small-12 medium-3 col-sidebar"><img src="http://placehold.it/300x250&text=Medium" /></div>' +
                 '</div>',
 
@@ -187,7 +184,6 @@ CKEDITOR.plugins.add( 'widgetfoundation', {
  
                 var name = this.data.name != undefined ? this.data.name : 'accordion';
                 var count = this.data.count != undefined ? this.data.count : 0;
-                console.log(count);
                 //@todo: var prevCount = this.data.prevCount != undefined ? this.data.prevCount : 
 
                 // Add rows
