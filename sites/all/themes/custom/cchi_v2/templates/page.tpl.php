@@ -89,7 +89,7 @@
       <!--.l-header-region -->
       <section class="l-button_menu-region">
         <div class="row">
-          <div class="medium-7 columns right">
+          <div class="medium-9 columns right">
             <?php print render($page['button_menu']); ?>
           </div>
         </div>
