@@ -139,7 +139,12 @@ hr
 p 
   a
     color: $blue
-  
+    
+.field-name-node-link
+  +h5-style
+  +link
+  margin-top: 1.5rem
+  padding-bottom: 1.5rem
 
 //sidebar
 
@@ -228,12 +233,6 @@ p
   
   .body
     margin-top: 4rem
-
-  .field-name-node-link
-    +h5-style
-    +link
-    margin-top: 1.5rem
-    padding-bottom: 1.5rem
   
   .group-left
     +h5-style
@@ -389,82 +388,17 @@ ul.links.inline
   display: inline
 
       
-//footer
 
-.l-footer-sections
-  margin-top: 4rem
-  .panel
-    height: 60px
-  .button
-    background-color: $blue
-    &:hover
-      background-color: $blue-light
-      a
-        color: $blue
-    a
-      color: $white
-      +menu-font
+  
+    
+  
+//front
+.front
+  .field-name-node-link
+    display:none
 
     
-  .block-menu-block-3
-    margin-top: -5rem
-    padding-bottom: 0.5rem
-    ul
-      margin-bottom: 2rem
-      margin-top: -0.5rem
-      li
-        display: inline-block
-        padding-right: 1.6rem
-        a
-          +menu-font
-          color: $blue
-          padding-right: 1rem
-    
-          
-      .active-trail
-        background-color: transparent
-        margin-right: 0
-        color: $black
-        
-  
-  .block-block-2
-    p
-      +h5-style
-      a
-        font-weight: 700
-        color: $gray-dark
-        
-.block-bean-member-login-button
-  +h5-style
-  
-.block-menu-menu-share-footer
-  ul
-    display: inline-block
-    li
-      +no-bullets
-      margin-left: -1rem
-      margin-right: 0.5rem
-      
-       
-      a
-        +icon(search)
-        color: transparent
-        margin-left: -4rem
-        margin-right: 4rem
-  
-     
-        &:before
-          color: $primary-color
-          
-      
-  
-    
-  
 //mission block on home page//
-  
-
-
-
 .bean-standard
   background-color: #fafafa
   padding: 4rem 
