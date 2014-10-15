@@ -2919,7 +2919,7 @@ div.tweet-author-wrapper {
   line-height: 1.4em;
   margin-bottom: 2rem; }
 
-.label-inline h5 {
+div.label-inline {
   font-family: "adelle-sans";
   text-transform: uppercase;
   letter-spacing: 1px;
