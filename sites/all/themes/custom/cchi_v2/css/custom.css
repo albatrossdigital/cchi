@@ -2754,7 +2754,7 @@ ul.links.inline {
     box-shadow: 0px 2px 3px #cccccc;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
-    margin-left: 1rem; }
+    margin-left: 0.75rem; }
     .bean-standard .button:hover {
       background-color: #e3f2fd;
       color: #01579b;
@@ -2789,22 +2789,30 @@ ul.links.inline {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem; }
 
+div.button.custom {
+  margin-top: -0.5rem;
+  margin-left: 1rem; }
+
 .fill {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   background: #f2f2f2;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  width: 425px;
+  padding: 1rem; }
   .fill h2 {
-    color: #01579b; }
-  .fill .medium-6 {
-    width: 95%; }
+    color: #01579b;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
+    padding-left: 1rem; }
+  .fill .medium-5 {
+    width: 100%; }
 
 .fill.first {
-  margin-left: 1rem;
-  margini-right: 1rem; }
+  margin-left: 0.5rem; }
 
 .fill.second {
-  margin-right: 1rem; }
+  margin-right: 0.5rem; }
 
 div.footer-second {
   width: 10%;
