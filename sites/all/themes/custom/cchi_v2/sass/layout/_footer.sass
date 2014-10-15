@@ -1,1 +1,86 @@
 // Non-modular or client styles for .l-footer region.
+
+//footer
+
+.l-footer-sections
+  margin-top: 4rem
+  .panel
+    height: 60px
+  .button
+    background-color: $blue
+    &:hover
+      background-color: $blue-light
+      a
+        color: $blue
+    a
+      color: $white
+      +menu-font
+
+    
+  .block-menu-block-3
+    margin-top: -5rem
+    padding-bottom: 0.5rem
+    ul
+      margin-bottom: 2rem
+      margin-top: -0.5rem
+      li
+        display: inline-block
+        padding-right: 1.6rem
+        a
+          +menu-font
+          color: $blue
+          padding-right: 1rem
+    
+          
+      .active-trail
+        background-color: transparent
+        margin-right: 0
+        color: $black
+        
+  
+  .block-block-2
+    p
+      +h5-style
+      a
+        font-weight: 700
+        color: $gray-dark
+        
+.block-bean-member-login-button
+  +h5-style
+  
+.block-menu-menu-share-footer
+  ul
+    display: inline-block
+    margin-left: -3rem
+    li
+      +no-bullets
+      font-size: 1.3rem
+      padding-right: 0.5rem
+      
+      
+       
+      a
+        +icon(linkedin)
+        color: transparent
+        margin-left: 0.5rem
+      
+      
+
+        &:before
+          color: $primary-color  
+    li.first
+      a
+        +icon(facebook)
+        margin-right: 0.5rem
+        &:before
+          color: $primary-color
+      
+    li.last
+      a
+        +icon(youtube-play)
+
+        &:before
+          color: $primary-color
+          
+          
+      
