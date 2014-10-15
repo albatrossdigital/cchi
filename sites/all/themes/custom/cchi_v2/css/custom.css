@@ -2919,6 +2919,17 @@ div.tweet-author-wrapper {
   line-height: 1.4em;
   margin-bottom: 2rem; }
 
+.label-inline h5 {
+  font-family: "adelle-sans";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  color: #777777;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
 .block-bean-media-release-contact {
   font-family: "adelle", serif;
   font-weight: 300;
