@@ -2260,7 +2260,8 @@ h1, h2, h3, h4, h5, h6, p, .field-name-body, .field-name-field-date, a, .views-f
     font-size: 25px;
     color: #222222;
     font-style: normal;
-    color: #1976d2; }
+    color: #1976d2;
+    padding-right: 2rem; }
   .orbit-container .button {
     font-family: "adelle-sans";
     text-transform: uppercase;
@@ -2285,6 +2286,9 @@ h1, h2, h3, h4, h5, h6, p, .field-name-body, .field-name-field-date, a, .views-f
       border-radius: 0.5rem;
       padding-top: 0.8rem;
       padding-bottom: 0.8rem; }
+  .orbit-container .orbit-next, .orbit-container .orbit-prev {
+    background-color: #777;
+    opacity: 0.4; }
 
 h1#page-title.title {
   margin-left: 70.5 rem;
