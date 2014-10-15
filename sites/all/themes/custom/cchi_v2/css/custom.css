@@ -1703,7 +1703,7 @@ fa-bars {
     .l-header li a:hover {
       color: #e3f2fd; }
   .l-header li a.active-trail.active {
-    color: #e3f2fd; }
+    color: #90caf9; }
 
 .breadcrumbs {
   display: none; }
@@ -2320,6 +2320,9 @@ hr {
 .sidebar-second .main, .two-sidebars .main {
   padding-right: 3rem;
   padding-left: 1rem; }
+
+.node-type-page h1#page-title.title {
+  width: 165%; }
 
 p a {
   color: #01579b; }
