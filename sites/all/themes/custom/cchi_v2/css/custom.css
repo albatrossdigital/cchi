@@ -2943,6 +2943,13 @@ div.label-inline {
   padding-left: 1.3rem;
   padding-right: 0.5rem; }
 
+.node-type-blog-post #comments h2 {
+  font-family: "adelle-sans", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #222222;
+  font-style: normal; }
+
 @media only screen and (min-width:62.125em) and (max-width:76.25em) {
   .l-button_menu-region div.medium-7.columns.right {
     background-color: red;
