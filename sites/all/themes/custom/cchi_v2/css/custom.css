@@ -1569,7 +1569,7 @@ a.s-button:before {
   display: none; }
 
 div.form-type-password-confirm .description {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "adelle", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal; }
 
@@ -2384,6 +2384,14 @@ h1, h2, h3, h4, h5, h6, p, .field-name-body, .field-name-field-date, a, .views-f
     background-color: #777;
     opacity: 0.4; }
 
+li {
+  font-family: "adelle", serif;
+  font-weight: 300;
+  font-size: 19px;
+  color: #222222;
+  line-height: 1.5em;
+  margin-bottom: 1rem; }
+
 h1#page-title.title {
   margin-left: 70.5 rem;
   padding-bottom: 1rem; }
@@ -2792,10 +2800,6 @@ ul.links.inline {
 div.button.custom {
   margin-top: -0.5rem;
   margin-left: 1rem; }
-
-.top-pad {
-  padding-top: 1rem;
-  padding-bottom: 1.5rem; }
 
 .fill {
   margin-bottom: 1.25rem;
