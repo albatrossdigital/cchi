@@ -2792,11 +2792,17 @@ ul.links.inline {
 .fill {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  margin-top: 4rem;
+  margin-right: 1rem; }
+  .fill h2 {
+    color: #01579b; }
 
 .fill.first {
-  padding-left: 2rem;
-  padding-right: 2rem; }
+  margin-left: 2rem; }
+
+.fill.second {
+  margin-right: 2rem; }
 
 div.footer-second {
   width: 10%;
