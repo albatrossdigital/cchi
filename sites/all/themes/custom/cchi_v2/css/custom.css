@@ -2796,6 +2796,8 @@ ul.links.inline {
   margin-top: 4rem; }
   .fill h2 {
     color: #01579b; }
+  .fill .medium-6 {
+    width: 95%; }
 
 .fill.first {
   margin-left: 1rem;
