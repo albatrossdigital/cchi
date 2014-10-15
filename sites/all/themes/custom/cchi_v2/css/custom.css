@@ -2764,7 +2764,7 @@ ul.links.inline {
       padding-top: 0.8rem;
       padding-bottom: 0.8rem; }
 
-.custom-button {
+.custom {
   font-family: "adelle-sans";
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -2780,7 +2780,7 @@ ul.links.inline {
   box-shadow: 0px 2px 3px #cccccc;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem; }
-  .custom-button:hover {
+  .custom:hover {
     background-color: #e3f2fd;
     color: #01579b;
     margin-top: 0.25rem;
@@ -2793,6 +2793,10 @@ ul.links.inline {
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   background: #f2f2f2; }
+
+.fill.first {
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 div.footer-second {
   width: 10%;
