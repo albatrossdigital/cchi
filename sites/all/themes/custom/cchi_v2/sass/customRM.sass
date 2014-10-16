@@ -79,23 +79,14 @@ h1, h2, h3, h4, h5, h6, p, .field-name-body, .field-name-field-date, a, .views-f
   p
     +h3-style
     color: #1976d2
-    padding-right: 2rem
   .button
     +custom-button
     &:hover
       +custom-button-hover
 
-  .orbit-next, .orbit-prev
-    background-color: $gray-dark
-    opacity: 0.4
-
 
 
 //global
-
-.body
-  li
-    +p-style
 
 h1#page-title.title
   margin-left: 70.5 rem
@@ -126,15 +117,11 @@ hr
   #page-title
     margin-left: -0.5rem
   .main
-    padding-right: 3rem
+    padding-right: 4rem
     padding-left: 1rem
       
-.node-type-page
-  h1#page-title.title
-    width: 165%
-      
 .body
-  //margin-top: 4rem // JEFF REMOVED
+  margin-top: 4rem
     
 //#main-content
  //.view
@@ -143,17 +130,8 @@ hr
 p 
   a
     color: $blue
-    
-.field-name-node-link
-  +h5-style
-  +link
-  margin-top: 1.5rem
-  padding-bottom: 1.5rem
+  
 
-
-    
-    
-    
 //sidebar
 
 .block-menu-block
@@ -188,7 +166,7 @@ p
       background-color: $yellow
       padding: 0.6rem 0 0.6rem 1rem
       margin-left: -1rem
-      margin-right: 2.4rem
+      margin-right: 2.8rem
       color: $black
       
       &:hover
@@ -211,10 +189,9 @@ p
       +h3-style
       +link
       margin-top: 1.5rem
-      margin-bottom: .3rem
-      
+        
   .field-name-field-subtitle
-    +h4-style
+    +h2-style
   .more-link
     padding-right: 4rem
     a
@@ -239,8 +216,12 @@ p
   
 .view-id-events
   
-  .body
-    margin-top: 4rem
+      
+  .field-name-node-link
+    +h5-style
+    +link
+    margin-top: 1.5rem
+    padding-bottom: 1.5rem
   
   .group-left
     +h5-style
@@ -256,7 +237,6 @@ p
     +h4-style
     margin-top: -1rem
     margin-bottom: 0
-    text-transform: none
     
   p
     &:first-child
@@ -313,7 +293,6 @@ p
 .node-event
   h1#page-title.title
     margin-top: 0rem
-    
         
   .field-name-field-location
     +h4-style
@@ -396,17 +375,60 @@ ul.links.inline
   display: inline
 
       
+//footer
 
+.l-footer-sections
+  margin-top: 4rem
+  .panel
+    height: 60px
+  .button
+    background-color: $blue
+    &:hover
+      background-color: $blue-light
+      a
+        color: $blue
+    a
+      color: $white
+      +menu-font
+
+    
+  .block-menu-block-3
+    margin-top: -5rem
+    padding-bottom: 0.5rem
+    ul
+      margin-bottom: 2rem
+      margin-top: -0.5rem
+      li
+        display: inline-block
+        padding-right: 1.6rem
+        a
+          +menu-font
+          color: $blue
+          padding-right: 1rem
+    
+          
+      .active-trail
+        background-color: transparent
+        margin-right: 0
+        color: $black
+        
   
+  .block-block-2
+    p
+      +h5-style
+      a
+        font-weight: 700
+        color: $gray-dark
+        
+.block-bean-member-login-button
+  +h5-style
     
   
-//front
-.front
-  .field-name-node-link
-    display:none
-
-    
 //mission block on home page//
+  
+
+
+
 .bean-standard
   background-color: #fafafa
   padding: 4rem 
@@ -419,39 +441,10 @@ ul.links.inline
       
   .button
     +custom-button
-    margin-left: 0.75rem
+    margin-left: 1rem
     &:hover
       +custom-button-hover
   
-.custom
-  +custom-button
-  &:hover
-    +custom-button-hover
-div.button.custom
-  margin-top: -0.5rem
-  margin-left: 1rem
-
-  
-
-.fill
-  +fill
-  margin-top: 4rem
-  width: 425px
-  padding: 1rem
-    
-  h2
-    color: $blue
-    padding-top: 1.5rem
-    padding-bottom: 0
-    padding-left: 1rem
-  .medium-5
-    width: 100%
-  
-.fill.first
-  margin-left: 0.5rem
-.fill.second
-  margin-right: 0.5rem
-
   
       
   //share
@@ -607,9 +600,8 @@ div.tweet-author-wrapper
     
   .field-name-field-subtitle
     +h2-style
-
-div.label-inline
-  +h5-style
+  
+  
   
 .block-bean-media-release-contact
   +h2-style
@@ -617,97 +609,11 @@ div.label-inline
   padding: 1rem
   padding-left: 1.3rem
   padding-right: 0.5rem
-    
-.node-type-blog-post
-  #comments
-    h2
-      +h3-style
-      
-    
-// Media queries
-  
-  
-@media #{$medium-only}
-  h1#page-title.title
-    margin-left: -1%
-  
-  .l-button_menu-region
-    background-color: yellow
-      
-    div.medium-7.columns.right
-        background-color: red
-        margin-left: 20%  
-  
-  #main-menu
-    ul
-      margin: -10.6rem auto 0 8rem
-      float: right
-        
-      li
-        margin-left: 0.1rem
-          
-      li.last
-        padding-right: 3.5rem
-    
-      
-    
-@media #{$small-only}
-  h1#page-title.title
-   margin-top: -4rem
-   margin-left: 0
-  .l-button_menu-region
-    background-color: pink
-    .block-menu-menu-button-menu
-      .menu
-        li.leaf
-          margin-left: 0
-  .medium-6
-    margin-left: 4rem
-    #main-content
-      padding-right: 4rem
-  .medium-3
-    margin-left: 4rem
-    
-  .l-header 
-    background-color: black
-    ul
-      margin-left: 0
-      
-      #main-menu 
-        margin-top: 65.5rem
 
-    .top-bar
-      background-color: $black
-      margin-top: 10rem
-  ul#main-menu.main-nav.left
-    padding-top: 10rem
-    background-color: red
-  
 
-  div.orbit-container
-    orbit-helper-processed
-      padding-bottom: 0
-      margin-bottom: 0
-    a.orbit-next, a.orbit-prev
-      display: block
-      margin-top: -12rem
-  .group-right
-    padding-top: 2rem
 
-  .block-cchi-customizations-tweets
-    margin-top: 10rem
-    
-    
-    
-  .twitter-pull-block-wrapper
-    padding-left: 4rem
-    background-color: $gray
-    margin-right: -1rem
-    
-    
-    .tweets-pulled-listing
-      padding-left: 4rem
-      padding-right: 4rem
     
 
+      
+      
   

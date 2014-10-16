@@ -13,12 +13,12 @@ meta.foundation-mq-small {
   width: 0em; }
 
 meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:62.125em)/";
-  width: 62.125em; }
+  font-family: "/only screen and (min-width:54.375em)/";
+  width: 54.375em; }
 
 meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:76.3125em)/";
-  width: 76.3125em; }
+  font-family: "/only screen and (min-width:70.0625em)/";
+  width: 70.0625em; }
 
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:90.0625em)/";
@@ -1648,12 +1648,12 @@ div.form-type-password-confirm .description {
   margin-top: -1.3125rem; }
 
 meta.before-menu {
-  font-family: "/only screen and (max-width:62.0625em)/";
-  max-width: 62.0625em; }
+  font-family: "/only screen and (max-width:54.3125em)/";
+  max-width: 54.3125em; }
 
 meta.past-menu {
-  font-family: "/only screen and (min-width:62.125em)/";
-  min-width: 62.125em; }
+  font-family: "/only screen and (min-width:54.375em)/";
+  min-width: 54.375em; }
 
 html body.admin-menu {
   margin-top: 0px !important; }
@@ -1663,9 +1663,9 @@ html body.admin-menu {
 html, body {
   max-width: 100% Z; }
 
-@media only screen and (min-width:62.125em) { }
+@media only screen and (min-width:54.375em) { }
 
-@media only screen and (min-width:62.125em) {
+@media only screen and (min-width:54.375em) {
   .move-left > .inner-wrap {
     -ms-transform: translate(0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -1715,7 +1715,22 @@ fa-bars {
   z-index: 99; }
 
 .searchblock {
-  display: none; }
+  padding-top: 0.75rem;
+  margin-bottom: 2rem; }
+  .searchblock #edit-submit {
+    z-index: 10;
+    position: relative;
+    width: 5rem;
+    margin-left: -1.75rem; }
+
+#edit-search-block-form--2 {
+  position: relative;
+  z-index: 10;
+  width: 20rem;
+  margin-left: -15rem; }
+
+a.s-button.open {
+  background-color: yellow; }
 
 .block-search {
   float: right;
@@ -2132,7 +2147,7 @@ form.confirmation .form-submit {
   margin-right: 0.625rem;
   margin-top: 1.25rem; }
 
-@media only screen and (min-width:62.125em) {
+@media only screen and (min-width:54.375em) {
   .page-user div.main > form > div > .form-item {
     max-width: 50%;
     clear: left; }
@@ -2177,11 +2192,11 @@ form.confirmation .form-submit {
 .views-content > h3, .grouping-content > h2 {
   margin-bottom: 0.75rem; }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 54.3125em) {
   .views-exposed-widgets > [class*='views-widget-filter-'] {
     width: 100% !important; } }
 
-@media only screen and (min-width:62.125em) {
+@media only screen and (min-width:54.375em) {
   .views-reset-button button {
     margin-left: -0.9375rem; } }
 
@@ -2204,13 +2219,13 @@ form.confirmation .form-submit {
 .top-bar li.has-dropdown > a {
   padding: 0 22.5px !important; }
 
-@media only screen and (max-width:62.0625em) {
+@media only screen and (max-width:54.3125em) {
   .top-bar {
     overflow: visible; }
   .user-menu-wrap li {
     padding-top: 0.25rem !important; } }
 
-@media only screen and (min-width:62.125em) {
+@media only screen and (min-width:54.375em) {
   .main-nav > li > a {
     text-transform: uppercase;
     letter-spacing: 0.05em; }
@@ -2275,7 +2290,7 @@ form.confirmation .form-submit {
   width: 100%;
   z-index: 1; }
 
-@media only screen and (max-width:62.0625em) {
+@media only screen and (max-width:54.3125em) {
   .top-bar {
     position: static !important; }
   .l-header-region {
@@ -2290,11 +2305,11 @@ form.confirmation .form-submit {
       padding-right: 0.8125rem;
       overflow: hidden; } }
 
-@media only screen and (min-width:40.0625em) and (max-width:62.0625em) {
+@media only screen and (min-width:54.375em) and (max-width:54.3125em) {
   .menu-toggle {
     left: 3.625rem; } }
 
-@media only screen and (min-width:62.125em) {
+@media only screen and (min-width:54.375em) {
   .menu-toggle, .left-off-canvas-toggle, .left-off-canvas-menu .block-block-28 {
     display: none; } }
 
@@ -2384,7 +2399,7 @@ h1, h2, h3, h4, h5, h6, p, .field-name-body, .field-name-field-date, a, .views-f
     background-color: #777;
     opacity: 0.4; }
 
-li {
+.body li {
   font-family: "adelle", serif;
   font-weight: 300;
   font-size: 19px;
@@ -3008,10 +3023,14 @@ div.label-inline {
   color: #222222;
   font-style: normal; }
 
-@media only screen and (min-width:62.125em) and (max-width:76.25em) {
-  .l-button_menu-region div.medium-7.columns.right {
-    background-color: red;
-    margin-left: 20%; }
+@media only screen and (min-width:54.375em) and (max-width:70em) {
+  h1#page-title.title {
+    margin-left: -1%; }
+  .l-button_menu-region {
+    background-color: yellow; }
+    .l-button_menu-region div.medium-7.columns.right {
+      background-color: red;
+      margin-left: 20%; }
   #main-menu ul {
     margin: -10.6rem auto 0 8rem;
     float: right; }
@@ -3019,3 +3038,47 @@ div.label-inline {
       margin-left: 0.1rem; }
     #main-menu ul li.last {
       padding-right: 3.5rem; } }
+
+@media only screen and (max-width: 54.3125em) {
+  h1#page-title.title {
+    margin-top: -4rem;
+    margin-left: 0; }
+  .l-button_menu-region {
+    background-color: pink; }
+    .l-button_menu-region .block-menu-menu-button-menu .menu li.leaf {
+      margin-left: 0; }
+  .medium-6 {
+    margin-left: 4rem; }
+    .medium-6 #main-content {
+      padding-right: 4rem; }
+  .medium-3 {
+    margin-left: 4rem; }
+  .l-header {
+    background-color: black; }
+    .l-header ul {
+      margin-left: 0; }
+      .l-header ul #main-menu {
+        margin-top: 65.5rem; }
+    .l-header .top-bar {
+      background-color: #333;
+      margin-top: 10rem; }
+  ul#main-menu.main-nav.left {
+    padding-top: 10rem;
+    background-color: red; }
+  div.orbit-container orbit-helper-processed {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  div.orbit-container a.orbit-next, div.orbit-container a.orbit-prev {
+    display: block;
+    margin-top: -12rem; }
+  .group-right {
+    padding-top: 2rem; }
+  .block-cchi-customizations-tweets {
+    margin-top: 10rem; }
+  .twitter-pull-block-wrapper {
+    padding-left: 4rem;
+    background-color: #fafafa;
+    margin-right: -1rem; }
+    .twitter-pull-block-wrapper .tweets-pulled-listing {
+      padding-left: 4rem;
+      padding-right: 4rem; } }
