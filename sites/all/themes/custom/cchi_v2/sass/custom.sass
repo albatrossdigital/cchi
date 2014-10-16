@@ -633,10 +633,6 @@ div.label-inline
   
   .l-button_menu-region
     background-color: yellow
-      
-    div.medium-7.columns.right
-        background-color: red
-        margin-left: 20%  
   
   #main-menu
     ul
@@ -655,36 +651,76 @@ div.label-inline
   h1#page-title.title
    margin-top: -4rem
    margin-left: 0
+  
+  .bean-standard
+    .field-name-field-description
+      font-size: 18px
+      margin-left: -2rem
+      margin-right: -3rem
+    
   .l-button_menu-region
-    background-color: pink
     .block-menu-menu-button-menu
       .menu
+        min-width: 290px
         li.leaf
           margin-left: 0
+          width: 80px
+          background: transparent
+          
+          a
+            color: transparent
+            background-color: transparent
+            border: transparent
+            box-shadow: none
+            
+            &:before
+              color: $blue
+              font-size: 2rem
+              float: left
+              padding: 0
+              margin: 0
+           
+
+
+
+      //li.last.leaf
+  
+    
+        
+        //a
+        //  padding-right: 0.5rem
+        //  margin: 0
+        //  color: $blue
+        //  font-size: 1rem
+          
   .medium-6
-    margin-left: 4rem
     #main-content
-      padding-right: 4rem
+      padding-right: 1rem
   .medium-3
-    margin-left: 4rem
+    margin-left: 1rem
     
   .l-header 
-    background-color: black
-    ul
-      margin-left: 0
-      
-      #main-menu 
-        margin-top: 65.5rem
+    background-color: $blue
 
     .top-bar
-      background-color: $black
+      background-color: $blue
       margin-top: 10rem
+      ul.title-area
+        margin-right: -1rem
   ul#main-menu.main-nav.left
-    padding-top: 10rem
+    padding-top: 16rem
     background-color: red
-  
+    .has-dropdown
+      margin-left: -0.4rem
+        
+  .logo
+    img
+      display: block
+      
 
   div.orbit-container
+    .medium-6
+      margin-left: 0
     orbit-helper-processed
       padding-bottom: 0
       margin-bottom: 0
