@@ -1922,7 +1922,7 @@ h6 {
       font-weight: 600;
       font-style: normal; }
   .l-footer-sections .block-menu-block-3 {
-    margin-top: -5rem;
+    margin-top: 1rem;
     padding-bottom: 0.5rem; }
     .l-footer-sections .block-menu-block-3 ul {
       margin-bottom: 2rem;
@@ -2448,7 +2448,7 @@ p a {
   margin-top: 1.5rem;
   padding-bottom: 1.5rem; }
 
-.block-menu-block h2 {
+aside .block-menu-block h2 {
   font-family: "adelle-sans";
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -2462,23 +2462,23 @@ p a {
   margin-bottom: -5.5rem;
   margin-left: -0.4rem;
   font-weight: 600; }
-.block-menu-block .menu-block-wrapper {
+aside .block-menu-block .menu-block-wrapper {
   margin-top: 5rem; }
-.block-menu-block ul {
+aside .block-menu-block ul {
   display: inline;
   list-style-type: none; }
-  .block-menu-block ul li {
+  aside .block-menu-block ul li {
     margin-bottom: 0.8rem;
     margin-left: -0.3rem; }
-  .block-menu-block ul a:hover {
+  aside .block-menu-block ul a:hover {
     color: #333; }
-  .block-menu-block ul .active-trail {
+  aside .block-menu-block ul .active-trail {
     background-color: #fdd835;
     padding: 0.6rem 0 0.6rem 1rem;
     margin-left: -1rem;
     margin-right: 2.4rem;
     color: #333; }
-    .block-menu-block ul .active-trail:hover {
+    aside .block-menu-block ul .active-trail:hover {
       background-color: #fdd835;
       height: auto;
       width: auto; }
@@ -2827,11 +2827,6 @@ div.button.custom {
 .fill.second {
   margin-right: 0.5rem; }
 
-div.footer-second {
-  width: 10%;
-  float: right;
-  margin-top: -4rem; }
-
 #share42 {
   border-color: transparent;
   background: transparent;
@@ -3016,8 +3011,6 @@ div.label-inline {
 @media only screen and (min-width:54.375em) and (max-width:76.25em) {
   h1#page-title.title {
     margin-left: -1%; }
-  .l-button_menu-region {
-    background-color: yellow; }
   #main-menu ul {
     margin: -10.6rem auto 0 8rem;
     float: right; }
@@ -3085,4 +3078,13 @@ div.label-inline {
     padding-left: 4rem;
     background-color: #fafafa;
     margin-right: -1rem;
-    padding-right: 4rem; } }
+    padding-right: 4rem; }
+  .l-footer-sections .block-menu-block-3 {
+    margin-left: 3rem; }
+    .l-footer-sections .block-menu-block-3 ul li {
+      display: block; }
+  .block-menu-menu-share-footer ul {
+    display: block;
+    min-width: 260px; }
+    .block-menu-menu-share-footer ul li {
+      margin-right: 0rem; } }
