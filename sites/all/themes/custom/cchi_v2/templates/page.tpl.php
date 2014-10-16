@@ -89,7 +89,7 @@
       <!--.l-header-region -->
       <section class="l-button_menu-region">
         <div class="row">
-          <div class="medium-9 columns right">
+          <div class="medium-9 small-12 columns right">
             <?php print render($page['button_menu']); ?>
           </div>
         </div>
@@ -213,13 +213,13 @@
     <section class="panel l-footer-sections">
       <div class="row">
         <?php if (!empty($page['footer_firstcolumn'])): ?>
-        <div class="footer-first medium-10 columns">
+        <div class="footer-first medium-10 small-12 columns">
           <?php print render($page['footer_firstcolumn']); ?>
         </div>
       </div>
       <?php endif; ?>
       <?php if (!empty($page['footer_secondcolumn'])): ?>
-        <div class="footer-second medium-3 columns">
+        <div class="footer-second medium-3 small-12 columns">
           <?php print render($page['footer_secondcolumn']); ?>
         </div>
       <?php endif; ?>
