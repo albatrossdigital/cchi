@@ -31,18 +31,14 @@
 ?>
 
     
-<div class="medium-1 columns right searchblock">
-    <a href="#" class="s-button" data-dropdown="drop"></a>
+<div class="searchblock">
+  <a href="#" class="s-button" data-dropdown="drop-search"></a>
   
-      <div id="drop" class="content f-dropdown" data-dropdown-content>  
-        <div class="container-inline">
-        <?php if (empty($variables['form']['#block']->subject)): ?>
-
-
+  <div id="drop-search" class="content f-dropdown" data-dropdown-content>  
+    <?php if (empty($variables['form']['#block']->subject)): ?>
         <h2 class="element-invisible"><?php print t('Search form'); ?></h2>
-            <?php endif; ?>
-            <?php print $search_form; ?>
-        </div>
-      </div>
-    </div>
+    <?php endif; ?>
+    <?php print $search_form; ?>
+  </div>
+</div>
   

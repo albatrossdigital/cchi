@@ -59,6 +59,7 @@
 
       <?php if ($alt_main_menu): ?>
         <nav id="main-menu" class="navigation" role="navigation">
+          <?php print render($page['header']); ?>
           <?php print ($alt_main_menu); ?>
         </nav> <!-- /#main-menu -->
       <?php endif; ?>
@@ -72,15 +73,6 @@
     </section>
     <?php endif; ?>
     <!-- End title, slogan and menu -->
-
-    <?php if (!empty($page['header'])): ?>
-      <!--.l-header-region -->
-      <section class="l-header-region row">
-          <?php print render($page['header']); ?>
-      
-      </section>
-      <!--/.l-header-region -->
-    <?php endif; ?>
 
   </header>
   <!--/.l-header -->

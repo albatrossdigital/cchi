@@ -71,38 +71,36 @@ fa-bars
   
 //*search dropdown/
 
-.searchblock
-  padding-top: 0.75rem
-  margin-bottom: 2rem
-
-  #edit-submit
-    z-index: 10
-    position: relative
-    width: 5rem
-    margin-left: -1.75rem
-      
-#edit-search-block-form--2
+#main-menu
   position: relative
-  z-index: 10
-  width: 20rem
-  margin-left: -15rem
 
-a.s-button.open
-  background-color: yellow
 
-.block-search
-  float: right
-  position: relative
-  top: 1px
-  z-index: 999
-  color: $yellow
-  background-color: red
-  display: none
-    
-a.s-button
-  +icon(search)
-  font-size: 1.2rem
-  color: $yellow
+  .searchblock
+    position: absolute
+    top: 0
+    right: $column-gutter
+    color: $yellow
+
+    a.s-button
+      +icon(search)
+      font-size: 1.2rem
+      color: $yellow
+
+    .f-dropdown
+      min-width: 300px
+      max-width: 300px
+
+      &.open
+        left: -270px !important
+        top: 36px !important
+
+        &:before,
+        &:after
+          left: 270px
+
+      .form-submit
+        width: auto
+
 
   
 /*button menu*/
