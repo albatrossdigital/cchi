@@ -1,0 +1,63 @@
+diff --git a/disqus.module b/disqus.module
+old mode 100644
+new mode 100755
+index 2efd1ac..0db1e08
+--- a/disqus.module
++++ b/disqus.module
+@@ -705,6 +705,56 @@ function _disqus_block_content($function, $options) {
+ }
+ 
+ /**
++ *  Implementation of hook_ds_fields_info().
++ */
++function disqus_ds_fields_info($entity_type) {
++  $fields = array();
++
++  $fields['node'] = array(
++    'disqus_comment' => array(
++      'title' => t('Disqus comments'),
++      'field_type' => DS_FIELD_TYPE_FUNCTION,
++      'function' => '_disqus_ds_comment',
++    ),
++    'disqus_comment_count' => array(
++      'title' => t('Disqus comment count'),
++      'field_type' => DS_FIELD_TYPE_FUNCTION,
++      'function' => '_disqus_ds_comment_count',
++    ),
++  );
++
++  return $fields;
++}
++
++
++/**
++ * Display the DS comments for a node
++ */
++function _disqus_ds_comment(array &$field) {
++  $entity = $field['entity'];
++  drupal_add_js(drupal_get_path('module', 'disqus') . '/disqus.js');
++  drupal_add_js(array('disqusComments' => $entity->disqus['domain']), 'setting');
++  $render = array(
++    '#type' => 'disqus',
++    '#disqus' => $entity->disqus,
++    '#access' => user_access('view disqus comments'),
++  );
++  return drupal_render($render);
++}
++
++
++/**
++ * Display the DS comment count for a node
++ */
++function _disqus_ds_comment_count(array &$field) {
++  $entity = $field['entity'];
++  drupal_add_js(drupal_get_path('module', 'disqus') . '/disqus.js');
++  drupal_add_js(array('disqusComments' => $entity->disqus['domain']), 'setting');
++  return l('', 'node/' . $entity->nid, array('attributes' => array('data-disqus-identifier' => 'node/' . $entity->nid), 'fragment' => 'disqus_thread'));
++}
++
++
++/**
+  * Implementation of hook_form_alter().
+  */
+ function disqus_form_alter(&$form, $form_state, $form_id) {
