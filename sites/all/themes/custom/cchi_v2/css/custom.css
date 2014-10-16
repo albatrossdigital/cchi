@@ -17,8 +17,8 @@ meta.foundation-mq-medium {
   width: 54.375em; }
 
 meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:70.0625em)/";
-  width: 70.0625em; }
+  font-family: "/only screen and (min-width:76.3125em)/";
+  width: 76.3125em; }
 
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:90.0625em)/";
@@ -2305,7 +2305,7 @@ form.confirmation .form-submit {
       padding-right: 0.8125rem;
       overflow: hidden; } }
 
-@media only screen and (min-width:54.375em) and (max-width:54.3125em) {
+@media only screen and (min-width:0.0625em) and (max-width:54.3125em) {
   .menu-toggle {
     left: 3.625rem; } }
 
@@ -2847,7 +2847,7 @@ div.footer-second {
   background: transparent;
   color: #01579b;
   padding: 0px;
-  margin-left: -6.2rem; }
+  margin-left: 0.5rem; }
   #share42:hover {
     background: transparent;
     border: 1px solid transparent;
@@ -3023,7 +3023,7 @@ div.label-inline {
   color: #222222;
   font-style: normal; }
 
-@media only screen and (min-width:54.375em) and (max-width:70em) {
+@media only screen and (min-width:54.375em) and (max-width:76.25em) {
   h1#page-title.title {
     margin-left: -1%; }
   .l-button_menu-region {
@@ -3078,7 +3078,5 @@ div.label-inline {
   .twitter-pull-block-wrapper {
     padding-left: 4rem;
     background-color: #fafafa;
-    margin-right: -1rem; }
-    .twitter-pull-block-wrapper .tweets-pulled-listing {
-      padding-left: 4rem;
-      padding-right: 4rem; } }
+    margin-right: -1rem;
+    padding-right: 4rem; } }
