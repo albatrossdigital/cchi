@@ -9,10 +9,10 @@
       <?php if ($top_bar_classes): ?>
       <div class="<?php print $top_bar_classes; ?>">
       <?php endif; ?>
+        <div class="left mobile-logo"><?php print $linked_logo; ?></div>
         <nav class="top-bar" data-topbar<?php print $top_bar_options; ?>>
           <ul class="title-area inner-wrap">
-            <li class="name"><h1><?php print $linked_site_name; ?></h1></li>
-            <li class="toggle-off-canvas menu-toggle"><a class="left-off-canvas-toggle" href="#"><span><?php print $top_bar_menu_text; ?></span> <i class="fa-bars"></i></a></li>
+            <li class="toggle-off-canvas menu-toggle right"><a class="left-off-canvas-toggle" href="#"><span><?php print $top_bar_menu_text; ?></span> <i class="fa-bars"></i></a></li>
           </ul>
           <section class="top-bar-section left-off-canvas-menu">
             <a class="left-off-canvas-toggle" href="#"><span><?php print t('Close'); ?></span> <i class="fa-times"></i></a>

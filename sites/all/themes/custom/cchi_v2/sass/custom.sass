@@ -658,7 +658,7 @@ div.label-inline
         min-width: 290px
         li.leaf
           margin-left: 0
-          width: 80px
+          width: 60px
           background: transparent
           
           a
@@ -699,18 +699,48 @@ div.label-inline
     .top-bar
       background-color: $blue
       margin-top: 10rem
+
       ul.title-area
         margin-right: -1rem
-  ul#main-menu.main-nav.left
-    padding-top: 16rem
-    background-color: red
-    .has-dropdown
-      margin-left: -0.4rem
+
+      li
+        a
+          background: transparent
+
+      .left-off-canvas-menu
+        padding-top: 3rem
+
+        ul
+          margin: 0
+          padding: 0
+
+          &#main-menu
+            width: 100%
+
+          li
+            padding: .5rem
+
+            a
+              padding: 0
+              background: none !important
+
+          li.has-dropdown.moved > .dropdown 
+            width: 100%
+            left: inherit
+            position: static !important
+            top: inherit
+            margin: 0
+            margin-left: 1rem
+
+
+    .mobile-logo
+      position: absolute
+      left: 10px
+
+      img
+        max-width: 100px
         
-  .logo
-    img
-      display: block
-      
+
 
   div.orbit-container
     .medium-6
