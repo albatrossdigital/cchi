@@ -149,10 +149,6 @@ p
   +link
   margin-top: 1.5rem
   padding-bottom: 1.5rem
-
-
-    
-    
     
 //sidebar
 aside
@@ -197,6 +193,11 @@ aside
           width: auto
     
 //content elements: NEWS View
+
+.group-left
+  .field-name-disqus-comment-count
+    a
+      +h5-style
 
 .view-id-news
   #page-title
@@ -696,11 +697,12 @@ div.label-inline
   .l-header 
     background-color: $blue
 
-    .top-bar
-      background-color: $blue
-      margin-top: 10rem
-      ul.title-area
-        margin-right: -1rem
+  .top-bar
+    background-color: $blue
+    margin-top: 10rem
+
+    ul.title-area
+      margin-right: -1rem
   ul#main-menu.main-nav.left
     padding-top: 16rem
     background-color: red
