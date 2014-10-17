@@ -1922,7 +1922,7 @@ h6 {
       font-weight: 600;
       font-style: normal; }
   .l-footer-sections .block-menu-block-3 {
-    margin-top: 1rem;
+    margin-top: -5rem;
     padding-bottom: 0.5rem; }
     .l-footer-sections .block-menu-block-3 ul {
       margin-bottom: 2rem;
@@ -2483,17 +2483,6 @@ aside .block-menu-block ul {
       height: auto;
       width: auto; }
 
-.group-left .field-name-disqus-comment-count a {
-  font-family: "adelle-sans";
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 14px;
-  font-weight: 600;
-  font-style: normal;
-  color: #777777;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem; }
-
 .view-id-news #page-title {
   margin-top: 1rem;
   padding-top: 0px; }
@@ -3042,7 +3031,7 @@ div.label-inline {
     min-width: 290px; }
     .l-button_menu-region .block-menu-menu-button-menu .menu li.leaf {
       margin-left: 0;
-      width: 80px;
+      width: 60px;
       background: transparent; }
       .l-button_menu-region .block-menu-menu-button-menu .menu li.leaf a {
         color: transparent;
@@ -3061,18 +3050,37 @@ div.label-inline {
     margin-left: 1rem; }
   .l-header {
     background-color: #01579b; }
-  .top-bar {
-    background-color: #01579b;
-    margin-top: 10rem; }
-    .top-bar ul.title-area {
-      margin-right: -1rem; }
-  ul#main-menu.main-nav.left {
-    padding-top: 16rem;
-    background-color: red; }
-    ul#main-menu.main-nav.left .has-dropdown {
-      margin-left: -0.4rem; }
-  .logo img {
-    display: block; }
+    .l-header .top-bar {
+      background-color: #01579b;
+      margin-top: 10rem; }
+      .l-header .top-bar ul.title-area {
+        margin-right: -1rem; }
+      .l-header .top-bar li a {
+        background: transparent; }
+      .l-header .top-bar .left-off-canvas-menu {
+        padding-top: 3rem; }
+        .l-header .top-bar .left-off-canvas-menu ul {
+          margin: 0;
+          padding: 0; }
+          .l-header .top-bar .left-off-canvas-menu ul#main-menu {
+            width: 100%; }
+          .l-header .top-bar .left-off-canvas-menu ul li {
+            padding: 0.5rem; }
+            .l-header .top-bar .left-off-canvas-menu ul li a {
+              padding: 0;
+              background: none !important; }
+          .l-header .top-bar .left-off-canvas-menu ul li.has-dropdown.moved > .dropdown {
+            width: 100%;
+            left: inherit;
+            position: static !important;
+            top: inherit;
+            margin: 0;
+            margin-left: 1rem; }
+    .l-header .mobile-logo {
+      position: absolute;
+      left: 10px; }
+      .l-header .mobile-logo img {
+        max-width: 100px; }
   div.orbit-container .medium-6 {
     margin-left: 0; }
   div.orbit-container orbit-helper-processed {
