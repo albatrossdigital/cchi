@@ -12,10 +12,10 @@
         <div class="left mobile-logo"><?php print $linked_logo; ?></div>
         <nav class="top-bar" data-topbar<?php print $top_bar_options; ?>>
           <ul class="title-area inner-wrap">
-            <li class="toggle-off-canvas menu-toggle right"><a class="left-off-canvas-toggle" href="#"><span><?php print $top_bar_menu_text; ?></span> <i class="fa-bars"></i></a></li>
+            <li class="toggle-off-canvas menu-toggle right"><a class="right-off-canvas-toggle" href="#"><span><?php print $top_bar_menu_text; ?></span> <i class="fa-bars"></i></a></li>
           </ul>
-          <section class="top-bar-section left-off-canvas-menu">
-            <a class="left-off-canvas-toggle" href="#"><span><?php print t('Close'); ?></span> <i class="fa-times"></i></a>
+          <section class="top-bar-section right-off-canvas-menu">
+            <a class="right-off-canvas-toggle" href="#"><span><?php print t('Close'); ?></span> <i class="fa-times"></i></a>
             <?php if ($top_bar_main_menu) :?>
               <?php print $top_bar_main_menu; ?>
             <?php endif; ?>

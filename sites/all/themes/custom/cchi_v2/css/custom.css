@@ -519,7 +519,7 @@ i[class^="fa"] {
 .fa-phone-square:before {
   content: "\f098"; }
 
-.share42-item:nth-child(2) a:before {
+.block-menu-menu-share-footer ul li a:before, .share42-item:nth-child(2) a:before {
   content: "\f099"; }
 
 .fa-twitter:before {
@@ -690,7 +690,7 @@ i[class^="fa"] {
 .fa-envelope:before {
   content: "\f0e0"; }
 
-.block-menu-menu-share-footer ul li a:before, .share42-item:nth-child(3) a:before {
+.share42-item:nth-child(3) a:before {
   content: "\f0e1"; }
 
 .fa-linkedin:before {
@@ -1939,7 +1939,7 @@ h6 {
           font-style: normal;
           color: #01579b;
           padding-right: 1rem; }
-      .l-footer-sections .block-menu-block-3 ul .active-trail {
+      .l-footer-sections .block-menu-block-3 ul .active-trail, .l-footer-sections .block-menu-block-3 ul .active {
         background-color: transparent;
         margin-right: 0;
         color: #333; }
@@ -1968,31 +1968,29 @@ h6 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
 
-.block-menu-menu-share-footer ul {
-  display: inline-block;
-  margin-left: -3rem; }
-  .block-menu-menu-share-footer ul li {
-    display: inline;
-    list-style-type: none;
-    font-size: 1.3rem;
-    padding-right: 0.5rem; }
-    .block-menu-menu-share-footer ul li a {
-      color: transparent;
-      margin-left: 0.5rem; }
-      .block-menu-menu-share-footer ul li a:before {
-        font-size: inherit; }
-      .block-menu-menu-share-footer ul li a:before {
-        color: #1976d2; }
-  .block-menu-menu-share-footer ul li.first a {
-    margin-right: 0.5rem; }
+.block-menu-menu-share-footer {
+  margin-left: 6rem;
+  width: 400px; }
+  .block-menu-menu-share-footer ul {
+    display: inline-block; }
+    .block-menu-menu-share-footer ul li {
+      display: inline;
+      list-style-type: none;
+      font-size: 1.3rem; }
+      .block-menu-menu-share-footer ul li a {
+        color: transparent; }
+        .block-menu-menu-share-footer ul li a:before {
+          font-size: inherit; }
+        .block-menu-menu-share-footer ul li a:before {
+          color: #1976d2; }
     .block-menu-menu-share-footer ul li.first a:before {
       font-size: inherit; }
     .block-menu-menu-share-footer ul li.first a:before {
       color: #1976d2; }
-  .block-menu-menu-share-footer ul li.last a:before {
-    font-size: inherit; }
-  .block-menu-menu-share-footer ul li.last a:before {
-    color: #1976d2; }
+    .block-menu-menu-share-footer ul li.last a:before {
+      font-size: inherit; }
+    .block-menu-menu-share-footer ul li.last a:before {
+      color: #1976d2; }
 
 .tabledrag-toggle-weight-wrapper {
   display: none; }
@@ -2448,40 +2446,42 @@ p a {
   margin-top: 1.5rem;
   padding-bottom: 1.5rem; }
 
-aside .block-menu-block h2 {
-  font-family: "adelle-sans";
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 14px;
-  font-weight: 600;
-  font-style: normal;
-  color: #777777;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 6rem;
-  margin-bottom: -5.5rem;
-  margin-left: -0.4rem;
-  font-weight: 600; }
-aside .block-menu-block .menu-block-wrapper {
-  margin-top: 5rem; }
-aside .block-menu-block ul {
-  display: inline;
-  list-style-type: none; }
-  aside .block-menu-block ul li {
-    margin-bottom: 0.8rem;
-    margin-left: -0.3rem; }
-  aside .block-menu-block ul a:hover {
-    color: #333; }
-  aside .block-menu-block ul .active-trail, aside .block-menu-block ul .active {
-    background-color: #fdd835;
-    padding: 0.6rem 0 0.6rem 1rem;
-    margin-left: -1rem;
-    margin-right: 2.4rem;
-    color: #333; }
-    aside .block-menu-block ul .active-trail:hover, aside .block-menu-block ul .active:hover {
+aside .block-menu-block {
+  font-family: "adelle-sans", sans-serif; }
+  aside .block-menu-block h2 {
+    font-family: "adelle-sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: #777777;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 6rem;
+    margin-bottom: -5.5rem;
+    margin-left: -0.4rem;
+    font-weight: 600; }
+  aside .block-menu-block .menu-block-wrapper {
+    margin-top: 5rem; }
+  aside .block-menu-block ul {
+    display: inline;
+    list-style-type: none; }
+    aside .block-menu-block ul li {
+      margin-bottom: 0.8rem;
+      margin-left: -0.3rem; }
+    aside .block-menu-block ul a:hover {
+      color: #333; }
+    aside .block-menu-block ul .active-trail, aside .block-menu-block ul .active {
       background-color: #fdd835;
-      height: auto;
-      width: auto; }
+      padding: 0.6rem 0 0.6rem 1rem;
+      margin-left: -1rem;
+      margin-right: 2.4rem;
+      color: #333; }
+      aside .block-menu-block ul .active-trail:hover, aside .block-menu-block ul .active:hover {
+        background-color: #fdd835;
+        height: auto;
+        width: auto; }
 
 .view-id-news #page-title {
   margin-top: 1rem;
@@ -2902,7 +2902,8 @@ div.button.custom {
   margin-left: 1.8rem;
   margin-top: 0.3rem;
   color: #777;
-  font-size: remCalc(16); }
+  font-size: remCalc(16);
+  font-family: "adelle-sans", sans-serif; }
   .tweets-pulled-listing li iframe {
     display: none; }
   .tweets-pulled-listing li:first-child iframe {
@@ -3061,26 +3062,25 @@ div.label-inline {
     margin-left: 1rem; }
   .l-header {
     background-color: #01579b; }
-    .l-header .top-bar {
+    .l-header nav.top-bar {
       background-color: #01579b;
       margin-top: 10rem; }
-      .l-header .top-bar ul.title-area {
-        margin-right: -1rem; }
-      .l-header .top-bar li a {
+      .l-header nav.top-bar li a {
         background: transparent; }
-      .l-header .top-bar .left-off-canvas-menu {
-        padding-top: 3rem; }
-        .l-header .top-bar .left-off-canvas-menu ul {
+      .l-header nav.top-bar .right-off-canvas-menu {
+        padding-top: 3rem;
+        background: #01467c; }
+        .l-header nav.top-bar .right-off-canvas-menu ul {
           margin: 0;
           padding: 0; }
-          .l-header .top-bar .left-off-canvas-menu ul#main-menu {
+          .l-header nav.top-bar .right-off-canvas-menu ul#main-menu {
             width: 100%; }
-          .l-header .top-bar .left-off-canvas-menu ul li {
+          .l-header nav.top-bar .right-off-canvas-menu ul li {
             padding: 0.5rem; }
-            .l-header .top-bar .left-off-canvas-menu ul li a {
+            .l-header nav.top-bar .right-off-canvas-menu ul li a {
               padding: 0;
               background: none !important; }
-          .l-header .top-bar .left-off-canvas-menu ul li.has-dropdown.moved > .dropdown {
+          .l-header nav.top-bar .right-off-canvas-menu ul li.has-dropdown.moved > .dropdown {
             width: 100%;
             left: inherit;
             position: static !important;

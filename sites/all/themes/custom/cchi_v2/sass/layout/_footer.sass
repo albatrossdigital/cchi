@@ -32,7 +32,7 @@
           padding-right: 1rem
     
           
-      .active-trail
+      .active-trail, .active
         background-color: transparent
         margin-right: 0
         color: $black
@@ -49,20 +49,19 @@
   +h5-style
   
 .block-menu-menu-share-footer
+  margin-left: 6rem
+  width: 400px
   ul
     display: inline-block
-    margin-left: -3rem
     li
       +no-bullets
       font-size: 1.3rem
-      padding-right: 0.5rem
       
       
        
       a
-        +icon(linkedin)
+        +icon(twitter)
         color: transparent
-        margin-left: 0.5rem
       
       
 
@@ -71,7 +70,6 @@
     li.first
       a
         +icon(facebook)
-        margin-right: 0.5rem
         &:before
           color: $primary-color
       
