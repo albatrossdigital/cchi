@@ -2472,13 +2472,13 @@ aside .block-menu-block ul {
     margin-left: -0.3rem; }
   aside .block-menu-block ul a:hover {
     color: #333; }
-  aside .block-menu-block ul .active-trail {
+  aside .block-menu-block ul .active-trail, aside .block-menu-block ul .active {
     background-color: #fdd835;
     padding: 0.6rem 0 0.6rem 1rem;
     margin-left: -1rem;
     margin-right: 2.4rem;
     color: #333; }
-    aside .block-menu-block ul .active-trail:hover {
+    aside .block-menu-block ul .active-trail:hover, aside .block-menu-block ul .active:hover {
       background-color: #fdd835;
       height: auto;
       width: auto; }
