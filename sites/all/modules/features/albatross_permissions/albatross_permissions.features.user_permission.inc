@@ -81,14 +81,6 @@ function albatross_permissions_user_default_permissions() {
     'module' => 'dashboard',
   );
 
-  // Exported permission: access overlay
-  $permissions['access overlay'] = array(
-    'name' => 'access overlay',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'overlay',
-  );
 
   // Exported permission: access own webform results
   $permissions['access own webform results'] = array(
