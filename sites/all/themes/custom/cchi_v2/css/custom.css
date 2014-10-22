@@ -519,13 +519,13 @@ i[class^="fa"] {
 .fa-phone-square:before {
   content: "\f098"; }
 
-.block-menu-menu-share-footer ul li a:before, .share42-item:nth-child(2) a:before {
+.block-menu-menu-share-footer ul li a:before, .share42-item:nth-child(1) a:before {
   content: "\f099"; }
 
 .fa-twitter:before {
   content: "\f099"; }
 
-.block-menu-menu-share-footer ul li.first a:before, .share42-item:nth-child(1) a:before {
+.block-menu-menu-share-footer ul li.first a:before, .share42-item:nth-child(2) a:before {
   content: "\f09a"; }
 
 .fa-facebook:before {
