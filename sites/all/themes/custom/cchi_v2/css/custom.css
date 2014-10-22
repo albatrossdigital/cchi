@@ -1833,10 +1833,10 @@ nav#main-menu.navigation {
 p {
   font-family: "adelle", serif;
   font-weight: 300;
-  font-size: 19px;
+  font-size: 18px;
   color: #222222;
-  line-height: 1.5em;
-  margin-bottom: 1rem; }
+  line-height: 1.7em;
+  margin-bottom: 1.3rem; }
   p a {
     color: #ff5722; }
     p a:hover {
@@ -3102,14 +3102,14 @@ div.label-inline {
     padding-right: 1rem; }
   .medium-3 {
     margin-left: 1rem; }
+  .top-bar ul li:hover:not(.has-form) > a {
+    background-color: #01579b;
+    background: #01579b; }
   nav.top-bar a.right-off-canvas-toggle {
-    color: red;
     position: fixed;
-    right: 20px; }
-    nav.top-bar a.right-off-canvas-toggle i.fa-bars:hover {
-      background-color: #01579b; }
+    right: 20px;
+    padding-top: 0.25rem; }
     nav.top-bar a.right-off-canvas-toggle span {
-      color: pink;
       margin-right: 1rem; }
   .right-off-canvas-menu i.fa-times {
     display: none; }
@@ -3117,10 +3117,18 @@ div.label-inline {
     display: none; }
   .right-off-canvas-menu li.leaf {
     margin-left: 1.2rem; }
+    .right-off-canvas-menu li.leaf .last {
+      color: red; }
   .right-off-canvas-menu li.first-expanded.has-dropdown.not-click {
     margin-left: -2rem; }
   .right-off-canvas-menu #secondary-menu {
     display: none; }
+  .right-off-canvas-menu li.js-generated, .right-off-canvas-menu li.parent-link.js-generated {
+    display: none; }
+  .right-off-canvas-menu ul.dropdown li.leaf a {
+    padding-right: 1.5rem; }
+  .right-off-canvas-menu ul.dropdown li.last.leaf a {
+    color: #fff; }
   .l-header {
     background-color: #01579b; }
     .l-header nav.top-bar {
