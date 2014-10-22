@@ -186,7 +186,9 @@ p
         +h4-style
 
 //events view
-
+.page-events, .page-events-past
+   h1#page-title
+    display: none
   
 .section-all-media
   h1#page-title.title
@@ -194,7 +196,6 @@ p
     padding-top: 0rem
   
 .view-id-events
-  
   .body
     margin-top: 4rem
   
@@ -604,7 +605,10 @@ div.label-inline
       
 .field-name-disqus-comment-count
   +h5-style
-      
+
+.page-all-media, .page-blog-post, .page-in-the-news, .page-story
+  h1#page-title
+    display: none
     
 // Media queries
   
@@ -661,6 +665,9 @@ div.label-inline
               float: left
               padding: 0
               margin: 0
+            
+          a.active-trail.active
+            color: transparent
            
 
 
@@ -680,7 +687,29 @@ div.label-inline
       padding-right: 1rem
   .medium-3
     margin-left: 1rem
-    
+
+  nav.top-bar
+    a.right-off-canvas-toggle
+      color: red
+      position: fixed
+      right: 20px
+      i.fa-bars
+        &:hover
+          background-color: $blue
+        
+      
+      span
+        color: pink
+        margin-right: 1rem
+        
+      
+  .right-off-canvas-menu
+    i.fa-times
+      display: none
+    a.right-off-canvas-toggle
+      span
+        display: none
+        
   .l-header 
     background-color: $blue
 
