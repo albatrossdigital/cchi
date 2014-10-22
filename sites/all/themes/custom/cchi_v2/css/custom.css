@@ -3115,6 +3115,12 @@ div.label-inline {
     display: none; }
   .right-off-canvas-menu a.right-off-canvas-toggle span {
     display: none; }
+  .right-off-canvas-menu li.leaf {
+    margin-left: 1.2rem; }
+  .right-off-canvas-menu li.first-expanded.has-dropdown.not-click {
+    margin-left: -2rem; }
+  .right-off-canvas-menu #secondary-menu {
+    display: none; }
   .l-header {
     background-color: #01579b; }
     .l-header nav.top-bar {
