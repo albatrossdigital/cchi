@@ -2007,29 +2007,49 @@ aside .block-menu-block {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
 
-.block-menu-menu-share-footer {
-  margin-left: 6rem;
-  width: 400px; }
-  .block-menu-menu-share-footer ul {
-    display: inline-block; }
-    .block-menu-menu-share-footer ul li {
-      display: inline;
-      list-style-type: none;
-      font-size: 1.3rem; }
-      .block-menu-menu-share-footer ul li a {
-        color: transparent; }
-        .block-menu-menu-share-footer ul li a:before {
-          font-size: inherit; }
-        .block-menu-menu-share-footer ul li a:before {
-          color: #1976d2; }
-    .block-menu-menu-share-footer ul li.first a:before {
-      font-size: inherit; }
-    .block-menu-menu-share-footer ul li.first a:before {
-      color: #1976d2; }
-    .block-menu-menu-share-footer ul li.last a:before {
-      font-size: inherit; }
-    .block-menu-menu-share-footer ul li.last a:before {
-      color: #1976d2; }
+.block-menu-menu-share-footer .leaf {
+  margin-left: -1rem;
+  margin-right: -1rem; }
+.block-menu-menu-share-footer ul {
+  display: inline-block;
+  float: right; }
+  .block-menu-menu-share-footer ul li {
+    display: inline;
+    list-style-type: none;
+    font-size: 1.3rem; }
+    .block-menu-menu-share-footer ul li a {
+      color: transparent; }
+      .block-menu-menu-share-footer ul li a:before {
+        font-size: inherit; }
+      .block-menu-menu-share-footer ul li a:before {
+        color: #1976d2; }
+  .block-menu-menu-share-footer ul li.first a:before {
+    font-size: inherit; }
+  .block-menu-menu-share-footer ul li.first a:before {
+    color: #1976d2; }
+  .block-menu-menu-share-footer ul li.last a:before {
+    font-size: inherit; }
+  .block-menu-menu-share-footer ul li.last a:before {
+    color: #1976d2; }
+
+div.footer-second.large-3 {
+  width: 100%;
+  float: right;
+  margin-top: -4rem;
+  margin-right: -4.3rem; }
+
+@media only screen and (max-width: 56.125em) {
+  div.footer-second.large-3 {
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media only screen and (min-width:56.1875em) and (max-width:76.25em) {
+  div.footer-second.large-3 {
+    margin-top: -2rem; }
+  div.footer-first.large-9 {
+    width: 115%; } }
 
 .tabledrag-toggle-weight-wrapper {
   display: none; }

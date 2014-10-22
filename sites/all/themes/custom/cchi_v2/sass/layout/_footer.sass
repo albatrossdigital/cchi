@@ -49,22 +49,18 @@
   +h5-style
   
 .block-menu-menu-share-footer
-  margin-left: 6rem
-  width: 400px
+  .leaf
+    margin-left: -1rem
+    margin-right: -1rem  
   ul
     display: inline-block
+    float: right
     li
       +no-bullets
-      font-size: 1.3rem
-      
-      
-       
+      font-size: 1.3rem   
       a
         +icon(twitter)
         color: transparent
-      
-      
-
         &:before
           color: $primary-color  
     li.first
@@ -79,6 +75,32 @@
 
         &:before
           color: $primary-color
+          
+div.footer-second.large-3
+  width: 100%
+  float: right
+  margin-top: -4rem
+  margin-right: -4.3rem
+      
+
+  
+    
+          
+  
+          
+          
+@media #{$small-only}
+  div.footer-second.large-3
+    margin-bottom: 0.25rem
+    margin-top: 0.25rem
+    margin-left: auto
+    margin-right: auto
+  
+@media #{$medium-only}
+  div.footer-second.large-3
+    margin-top: -2rem
+  div.footer-first.large-9
+    width: 115%
           
           
       

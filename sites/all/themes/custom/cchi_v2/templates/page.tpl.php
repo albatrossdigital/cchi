@@ -205,15 +205,15 @@
     <section class="panel l-footer-sections">
       <div class="row">
         <?php if (!empty($page['footer_firstcolumn'])): ?>
-        <div class="footer-first medium-10 small-12 columns">
+        <div class="footer-first large-9 medium-12 columns">
           <?php print render($page['footer_firstcolumn']); ?>
         </div>
-      </div>
       <?php endif; ?>
       <?php if (!empty($page['footer_secondcolumn'])): ?>
-        <div class="footer-second medium-3 small-12 columns">
+        <div class="footer-second large-3 medium-12 columns">
           <?php print render($page['footer_secondcolumn']); ?>
         </div>
+      </div>
       <?php endif; ?>
     
    
