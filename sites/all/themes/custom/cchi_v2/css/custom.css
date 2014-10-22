@@ -2476,17 +2476,18 @@ h1#page-title.title {
 hr {
   border-bottom-color: #e3f2fd; }
 
-.two-sidebars h1#page-title, .sidebar-first h1#page-title {
-  margin-left: -20.6rem; }
+.node-type-page h1#page-title.title {
+  width: 100%; }
+
+.two-sidebars h1#page-title.title, .sidebar-first h1#page-title.title {
+  margin-left: -20.6rem;
+  width: 165%; }
 
 .sidebar-second #page-title, .two-sidebars #page-title {
   margin-left: -0.5rem; }
 .sidebar-second .main, .two-sidebars .main {
   padding-right: 3rem;
   padding-left: 1rem; }
-
-.node-type-page h1#page-title.title {
-  width: 100%; }
 
 p a {
   color: #01579b; }
