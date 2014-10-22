@@ -2470,6 +2470,8 @@ hr {
 
 p a {
   color: #01579b; }
+  p a:hover {
+    color: #01467c; }
 
 .field-name-node-link {
   font-family: "adelle-sans";
