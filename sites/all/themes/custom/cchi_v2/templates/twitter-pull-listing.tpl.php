@@ -44,7 +44,7 @@
             <div class="tweet-author"><?php print l($tweet->username, 'https://twitter.com/' . $tweet->screenname); ?></div>
             <div class="tweet-screenname"><?php print l('@' . $tweet->screenname, 'https://twitter.com/' . $tweet->screenname); ?></div>
           </div>
-          <?php print l(t("Follow @$tweet->screenname"), 'https://twitter.com/' . $tweet->screenname, array('attributes'=> array(
+          <?php print l(t("Follow @$tweet->screenname"), 'https://twitter.com/' . $twitkey, array('attributes'=> array(
               'class' => array('twitter-follow-button'),
               'data-show-count' => 'false',
               'data-lang' => $language,
