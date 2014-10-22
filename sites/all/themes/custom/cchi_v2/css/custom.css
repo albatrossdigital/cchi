@@ -2366,12 +2366,12 @@ form.confirmation .form-submit {
 .views-row-last .node-story.node-teaser:after {
   border: 0; }
 
-h1, h2, h3, h4, h5, h6, p, .field-name-body, .field-name-field-date, a, .views-field-name, label, .tweet-text, .view-header, .field {
+h1, h2, h3, h4, h5, h6, p, li, .field-name-body, .field-name-field-date, a, .views-field-name, label, .tweet-text, .view-header, .field {
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out; }
-  .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6, .wf-active p, .wf-active .field-name-body, .wf-active .field-name-field-date, .wf-active a, .wf-active .views-field-name, .wf-active label, .wf-active .tweet-text, .wf-active .view-header, .wf-active .field {
+  .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6, .wf-active p, .wf-active li, .wf-active .field-name-body, .wf-active .field-name-field-date, .wf-active a, .wf-active .views-field-name, .wf-active label, .wf-active .tweet-text, .wf-active .view-header, .wf-active .field {
     opacity: 1; }
 
 .orbit-container {
@@ -2710,6 +2710,23 @@ div.twitter-pull-block-wrapper {
   margin-bottom: 1rem;
   font-style: normal;
   text-align: center; }
+
+.block-system-user-menu {
+  margin-left: 2rem; }
+  .block-system-user-menu h2.block-title {
+    font-family: "adelle-sans";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    color: #777777;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.9rem; }
+  .block-system-user-menu li {
+    font-family: "adelle-sans", sans-serif;
+    list-style-type: none; }
 
 div.view-content table {
   border-color: #fff; }

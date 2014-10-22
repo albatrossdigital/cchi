@@ -59,7 +59,7 @@
 // Typekit fade
 //------------------------------------------
 
-h1, h2, h3, h4, h5, h6, p, .field-name-body, .field-name-field-date, a, .views-field-name, label, .tweet-text, .view-header, .field
+h1, h2, h3, h4, h5, h6, p, li, .field-name-body, .field-name-field-date, a, .views-field-name, label, .tweet-text, .view-header, .field
  opacity: 0
  +transition (opacity 0.20s ease-in-out)
 
@@ -341,6 +341,15 @@ div.twitter-pull-block-wrapper
     h2
       +h1-style
       text-align: center
+        
+.block-system-user-menu
+  margin-left: 2rem
+  h2.block-title
+    +h5-style
+    margin-left: 0.9rem
+  li
+    font-family: $adelle-sans
+    list-style-type: none
         
         
         
