@@ -2733,9 +2733,11 @@ div.view-content table {
   div.view-content table img {
     padding-top: 1.5rem;
     padding-bottom: 1rem; }
-  div.view-content table td a {
-    font-family: "adelle-sans", sans-serif;
-    font-size: 1rem; }
+  div.view-content table td {
+    padding-right: 2rem; }
+    div.view-content table td a {
+      font-family: "adelle-sans", sans-serif;
+      font-size: 1rem; }
 
 .field-name-field-tags h2 {
   font-family: "adelle-sans";
@@ -3101,7 +3103,8 @@ div.label-inline {
         background: transparent; }
       .l-header nav.top-bar .right-off-canvas-menu {
         padding-top: 3rem;
-        background: #01467c; }
+        background: #01467c;
+        left: inherit !important; }
         .l-header nav.top-bar .right-off-canvas-menu ul {
           margin: 0;
           padding: 0; }
