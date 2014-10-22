@@ -687,19 +687,22 @@ div.label-inline
       padding-right: 1rem
   .medium-3
     margin-left: 1rem
+ 
+  .top-bar
+    ul
+      li
+        &:hover
+          &:not(.has-form) > a
+            background-color: $blue
+            background: $blue
 
   nav.top-bar
     a.right-off-canvas-toggle
-      color: red
       position: fixed
       right: 20px
-      i.fa-bars
-        &:hover
-          background-color: $blue
-        
+      padding-top: 0.25rem
       
       span
-        color: pink
         margin-right: 1rem
         
       
@@ -711,11 +714,22 @@ div.label-inline
         display: none
     li.leaf
       margin-left: 1.2rem
+      .last
+        color: red
     
     li.first-expanded.has-dropdown.not-click
       margin-left: -2rem
     #secondary-menu
       display: none
+    li.js-generated, li.parent-link.js-generated
+      display: none
+    ul.dropdown
+      li.leaf
+        a
+          padding-right: 1.5rem
+      li.last.leaf
+        a
+         color: $white
         
   .l-header 
     background-color: $blue
