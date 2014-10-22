@@ -2543,6 +2543,9 @@ p a {
     line-height: 1.5em;
     margin-bottom: 1rem; }
 
+.page-events h1#page-title, .page-events-past h1#page-title {
+  display: none; }
+
 .section-all-media h1#page-title.title {
   margin-top: 2rem;
   padding-top: 0rem; }
@@ -3052,6 +3055,9 @@ div.label-inline {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
 
+.page-all-media h1#page-title, .page-blog-post h1#page-title, .page-in-the-news h1#page-title, .page-story h1#page-title {
+  display: none; }
+
 @media only screen and (min-width:56.1875em) and (max-width:76.25em) {
   h1#page-title.title {
     margin-left: -1%; }
@@ -3090,10 +3096,25 @@ div.label-inline {
           float: left;
           padding: 0;
           margin: 0; }
+      .l-button_menu-region .block-menu-menu-button-menu .menu li.leaf a.active-trail.active {
+        color: transparent; }
   .medium-6 #main-content {
     padding-right: 1rem; }
   .medium-3 {
     margin-left: 1rem; }
+  nav.top-bar a.right-off-canvas-toggle {
+    color: red;
+    position: fixed;
+    right: 20px; }
+    nav.top-bar a.right-off-canvas-toggle i.fa-bars:hover {
+      background-color: #01579b; }
+    nav.top-bar a.right-off-canvas-toggle span {
+      color: pink;
+      margin-right: 1rem; }
+  .right-off-canvas-menu i.fa-times {
+    display: none; }
+  .right-off-canvas-menu a.right-off-canvas-toggle span {
+    display: none; }
   .l-header {
     background-color: #01579b; }
     .l-header nav.top-bar {
