@@ -1,1 +1,44 @@
 // Non-modular or client styles for asides or sidebars.
+
+//sidebar
+aside
+  .block-menu-block
+    font-family: $adelle-sans
+    h2
+      +h5-style
+      margin-top: 6rem
+      margin-bottom: -5.5rem
+      margin-left: -0.4rem
+      font-weight: 600
+
+
+    .menu-block-wrapper
+      margin-top: 5rem
+
+
+    ul
+      +no-bullets
+
+      li
+        margin-bottom: 0.8rem
+        margin-left: -0.3rem
+
+
+      a  
+        &:hover          
+          color: $black
+          //color: $black
+          //width: 241px
+          //height: 35px
+
+      .active-trail, .active
+        background-color: $yellow
+        padding: 0.6rem 0 0.6rem 1rem
+        margin-left: -1rem
+        margin-right: 2.4rem
+        color: $black
+
+        &:hover
+          background-color: $yellow
+          height: auto
+          width: auto
