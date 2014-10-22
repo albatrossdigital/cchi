@@ -2712,7 +2712,7 @@ div.twitter-pull-block-wrapper {
   text-align: center; }
 
 .block-system-user-menu {
-  margin-left: 2rem; }
+  margin-left: 1rem; }
   .block-system-user-menu h2.block-title {
     font-family: "adelle-sans";
     text-transform: uppercase;
@@ -2730,6 +2730,9 @@ div.twitter-pull-block-wrapper {
 
 div.view-content table {
   border-color: #fff; }
+  div.view-content table img {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem; }
   div.view-content table td a {
     font-family: "adelle-sans", sans-serif;
     font-size: 1rem; }
