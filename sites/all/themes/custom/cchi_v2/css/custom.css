@@ -13,8 +13,8 @@ meta.foundation-mq-small {
   width: 0em; }
 
 meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:54.375em)/";
-  width: 54.375em; }
+  font-family: "/only screen and (min-width:56.1875em)/";
+  width: 56.1875em; }
 
 meta.foundation-mq-large {
   font-family: "/only screen and (min-width:76.3125em)/";
@@ -1648,12 +1648,12 @@ div.form-type-password-confirm .description {
   margin-top: -1.3125rem; }
 
 meta.before-menu {
-  font-family: "/only screen and (max-width:54.3125em)/";
-  max-width: 54.3125em; }
+  font-family: "/only screen and (max-width:56.125em)/";
+  max-width: 56.125em; }
 
 meta.past-menu {
-  font-family: "/only screen and (min-width:54.375em)/";
-  min-width: 54.375em; }
+  font-family: "/only screen and (min-width:56.1875em)/";
+  min-width: 56.1875em; }
 
 html body.admin-menu {
   margin-top: 0px !important; }
@@ -1663,9 +1663,9 @@ html body.admin-menu {
 html, body {
   max-width: 100% Z; }
 
-@media only screen and (min-width:54.375em) { }
+@media only screen and (min-width:56.1875em) { }
 
-@media only screen and (min-width:54.375em) {
+@media only screen and (min-width:56.1875em) {
   .move-left > .inner-wrap {
     -ms-transform: translate(0, 0);
     -webkit-transform: translate3d(0, 0, 0);
@@ -1707,6 +1707,9 @@ fa-bars {
       color: #e3f2fd; }
   .l-header li a.active-trail.active {
     color: #90caf9; }
+
+nav#main-menu.navigation {
+  margin-left: 10rem; }
 
 .breadcrumbs {
   display: none; }
@@ -1815,7 +1818,6 @@ fa-bars {
       padding-left: 1rem;
       padding-top: 0.35rem; }
   .block-menu-menu-button-menu .menu li.last a {
-    padding-right: 2.5rem;
     margin-left: 0.5rem; }
     .block-menu-menu-button-menu .menu li.last a:before {
       font-size: inherit; }
@@ -2172,7 +2174,7 @@ form.confirmation .form-submit {
   margin-right: 0.625rem;
   margin-top: 1.25rem; }
 
-@media only screen and (min-width:54.375em) {
+@media only screen and (min-width:56.1875em) {
   .page-user div.main > form > div > .form-item {
     max-width: 50%;
     clear: left; }
@@ -2217,11 +2219,11 @@ form.confirmation .form-submit {
 .views-content > h3, .grouping-content > h2 {
   margin-bottom: 0.75rem; }
 
-@media only screen and (max-width: 54.3125em) {
+@media only screen and (max-width: 56.125em) {
   .views-exposed-widgets > [class*='views-widget-filter-'] {
     width: 100% !important; } }
 
-@media only screen and (min-width:54.375em) {
+@media only screen and (min-width:56.1875em) {
   .views-reset-button button {
     margin-left: -0.9375rem; } }
 
@@ -2244,13 +2246,13 @@ form.confirmation .form-submit {
 .top-bar li.has-dropdown > a {
   padding: 0 22.5px !important; }
 
-@media only screen and (max-width:54.3125em) {
+@media only screen and (max-width:56.125em) {
   .top-bar {
     overflow: visible; }
   .user-menu-wrap li {
     padding-top: 0.25rem !important; } }
 
-@media only screen and (min-width:54.375em) {
+@media only screen and (min-width:56.1875em) {
   .main-nav > li > a {
     text-transform: uppercase;
     letter-spacing: 0.05em; }
@@ -2315,7 +2317,7 @@ form.confirmation .form-submit {
   width: 100%;
   z-index: 1; }
 
-@media only screen and (max-width:54.3125em) {
+@media only screen and (max-width:56.125em) {
   .top-bar {
     position: static !important; }
   .l-header-region {
@@ -2330,11 +2332,11 @@ form.confirmation .form-submit {
       padding-right: 0.8125rem;
       overflow: hidden; } }
 
-@media only screen and (min-width:0.0625em) and (max-width:54.3125em) {
+@media only screen and (min-width:0.0625em) and (max-width:56.125em) {
   .menu-toggle {
     left: 3.625rem; } }
 
-@media only screen and (min-width:54.375em) {
+@media only screen and (min-width:56.1875em) {
   .menu-toggle, .left-off-canvas-toggle, .left-off-canvas-menu .block-block-28 {
     display: none; } }
 
@@ -2506,7 +2508,7 @@ p a {
   color: #1976d2;
   margin-top: 1.5rem;
   margin-bottom: 0.3rem; }
-.view-id-news .field-name-field-subtitle {
+.view-id-news .field-name-field-subtitle, .view-id-news div.field.field-name-field-subtitle {
   font-family: "adelle";
   font-weight: 300;
   font-size: 19px;
@@ -3026,18 +3028,20 @@ div.label-inline {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
 
-@media only screen and (min-width:54.375em) and (max-width:76.25em) {
+@media only screen and (min-width:56.1875em) and (max-width:76.25em) {
   h1#page-title.title {
     margin-left: -1%; }
   #main-menu ul {
-    margin: -10.6rem auto 0 8rem;
-    float: right; }
+    margin: -10.6rem 0 0 0rem;
+    position: relative;
+    left: 0;
+    z-index: 20; }
     #main-menu ul li {
       margin-left: 0.1rem; }
     #main-menu ul li.last {
       padding-right: 3.5rem; } }
 
-@media only screen and (max-width: 54.3125em) {
+@media only screen and (max-width: 56.125em) {
   h1#page-title.title {
     margin-top: -4rem;
     margin-left: 0; }
