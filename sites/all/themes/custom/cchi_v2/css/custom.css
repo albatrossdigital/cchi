@@ -3128,28 +3128,37 @@ div.label-inline {
     background: #01579b; }
   nav.top-bar a.right-off-canvas-toggle {
     position: fixed;
-    right: 20px;
+    right: 50px;
     padding-top: 0.25rem; }
     nav.top-bar a.right-off-canvas-toggle span {
       margin-right: 1rem; }
+  .l-header .hide-for-small {
+    display: block !important; }
+    .l-header .hide-for-small .logo, .l-header .hide-for-small .navigation .links, .l-header .hide-for-small .navigation h2 {
+      display: none; }
+    .l-header .hide-for-small .searchblock {
+      top: -28px !important;
+      right: 20px !important; }
+      .l-header .hide-for-small .searchblock a {
+        color: #fff; }
   .right-off-canvas-menu i.fa-times {
     display: none; }
   .right-off-canvas-menu a.right-off-canvas-toggle span {
     display: none; }
-  .right-off-canvas-menu li.leaf {
+  .right-off-canvas-menu li .leaf {
     margin-left: 1.2rem; }
-    .right-off-canvas-menu li.leaf .last {
+    .right-off-canvas-menu li .leaf .last {
       color: red; }
   .right-off-canvas-menu li.first-expanded.has-dropdown.not-click {
     margin-left: -2rem; }
   .right-off-canvas-menu #secondary-menu {
     display: none; }
-  .right-off-canvas-menu li.js-generated, .right-off-canvas-menu li.parent-link.js-generated {
-    display: none; }
   .right-off-canvas-menu ul.dropdown li.leaf a {
     padding-right: 1.5rem; }
-  .right-off-canvas-menu ul.dropdown li.last.leaf a {
+  .right-off-canvas-menu ul.dropdown li.leaf.last a {
     color: #fff; }
+  .right-off-canvas-menu ul.dropdown li.js-generated, .right-off-canvas-menu ul.dropdown li.show-for-small {
+    display: none !important; }
   .l-header {
     background-color: #01579b; }
     .l-header nav.top-bar {
@@ -3169,8 +3178,10 @@ div.label-inline {
           .l-header nav.top-bar .right-off-canvas-menu ul li {
             padding: 0.5rem; }
             .l-header nav.top-bar .right-off-canvas-menu ul li a {
-              padding: 0;
+              padding-left: 0.5rem !important;
               background: none !important; }
+              .l-header nav.top-bar .right-off-canvas-menu ul li a li a {
+                padding-left: 0 !important; }
           .l-header nav.top-bar .right-off-canvas-menu ul li.has-dropdown.moved > .dropdown {
             width: 100%;
             left: inherit;

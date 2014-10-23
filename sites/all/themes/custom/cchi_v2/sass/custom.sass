@@ -135,13 +135,6 @@ hr
     padding-left: 1rem
       
 
-      
-.body
-  //margin-top: 4rem // JEFF REMOVED
-    
-//#main-content
- //.view
-  //margin-top: 4rem
     
 p 
   a
@@ -702,38 +695,65 @@ div.label-inline
   nav.top-bar
     a.right-off-canvas-toggle
       position: fixed
-      right: 20px
+      right: 50px
       padding-top: 0.25rem
       
       span
         margin-right: 1rem
+
+
+  .l-header
+    .hide-for-small
+      display: block !important
+
+      .logo,
+      .navigation .links,
+      .navigation h2
+        display: none
+
+      .searchblock
+        top: -28px !important
+        right: 20px !important
+
+        a
+          color: $white
         
       
   .right-off-canvas-menu
     i.fa-times
       display: none
+
     a.right-off-canvas-toggle
       span
         display: none
-    li.leaf
-      margin-left: 1.2rem
-      .last
-        color: red
+
+    li
+      .leaf
+        margin-left: 1.2rem
+        .last
+          color: red
     
-    li.first-expanded.has-dropdown.not-click
-      margin-left: -2rem
+      &.first-expanded.has-dropdown.not-click
+        margin-left: -2rem
+
     #secondary-menu
       display: none
-    li.js-generated, li.parent-link.js-generated
-      display: none
+
     ul.dropdown
-      li.leaf
-        a
-          padding-right: 1.5rem
-      li.last.leaf
-        a
-         color: $white
-        
+
+      li
+        &.leaf
+          a
+            padding-right: 1.5rem
+
+          &.last
+            a
+             color: $white
+
+        &.js-generated,
+        &.show-for-small
+          display: none !important
+          
   .l-header 
     background-color: $blue
 
@@ -761,8 +781,11 @@ div.label-inline
             padding: .5rem
 
             a
-              padding: 0
+              padding-left: .5rem !important
               background: none !important
+
+              li a
+                padding-left: 0 !important
 
           li.has-dropdown.moved > .dropdown 
             width: 100%
