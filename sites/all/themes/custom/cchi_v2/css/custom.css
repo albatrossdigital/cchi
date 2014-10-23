@@ -3084,6 +3084,9 @@ div.label-inline {
     margin-top: -4rem;
     margin-left: 0;
     font-size: 2.25rem; }
+  .two-sidebars h1#page-title.title, .sidebar-first h1#page-title.title {
+    margin-left: 0rem;
+    width: 100%; }
   .bean-standard .field-name-field-description {
     font-size: 18px;
     margin-left: -2rem;
