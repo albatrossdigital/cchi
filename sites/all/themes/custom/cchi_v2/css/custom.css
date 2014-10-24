@@ -1943,6 +1943,10 @@ aside .block-menu-block {
         height: auto;
         width: auto; }
 
+@media only screen and (max-width: 56.125em) {
+  aside .block-menu-block {
+    margin-left: 2rem; } }
+
 .l-footer-sections {
   margin-top: 4rem; }
   .l-footer-sections .panel {
