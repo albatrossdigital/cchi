@@ -49,6 +49,10 @@ function cchi_v2_preprocess_page(&$vars) {
     $vars['sidebar_first_grid'] = '';
     $vars['sidebar_sec_grid'] = '';
   }
+
+  $vars['top_bar_secondary_menu'] = drupal_render($vars['page']['button_menu']['menu_menu-button-menu']);
+  $vars['top_bar_secondary_menu'] = str_replace(array('<section', '</section', 'block-menu-menu-button-menu'), array('<div', '</div', 'submenu'), $vars['top_bar_secondary_menu']);
+  dpm($vars['top_bar_secondary_menu'] );
 }
 
 /**

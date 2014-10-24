@@ -14,9 +14,9 @@
             <li class="toggle-off-canvas menu-toggle right"><a class="right-off-canvas-toggle" href="#"><span><?php print $top_bar_menu_text; ?></span> <i class="fa-bars"></i></a></li>
           </ul>
           <section class="top-bar-section right-off-canvas-menu">
-            <ul><li>
+            <ul><li class="title">
               Sections
-              <a class="right-off-canvas-toggle right" href="#"><span>&#215;</span></a>
+              <a class="right-off-canvas-toggle right" href="#">&#215;</a>
             </li></ul>
             
             <?php if ($top_bar_main_menu) :?>
@@ -25,7 +25,6 @@
             <?php if ($top_bar_secondary_menu) :?>
               <?php print $top_bar_secondary_menu; ?>
             <?php endif; ?>
-            <?php print render($page['topbar']); ?>
             
           </section>
         </nav>

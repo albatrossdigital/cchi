@@ -3116,7 +3116,6 @@ div.label-inline {
     margin-left: -2rem;
     margin-right: -3rem; }
   .l-button_menu-region {
-    position: fixed;
     top: 35px;
     z-index: 699; }
     .l-button_menu-region .block-menu-menu-button-menu .menu {
@@ -3163,16 +3162,36 @@ div.label-inline {
         color: #fff; }
   .right-off-canvas-menu i.fa-times {
     display: none; }
-  .right-off-canvas-menu a.right-off-canvas-toggle {
-    position: relative !important;
-    font-size: 1.875rem;
-    color: #fff; }
+  .right-off-canvas-menu li.title {
+    color: #fff;
+    height: 2.75rem;
+    background-color: #01528f;
+    position: relative;
+    font-family: "adelle-sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 1rem !important; }
+    .right-off-canvas-menu li.title a.right-off-canvas-toggle {
+      position: absolute;
+      font-size: 1.875rem;
+      color: #fff;
+      line-height: 12px;
+      right: 1rem; }
   .right-off-canvas-menu li .leaf {
     margin-left: 1.2rem; }
-    .right-off-canvas-menu li .leaf .last {
-      color: red; }
   .right-off-canvas-menu li.first-expanded.has-dropdown.not-click {
     margin-left: -2rem; }
+  .right-off-canvas-menu #main-menu {
+    padding-bottom: 1rem; }
+    .right-off-canvas-menu #main-menu li.last a {
+      color: #fff !important; }
+  .right-off-canvas-menu .submenu {
+    padding-top: 1rem;
+    display: block;
+    border-top: 1px solid #1976d2;
+    clear: both; }
+    .right-off-canvas-menu .submenu a {
+      color: #fdd835; }
   .right-off-canvas-menu #secondary-menu {
     display: none; }
   .right-off-canvas-menu ul.dropdown li.leaf a {
@@ -3186,12 +3205,9 @@ div.label-inline {
     position: relative;
     left: 1rem;
     z-index: 600; }
-  .page.off-canvas-wrap.move-left .l-header {
-    position: initial; }
   .l-header {
     background-color: #01579b;
     width: 100%;
-    position: fixed;
     top: 0px;
     z-index: 999; }
     .l-header nav.top-bar {

@@ -671,7 +671,7 @@ div.label-inline
       margin-right: -3rem
     
   .l-button_menu-region
-    position: fixed
+    //position: fixed
     top: 35px
     z-index: 699
     
@@ -759,19 +759,47 @@ div.label-inline
     i.fa-times
       display: none
 
-    a.right-off-canvas-toggle
-      position: relative !important
-      font-size: rem-calc(30)
-      color: $white
-
     li
+      &.title
+        color: $white
+        height: rem-calc(44)
+        background-color: scale-color($blue-dark, $lightness: 5%);
+        position: relative
+        font-family: $adelle-sans
+        text-transform: uppercase
+        font-weight: 600
+        padding-left: 1rem !important
+
+
+        a.right-off-canvas-toggle
+          position: absolute
+          font-size: rem-calc(30)
+          color: $white
+          line-height: 12px
+          right: 1rem
+
       .leaf
         margin-left: 1.2rem
         .last
-          color: red
+          //color: red
     
       &.first-expanded.has-dropdown.not-click
         margin-left: -2rem
+
+    #main-menu
+      padding-bottom: 1rem
+
+      li.last a
+        color: $white !important
+
+    .submenu
+      padding-top: 1rem
+      display: block
+      border-top: 1px solid $blue-link
+      clear: both
+
+      a
+        color: $yellow
 
     #secondary-menu
       display: none
@@ -796,13 +824,13 @@ div.label-inline
     left: 1rem
     z-index: 600
 
-  .page.off-canvas-wrap.move-left .l-header
-    position: initial
+  //.page.off-canvas-wrap.move-left .l-header
+    //position: initial
 
   .l-header 
     background-color: $blue
     width: 100%
-    position: fixed
+    //position: fixed
     top: 0px
     z-index: 999
 
