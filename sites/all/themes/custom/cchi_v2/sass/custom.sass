@@ -723,8 +723,9 @@ div.label-inline
       display: none
 
     a.right-off-canvas-toggle
-      span
-        display: none
+      position: relative !important
+      font-size: rem-calc(30)
+      color: $white
 
     li
       .leaf
@@ -757,6 +758,10 @@ div.label-inline
     position: relative
     left: 1rem
     z-index: 600
+
+  .page.off-canvas-wrap.move-left .l-header
+    position: initial
+
   .l-header 
     background-color: $blue
     width: 100%
@@ -774,7 +779,6 @@ div.label-inline
           background: transparent
 
       .right-off-canvas-menu
-        padding-top: 3rem
         background: $blue-dark
         left: inherit !important
 

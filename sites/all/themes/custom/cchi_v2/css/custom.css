@@ -3139,8 +3139,10 @@ div.label-inline {
         color: #fff; }
   .right-off-canvas-menu i.fa-times {
     display: none; }
-  .right-off-canvas-menu a.right-off-canvas-toggle span {
-    display: none; }
+  .right-off-canvas-menu a.right-off-canvas-toggle {
+    position: relative !important;
+    font-size: 1.875rem;
+    color: #fff; }
   .right-off-canvas-menu li .leaf {
     margin-left: 1.2rem; }
     .right-off-canvas-menu li .leaf .last {
@@ -3160,6 +3162,8 @@ div.label-inline {
     position: relative;
     left: 1rem;
     z-index: 600; }
+  .page.off-canvas-wrap.move-left .l-header {
+    position: initial; }
   .l-header {
     background-color: #01579b;
     width: 100%;
@@ -3172,7 +3176,6 @@ div.label-inline {
       .l-header nav.top-bar li a {
         background: transparent; }
       .l-header nav.top-bar .right-off-canvas-menu {
-        padding-top: 3rem;
         background: #01467c;
         left: inherit !important; }
         .l-header nav.top-bar .right-off-canvas-menu ul {

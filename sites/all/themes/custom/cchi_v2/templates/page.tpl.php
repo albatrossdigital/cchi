@@ -1,6 +1,5 @@
 <!--.page -->
 <div data-offcanvas role="document" class="page off-canvas-wrap"><div class="inner-wrap">
-
   <!--.l-header region -->
   <header role="banner" class="l-header">
 
@@ -15,7 +14,11 @@
             <li class="toggle-off-canvas menu-toggle right"><a class="right-off-canvas-toggle" href="#"><span><?php print $top_bar_menu_text; ?></span> <i class="fa-bars"></i></a></li>
           </ul>
           <section class="top-bar-section right-off-canvas-menu">
-            <!--<a class="right-off-canvas-toggle" href="#"><span><?php print t('Close'); ?></span> <i class="fa-times"></i></a>-->
+            <ul><li>
+              Sections
+              <a class="right-off-canvas-toggle right" href="#"><span>&#215;</span></a>
+            </li></ul>
+            
             <?php if ($top_bar_main_menu) :?>
               <?php print $top_bar_main_menu; ?>
             <?php endif; ?>
@@ -23,6 +26,7 @@
               <?php print $top_bar_secondary_menu; ?>
             <?php endif; ?>
             <?php print render($page['topbar']); ?>
+            
           </section>
         </nav>
       <?php if ($top_bar_classes): ?>
@@ -239,6 +243,7 @@
 
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
+  <a class="exit-off-canvas" href="#"></a>
 </div></div>
 <!--/.page -->
 
