@@ -2758,10 +2758,9 @@ div.twitter-pull-block-wrapper {
   height: 10rem; }
   .view-id-members_logos .views-field-field-image img {
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    vertical-align: center; }
 .view-id-members_logos .views-field-title {
   height: 3rem;
   text-align: center;
