@@ -2765,6 +2765,7 @@ div.twitter-pull-block-wrapper {
     right: 0;
     margin: auto; }
 .view-id-members_logos .views-field-title {
+  height: 4rem;
   text-align: center;
   margin-top: -2rem;
   padding-bottom: 2.5rem; }
