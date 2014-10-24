@@ -3288,7 +3288,12 @@ div.label-inline {
   .fill.second {
     margin-top: 0.5rem; }
   .fill.first {
-    margin-top: 0.5rem; } }
+    margin-top: 0.5rem; }
+  .view-id-news img {
+    width: 100%; }
+  .view-id-news .medium-9 .field {
+    padding-left: 0rem;
+    padding-right: 0rem; } }
 
 @media only screen and (min-width:56.1875em) and (max-width:76.25em) {
   h1#page-title.title {
