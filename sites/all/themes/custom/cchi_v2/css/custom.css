@@ -1982,7 +1982,7 @@ aside .block-menu-block {
       .l-footer-sections .block-menu-block-3 ul .active-trail, .l-footer-sections .block-menu-block-3 ul .active {
         background-color: transparent;
         margin-right: 0;
-        color: #333; }
+        color: #01579b; }
   .l-footer-sections .block-block-2 p {
     font-family: "adelle-sans";
     text-transform: uppercase;
@@ -3293,7 +3293,12 @@ div.label-inline {
     width: 100%; }
   .view-id-news .medium-9 .field {
     padding-left: 0rem;
-    padding-right: 0rem; } }
+    padding-right: 0rem; }
+  .view-id-events {
+    background-color: pink; }
+    .view-id-events .medium-9 p, .view-id-events .medium-9 .field {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
 
 @media only screen and (min-width:56.1875em) and (max-width:76.25em) {
   h1#page-title.title {
