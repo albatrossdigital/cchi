@@ -2034,9 +2034,8 @@ aside .block-menu-block {
     color: #1976d2; }
 
 div.footer-second.large-3 {
-  width: 100%;
   float: right;
-  margin-top: -4rem;
+  margin-top: 1.25rem;
   margin-right: -4.3rem; }
 
 @media only screen and (max-width: 56.125em) {
