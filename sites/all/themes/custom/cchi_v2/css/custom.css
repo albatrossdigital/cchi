@@ -2758,8 +2758,8 @@ div.twitter-pull-block-wrapper {
 .view-id-members_logos .content {
   margin-top: 1rem;
   height: 200px;
-  width: 115%;
-  border: 1px solid red;
+  width: 100%;
+  border: 2px solid #fafafa;
   position: relative; }
   .view-id-members_logos .content img {
     max-height: 190px;
@@ -2772,21 +2772,25 @@ div.twitter-pull-block-wrapper {
     margin: auto; }
 .view-id-members_logos div.views-field.views-field-title {
   height: 6rem;
-  width: 235px;
-  width: 115%;
   position: relative;
   text-align: center;
   background-color: #fafafa;
-  border: 1px solid #777; }
-  .view-id-members_logos div.views-field.views-field-title span.field-content a {
+  border: 2px solid #fafafa; }
+  .view-id-members_logos div.views-field.views-field-title span.field-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); }
+  .view-id-members_logos div.views-field.views-field-title a {
     font-family: "adelle-sans", sans-serif;
-    font-size: 1.125rem;
-    padding-top: 1.5rem;
-    margin-bottom: 0.8rem; }
-.view-id-members_logos div.views-row:last-child {
-  float: left; }
+    font-size: 1.125rem; }
+.view-id-members_logos div.views-row {
+  width: 45%; }
+  .view-id-members_logos div.views-row:last-child {
+    float: left; }
 .view-id-members_logos .views-row-odd {
-  margin-right: 2.5rem; }
+  margin-right: 1.5rem; }
 
 .field-name-field-tags h2 {
   font-family: "adelle-sans";
