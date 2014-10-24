@@ -2767,6 +2767,7 @@ div.twitter-pull-block-wrapper {
 .view-id-members_logos .views-field-title {
   height: 3rem;
   text-align: center;
+  margin-top: -2rem;
   padding-bottom: 2.5rem; }
 .view-id-members_logos a {
   font-family: "adelle-sans", sans-serif;
