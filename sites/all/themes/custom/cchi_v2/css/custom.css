@@ -3278,10 +3278,15 @@ div.label-inline {
     padding-left: 0rem;
     padding-right: 0rem; }
   .view-id-events {
-    background-color: pink; }
-    .view-id-events .medium-9 p, .view-id-events .medium-9 .field {
-      padding-left: 1rem;
-      padding-right: 1rem; } }
+    margin-top: 2rem; }
+    .view-id-events .medium-9 {
+      padding-top: 0;
+      margin-top: -1rem; }
+      .view-id-events .medium-9 p, .view-id-events .medium-9 .field {
+        padding-left: 1rem;
+        padding-right: 1rem; }
+  .block-menu-menu-events-sub-menu .leaf, .block-menu-menu-media-categories .leaf {
+    margin-bottom: 0.25rem; } }
 
 @media only screen and (min-width:56.1875em) and (max-width:76.25em) {
   h1#page-title.title {
