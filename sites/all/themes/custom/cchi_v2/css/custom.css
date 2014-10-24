@@ -3273,10 +3273,16 @@ div.label-inline {
   .fill.first {
     margin-top: 0.5rem; }
   .view-id-news img {
-    width: 100%; }
-  .view-id-news .medium-9 .field {
-    padding-left: 0rem;
-    padding-right: 0rem; }
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem; }
+  .view-id-news div.group-left.columns.medium-3 {
+    margin-top: 3.5rem; }
+  .view-id-news .medium-9 {
+    margin-top: -1.9rem; }
+    .view-id-news .medium-9 .field {
+      padding-left: 0rem;
+      padding-right: 0rem; }
   .view-id-events {
     margin-top: 2rem; }
     .view-id-events .medium-9 {
