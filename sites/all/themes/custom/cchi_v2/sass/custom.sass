@@ -728,14 +728,18 @@ div.label-inline
             background-color: $blue
             background: $blue
 
-  nav.top-bar
-    a.right-off-canvas-toggle
-      position: fixed
-      right: 50px
-      padding-top: 0.25rem
-      
-      span
-        margin-right: 1rem
+    .toggle-off-canvas
+      position: static
+
+      a
+        position: absolute
+        right: rem-calc(245)
+        padding-top: 0.25rem
+        width: rem-calc(60)
+
+        span
+          margin-right: 1rem
+
 
 
   .l-header
@@ -775,7 +779,7 @@ div.label-inline
           position: absolute
           font-size: rem-calc(30)
           color: $white
-          line-height: 12px
+          line-height: 22px
           right: 1rem
 
       .leaf
@@ -808,7 +812,7 @@ div.label-inline
 
       li
         &.leaf
-          a
+          aF
             padding-right: 1.5rem
 
           &.last

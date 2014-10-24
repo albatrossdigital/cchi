@@ -1731,7 +1731,8 @@ nav#main-menu.navigation {
         font-size: inherit; }
     #main-menu .searchblock .f-dropdown {
       min-width: 300px;
-      max-width: 300px; }
+      max-width: 300px;
+      z-index: 1001; }
       #main-menu .searchblock .f-dropdown.open {
         left: -270px !important;
         top: 36px !important; }
@@ -3145,12 +3146,15 @@ div.label-inline {
   .top-bar ul li:hover:not(.has-form) > a {
     background-color: #01579b;
     background: #01579b; }
-  nav.top-bar a.right-off-canvas-toggle {
-    position: fixed;
-    right: 50px;
-    padding-top: 0.25rem; }
-    nav.top-bar a.right-off-canvas-toggle span {
-      margin-right: 1rem; }
+  .top-bar .toggle-off-canvas {
+    position: static; }
+    .top-bar .toggle-off-canvas a {
+      position: absolute;
+      right: 15.3125rem;
+      padding-top: 0.25rem;
+      width: 3.75rem; }
+      .top-bar .toggle-off-canvas a span {
+        margin-right: 1rem; }
   .l-header .hide-for-small {
     display: block !important; }
     .l-header .hide-for-small .logo, .l-header .hide-for-small .navigation .links, .l-header .hide-for-small .navigation h2 {
@@ -3175,7 +3179,7 @@ div.label-inline {
       position: absolute;
       font-size: 1.875rem;
       color: #fff;
-      line-height: 12px;
+      line-height: 22px;
       right: 1rem; }
   .right-off-canvas-menu li .leaf {
     margin-left: 1.2rem; }
@@ -3194,7 +3198,7 @@ div.label-inline {
       color: #fdd835; }
   .right-off-canvas-menu #secondary-menu {
     display: none; }
-  .right-off-canvas-menu ul.dropdown li.leaf a {
+  .right-off-canvas-menu ul.dropdown li.leaf aF {
     padding-right: 1.5rem; }
   .right-off-canvas-menu ul.dropdown li.leaf.last a {
     color: #fff; }
