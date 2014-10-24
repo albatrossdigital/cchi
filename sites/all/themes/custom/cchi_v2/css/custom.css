@@ -1947,13 +1947,6 @@ aside .block-menu-block {
   aside .block-menu-block {
     margin-left: 2rem; } }
 
-@media only screen and (min-width:56.1875em) and (max-width:76.25em) {
-  aside .block-menu-block ul .active, aside .block-menu-block ul .active-trail {
-    padding-top: 0.6; }
-    aside .block-menu-block ul .active a, aside .block-menu-block ul .active-trail a {
-      background-color: #fdd835;
-      padding-top: 0; } }
-
 .l-footer-sections {
   margin-top: 4rem; }
   .l-footer-sections .panel {
@@ -3132,8 +3125,7 @@ div.label-inline {
     margin-left: -2rem;
     margin-right: -3rem; }
   .l-button_menu-region {
-    top: 35px;
-    z-index: 699; }
+    display: none; }
   .medium-6 #main-content {
     padding-right: 1rem; }
   .top-bar ul li:hover:not(.has-form) > a {
