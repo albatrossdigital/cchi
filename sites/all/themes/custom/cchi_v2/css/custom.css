@@ -2758,6 +2758,7 @@ div.twitter-pull-block-wrapper {
 .view-id-members_logos .content {
   margin-top: 1rem;
   height: 200px;
+  min-height: 60px;
   width: 100%;
   border: 2px solid #fafafa;
   position: relative; }
