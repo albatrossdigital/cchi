@@ -2819,6 +2819,9 @@ ul.links.inline {
   list-style-type: none;
   display: inline; }
 
+.node-type-event h2, .blog-section h2 {
+  font-size: 36px; }
+
 .front .field-name-node-link {
   display: none; }
 
@@ -2927,8 +2930,7 @@ div.button.custom {
   border-color: transparent;
   background: transparent;
   color: #01579b;
-  padding: 0px;
-  margin-left: 0.5rem; }
+  padding: 0px; }
   #share42:hover {
     background: transparent;
     border: 1px solid transparent;
