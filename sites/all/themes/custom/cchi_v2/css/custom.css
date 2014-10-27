@@ -3331,6 +3331,8 @@ div.label-inline {
     margin-top: -0.05rem;
     margin-right: 20%;
     width: 55%; }
+  div.orbit-container img {
+    width: 100%; }
   div.orbit-container a.orbit-next, div.orbit-container a.orbit-prev {
     display: block;
     margin-top: -5.5rem; } }
