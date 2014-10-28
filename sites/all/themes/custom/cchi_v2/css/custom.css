@@ -1947,6 +1947,13 @@ aside .block-menu-block {
   aside .block-menu-block {
     margin-left: 2rem; } }
 
+@media only screen and (min-width:56.1875em) and (max-width:76.25em) {
+  aside .block-menu-block ul .active, aside .block-menu-block ul .active-trail {
+    padding-top: 0.6; }
+    aside .block-menu-block ul .active a, aside .block-menu-block ul .active-trail a {
+      background-color: #fdd835;
+      padding-top: 0; } }
+
 .l-footer-sections {
   margin-top: 4rem; }
   .l-footer-sections .panel {
@@ -2812,6 +2819,9 @@ ul.links.inline {
   list-style-type: none;
   display: inline; }
 
+.node-type-event h2, .blog-section h2 {
+  font-size: 36px; }
+
 .front .field-name-node-link {
   display: none; }
 
@@ -2920,8 +2930,7 @@ div.button.custom {
   border-color: transparent;
   background: transparent;
   color: #01579b;
-  padding: 0px;
-  margin-left: 0.5rem; }
+  padding: 0px; }
   #share42:hover {
     background: transparent;
     border: 1px solid transparent;
@@ -3124,8 +3133,10 @@ div.label-inline {
     font-size: 18px;
     margin-left: -2rem;
     margin-right: -3rem; }
-  .l-button_menu-region ul {
-    display: none; }
+  .l-button_menu-region {
+    height: 60px; }
+    .l-button_menu-region ul {
+      display: none; }
   .medium-6 #main-content {
     padding-right: 1rem; }
   .top-bar ul li:hover:not(.has-form) > a {
@@ -3239,7 +3250,7 @@ div.label-inline {
     margin-bottom: 0; }
   div.orbit-container a.orbit-next, div.orbit-container a.orbit-prev {
     display: block;
-    margin-top: -12rem; }
+    margin-top: -19.5rem; }
   .group-right {
     padding-top: 2rem; }
   .block-cchi-customizations-tweets {
@@ -3273,7 +3284,7 @@ div.label-inline {
     margin-top: 0.5rem; }
   .view-id-news img {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 3.5rem;
     margin-bottom: 1.5rem; }
   .view-id-news div.group-left.columns.medium-3 {
     margin-top: 3.5rem; }
@@ -3282,6 +3293,10 @@ div.label-inline {
     .view-id-news .medium-9 .field {
       padding-left: 0rem;
       padding-right: 0rem; }
+  .front .view-id-news div.group-left.columns.medium {
+    margin-top: 0rem; }
+  .front .views-row-1 {
+    margin-top: -4rem; }
   .view-id-events {
     margin-top: 2rem; }
     .view-id-events .medium-9 {
@@ -3315,4 +3330,9 @@ div.label-inline {
   .fill.second {
     margin-top: -0.05rem;
     margin-right: 20%;
-    width: 55%; } }
+    width: 55%; }
+  div.orbit-container img {
+    width: 100%; }
+  div.orbit-container a.orbit-next, div.orbit-container a.orbit-prev {
+    display: block;
+    margin-top: -5.5rem; } }
