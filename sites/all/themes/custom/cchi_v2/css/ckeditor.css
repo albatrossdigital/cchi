@@ -7137,3 +7137,9 @@ h5 {
   color: #777777;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
+
+img {
+  padding-right: 10px; }
+  img[style*="right"] {
+    padding-right: 0;
+    padding-left: 10px; }

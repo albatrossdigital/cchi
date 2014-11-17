@@ -2487,6 +2487,12 @@ p a {
   p a:hover {
     color: #01467c; }
 
+img {
+  padding-right: 10px; }
+  img[style*="right"] {
+    padding-right: 0;
+    padding-left: 10px; }
+
 .field-name-node-link {
   font-family: "adelle-sans";
   text-transform: uppercase;
