@@ -1751,7 +1751,7 @@ nav#main-menu.navigation {
   .l-button_menu-region .front {
     margin-top: -1.1rem; }
   .l-button_menu-region .block-menu-menu-button-menu .menu {
-    margin-top: 2.25rem;
+    margin-top: 1.25rem;
     margin-bottom: 0.5rem; }
     .l-button_menu-region .block-menu-menu-button-menu .menu ul {
       width: 100%; }
@@ -1793,43 +1793,25 @@ nav#main-menu.navigation {
 .block-menu-menu-button-menu {
   /* Fonts */ }
   .block-menu-menu-button-menu .menu li.leaf a {
-    padding-right: 2.5rem;
-    margin-left: 0.5rem; }
+    margin-left: 0.5rem;
+    display: block; }
     .block-menu-menu-button-menu .menu li.leaf a:before {
       font-size: inherit; }
     .block-menu-menu-button-menu .menu li.leaf a:before {
       float: right;
       position: relative;
       z-index: 3;
-      margin-left: -5rem;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      padding-top: 0.35rem; }
+      padding-right: 0;
+      padding-left: 0.8rem;
+      padding-top: 0.25rem; }
   .block-menu-menu-button-menu .menu li.first a {
-    padding-right: 2.5rem;
     margin-left: 0.5rem; }
     .block-menu-menu-button-menu .menu li.first a:before {
       font-size: inherit; }
-    .block-menu-menu-button-menu .menu li.first a:before {
-      float: right;
-      position: relative;
-      z-index: 3;
-      margin-left: -5rem;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      padding-top: 0.35rem; }
   .block-menu-menu-button-menu .menu li.last a {
     margin-left: 0.5rem; }
     .block-menu-menu-button-menu .menu li.last a:before {
       font-size: inherit; }
-    .block-menu-menu-button-menu .menu li.last a:before {
-      float: right;
-      position: relative;
-      z-index: 3;
-      margin-left: -5rem;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      padding-top: 0.35rem; }
 
 p {
   font-family: "adelle", serif;
