@@ -4,7 +4,9 @@
   #secondary-menu
     ul 
       margin-top: -25.5rem
-    
+  
+.mobile-logo
+  display: none!important
     
 fa-bars
   float: right
@@ -125,8 +127,6 @@ nav#main-menu.navigation
 //.sidebar-second
 //  .l-button_menu-region
 //    margin-top: -1.1
-      
-  
    
 .l-button_menu-region
   background-color: $gray
@@ -170,7 +170,7 @@ nav#main-menu.navigation
         &:hover
           +custom-button-hover 
   
-        
+      
         
 .block-menu-menu-button-menu
   .menu
@@ -295,3 +295,45 @@ h6
     &:hover
       color: #01579b
 
+
+
+
+// * Media Queries
+// *
+// ******************************************************
+
+@media #{$small-only}
+
+  /*button menu*/
+
+  .l-button_menu-region 
+    min-height: 72px
+    height: auto
+  
+  .logo-region
+    text-align: center
+    padding-top: 10px
+    padding-bottom: 10px
+
+    a 
+      display: inline-block
+      max-width: 250px
+
+
+@media #{$medium-up}
+
+  /*button menu*/
+  .l-button_menu-region
+
+    & > .row
+      position: relative
+
+  .logo-region
+    position: absolute
+    top: 13px
+    left: 10px
+    z-index: 10
+
+    a 
+      display: block
+      max-width: 311px

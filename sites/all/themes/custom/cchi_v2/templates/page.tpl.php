@@ -40,8 +40,6 @@
     <?php if ($alt_header): ?>
     <section class="row <?php print $alt_header_classes; ?>">
 
-      <?php if ($linked_logo): print $linked_logo; endif; ?>
-
       <?php if ($site_name): ?>
         <?php if ($title): ?>
           <div id="site-name" class="element-invisible">
@@ -84,6 +82,9 @@
       <!--.l-header-region -->
       <section class="l-button_menu-region">
         <div class="row">
+          <div class="logo-region"> 
+            <?php if ($linked_logo): print $linked_logo; endif; ?>
+          </div>
           <div class="medium-9 small-12 columns right">
             <?php print render($page['button_menu']); ?>
           </div>

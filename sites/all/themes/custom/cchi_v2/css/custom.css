@@ -1677,6 +1677,9 @@ html, body {
 .l-header #secondary-menu ul {
   margin-top: -25.5rem; }
 
+.mobile-logo {
+  display: none !important; }
+
 fa-bars {
   float: right; }
 
@@ -1887,6 +1890,32 @@ h6 {
     color: #1976d2; }
     h6 a:hover {
       color: #01579b; }
+
+@media only screen and (max-width: 56.125em) {
+  /*button menu*/
+  .l-button_menu-region {
+    min-height: 72px;
+    height: auto; }
+  .logo-region {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .logo-region a {
+      display: inline-block;
+      max-width: 250px; } }
+
+@media only screen and (min-width:56.1875em) {
+  /*button menu*/
+  .l-button_menu-region > .row {
+    position: relative; }
+  .logo-region {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    z-index: 10; }
+    .logo-region a {
+      display: block;
+      max-width: 311px; } }
 
 aside .block-menu-block {
   font-family: "adelle-sans", sans-serif; }
@@ -3121,10 +3150,8 @@ div.label-inline {
     font-size: 18px;
     margin-left: -2rem;
     margin-right: -3rem; }
-  .l-button_menu-region {
-    height: 60px; }
-    .l-button_menu-region ul {
-      display: none; }
+  .l-button_menu-region ul {
+    display: none; }
   .medium-6 #main-content {
     padding-right: 1rem; }
   .top-bar ul li:hover:not(.has-form) > a {
