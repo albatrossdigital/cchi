@@ -171,6 +171,10 @@
       <?php endif; ?>
 
       <?php print render($page['content']); ?>
+
+      <?php if (!empty($page['content_bottom'])): ?>
+      <?php print render($page['content_bottom']); ?>
+      <?php endif; ?>
     </div>
     <!--/.main region -->
 
