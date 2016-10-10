@@ -3159,9 +3159,8 @@ div.label-inline {
     position: static; }
     .top-bar .toggle-off-canvas a {
       position: absolute;
-      right: 15.3125rem;
-      padding-top: 0.25rem;
-      width: 3.75rem; }
+      right: 60px;
+      padding-top: 0.25rem; }
       .top-bar .toggle-off-canvas a span {
         margin-right: 1rem; }
   .l-header .hide-for-small {
