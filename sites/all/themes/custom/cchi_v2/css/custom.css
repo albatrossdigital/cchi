@@ -1723,7 +1723,7 @@ fa-bars {
     z-index: 50; }
   #main-menu .searchblock {
     position: absolute;
-    top: 0;
+    top: 1px;
     right: 1.875rem;
     color: #fdd835; }
     #main-menu .searchblock a.s-button {
@@ -3329,7 +3329,8 @@ div.label-inline {
   #main-menu ul {
     margin: 12px 0 0 0rem;
     position: relative;
-    z-index: 20; }
+    z-index: 20;
+    text-align: right; }
     #main-menu ul li {
       margin-left: 0.1rem; }
     #main-menu ul li.last {
