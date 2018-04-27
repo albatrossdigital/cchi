@@ -50,6 +50,12 @@ function cchi_v2_preprocess_page(&$vars) {
     $vars['sidebar_sec_grid'] = '';
   }
 
+  // Temporary (?) hack to override the page logo on http://www.cohealthinitiative.org/consumer-assistance-program
+  // Requested by Adam Fox on 4/26/18
+  if ($_GET['q'] === 'node/3539') {
+    $vars['linked_logo'] = str_replace('logo.png', 'cchi-cap-logo.png', $vars['linked_logo']);
+  }
+
   $vars['top_bar_secondary_menu'] = drupal_render($vars['page']['button_menu']['menu_menu-button-menu']);
   $vars['page']['button_menu']['menu_menu-button-menu'] = array('#markup' => $vars['top_bar_secondary_menu']);
   $vars['top_bar_secondary_menu'] = str_replace(array('<section', '</section', 'block-menu-menu-button-menu'), array('<div', '</div', 'submenu'), $vars['top_bar_secondary_menu']);
